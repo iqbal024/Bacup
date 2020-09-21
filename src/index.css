@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Register {
+  margin-top: 50px;
+}
+
+.Register-title {
+  text-align: left;
+}
