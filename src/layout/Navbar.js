@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Menu, Dropdown } from "semantic-ui-react";
 
 export default function Navbar() {
   return (
     <Menu fixed="top">
-      <Menu.Item>Home</Menu.Item>
+      <Link to="/">
+        <Menu.Item>Home</Menu.Item>
+      </Link>
       <Menu.Item>
         <Dropdown
           text="Scientific Meeting"
@@ -15,8 +18,12 @@ export default function Navbar() {
           // className="icon"
         >
           <Dropdown.Menu>
-            <Dropdown.Item text="Symposium" />
-            <Dropdown.Item text="Workshop" />
+            <Link to="/symposium">
+              <Dropdown.Item text="Symposium" />
+            </Link>
+            <Link to="/workshop">
+              <Dropdown.Item text="Workshop" />
+            </Link>
           </Dropdown.Menu>
         </Dropdown>
       </Menu.Item>
