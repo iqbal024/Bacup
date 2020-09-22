@@ -1,5 +1,5 @@
 import React from "react";
-import { Table } from "semantic-ui-react";
+import { Table, Button } from "semantic-ui-react";
 
 const TableCategoryRegister = () => (
   <>
@@ -65,6 +65,7 @@ const TableCategoryRegister = () => (
     </div>
     <div>
       <h3 className="Register-title">Registration</h3>
+      <Button className="Register-title">Register</Button>
     </div>
   </>
 )

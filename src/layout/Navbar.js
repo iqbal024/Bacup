@@ -27,7 +27,9 @@ export default function Navbar() {
           </Dropdown.Menu>
         </Dropdown>
       </Menu.Item>
-      <Menu.Item>Abstract Submission</Menu.Item>
+      <Link to="/Abstract">
+        <Menu.Item>Abstract Submission</Menu.Item>
+      </Link>
       <Link to="/Register">
         <Menu.Item>Register</Menu.Item>
       </Link>
