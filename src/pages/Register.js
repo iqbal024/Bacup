@@ -64,7 +64,7 @@ const TableCategoryRegister = () => (
       </Table>
     </div>
     <div>
-      <h3 className="Register-title">Registration</h3>
+      <h3>Registration</h3>
       <Button className="Register-title">Register</Button>
     </div>
   </>

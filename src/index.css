@@ -19,3 +19,20 @@ code {
 .Register-title {
   text-align: left;
 }
+
+.link-wa {
+  background: #4dc247;
+  color: #fff;
+  right: 10px;
+  bottom: 55px;
+  position: fixed;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 14px;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.text-hotline {
+  color: #fff;
+}
