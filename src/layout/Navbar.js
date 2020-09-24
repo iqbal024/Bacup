@@ -35,6 +35,11 @@ export default function Navbar() {
           <Menu.Item>Register</Menu.Item>
         </Link>
         <Menu.Item>Contact Person</Menu.Item>
+        <Link to="/login">
+          <Menu.Item>
+            <Icon name="sign in"/>Login
+          </Menu.Item>
+        </Link>
       </Menu>
       <div className="link-wa">
         <a href="https://api.whatsapp.com/send?phone=6281299001720" target="blank" title="Hotline Bacup" className="text-hotline">
