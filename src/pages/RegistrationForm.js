@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button, Radio } from "semantic-ui-react";
+import { Form, Button, Radio, Dropdown } from "semantic-ui-react";
 import * as yup from "yup";
 
 const registrationSchema = {
@@ -20,7 +20,9 @@ const registrationSchema = {
 };
 
 export default function RegistrationForm() {
-  const [formValues, setFormValues] = useState(registrationSchema);
+  const [formValues, setFormValues] = useState(
+    JSON.parse(localStorage.getItem("personal")) || registrationSchema
+  );
   const [errors, setErrors] = useState(registrationSchema);
   const [step, setStep] = useState("personal");
 
@@ -38,11 +40,10 @@ export default function RegistrationForm() {
     setErrors({ ...errors, [e.target.name]: "" });
   }
 
-  function handleSubmit(e) {
+  function handleSubmit() {
     const err = validateRegister(formValues);
 
     if (!err) {
-      alert(JSON.stringify(formValues, null, 2));
       localStorage.setItem("personal", JSON.stringify(formValues));
       setStep("event");
     } else {
@@ -269,7 +270,49 @@ export default function RegistrationForm() {
       )}
       {step === "event" && (
         <Form>
-          <div>ini event detail</div>
+          <Form.Field>
+            <label className={errors.phoneOffice ? "label--error" : ""}>
+              Category <span className="required">*</span>
+            </label>
+            <Dropdown
+              placeholder="Select Category"
+              selection
+              options={[
+                { key: "gp", text: "General Practitioner", value: "gp" },
+                { key: "sp", text: "Specialist", value: "sp" },
+                { key: "msn", text: "Medical student & nurse", value: "msn" },
+              ]}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.phoneOffice ? "label--error" : ""}>
+              Package <span className="required">*</span>
+            </label>
+            <Dropdown
+              placeholder="Select Package"
+              selection
+              options={[
+                {
+                  key: "silver",
+                  text: "Silver (1 workshop or symposium)",
+                  value: "silver",
+                },
+                {
+                  key: "gold",
+                  text: "Gold (1 workshop and symposium)",
+                  value: "gold",
+                },
+                {
+                  key: "platinum",
+                  text: "Platinum (2 workshop and symposium)",
+                  value: "platinum",
+                },
+              ]}
+            />
+          </Form.Field>
+          <div>symposium</div>
+          <div>workshop</div>
+          <div>package price</div>
         </Form>
       )}
     </div>
