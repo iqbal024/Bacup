@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Table, Button } from "semantic-ui-react";
 
 const TableCategoryRegister = () => (
@@ -26,7 +27,7 @@ const TableCategoryRegister = () => (
             <Table.Cell>1 Workshop or Symposium</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell>Silver Medical Student & Nurse</Table.Cell>
+            <Table.Cell>Silver Medical Student &amp; Nurse</Table.Cell>
             <Table.Cell>Rp 150.000</Table.Cell>
             <Table.Cell>1 Workshop or Symposium</Table.Cell>
           </Table.Row>
@@ -41,7 +42,7 @@ const TableCategoryRegister = () => (
             <Table.Cell>1 Workshop and Symposium</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell>Gold Medical Student & Nurse</Table.Cell>
+            <Table.Cell>Gold Medical Student &amp; Nurse</Table.Cell>
             <Table.Cell>Rp 200.000</Table.Cell>
             <Table.Cell>1 Workshop and Symposium</Table.Cell>
           </Table.Row>
@@ -56,7 +57,7 @@ const TableCategoryRegister = () => (
             <Table.Cell>2 Workshop and Symposium</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell>Platinum Medical Student & Nurse</Table.Cell>
+            <Table.Cell>Platinum Medical Student &amp; Nurse</Table.Cell>
             <Table.Cell>Rp 250.000</Table.Cell>
             <Table.Cell>2 Workshop and Symposium</Table.Cell>
           </Table.Row>
@@ -65,8 +66,10 @@ const TableCategoryRegister = () => (
     </div>
     <div>
       <h3>Registration</h3>
-      <Button className="Register-title">Register</Button>
+      <Link to="/registration">
+        <Button className="Register-title">Register</Button>
+      </Link>
     </div>
   </>
-)
+);
 export default TableCategoryRegister;

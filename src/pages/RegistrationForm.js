@@ -1,0 +1,318 @@
+import React, { useState } from "react";
+import { Form, Button, Radio } from "semantic-ui-react";
+import * as yup from "yup";
+
+const registrationSchema = {
+  firstName: "",
+  lastName: "",
+  fullName: "",
+  gender: "",
+  placeOfBirth: "",
+  dateOfBirth: "",
+  country: "",
+  province: "",
+  city: "",
+  email: "",
+  emailConfirmation: "",
+  phone: "",
+  affiliation: "",
+  phoneOffice: "",
+};
+
+export default function RegistrationForm() {
+  const [formValues, setFormValues] = useState(registrationSchema);
+  const [errors, setErrors] = useState(registrationSchema);
+  const [step, setStep] = useState("personal");
+
+  function handleChange(e) {
+    setFormValues({ ...formValues, [e.target.name]: e.target.value });
+  }
+
+  function handleRadioChange(_, { value, name }) {
+    handleChange({ target: { value, name } });
+    setErrors({ ...errors, gender: "" });
+  }
+
+  function resetError(e) {
+    console.log(e.target.name);
+    setErrors({ ...errors, [e.target.name]: "" });
+  }
+
+  function handleSubmit(e) {
+    const err = validateRegister(formValues);
+
+    if (!err) {
+      alert(JSON.stringify(formValues, null, 2));
+      localStorage.setItem("personal", JSON.stringify(formValues));
+      setStep("event");
+    } else {
+      setErrors({ ...errors, ...err });
+    }
+  }
+
+  return (
+    <div className="page">
+      {step === "personal" && (
+        <Form onSubmit={handleSubmit}>
+          <Form.Field>
+            <label className={errors.firstName ? "label--error" : ""}>
+              First Name <span className="required">*</span>
+            </label>
+            {errors.firstName && <p className="error">{errors.firstName}</p>}
+            <input
+              className={errors.firstName ? "input--error" : ""}
+              placeholder="Enter your first name"
+              value={formValues.firstName}
+              name="firstName"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.lastName ? "label--error" : ""}>
+              Last Name <span className="required">*</span>
+            </label>
+            {errors.lastName && <p className="error">{errors.lastName}</p>}
+            <input
+              className={errors.lastName ? "input--error" : ""}
+              placeholder="Enter your last name"
+              value={formValues.lastName}
+              name="lastName"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.fullName ? "label--error" : ""}>
+              Full Name (for certificate) <span className="required">*</span>
+            </label>
+            {errors.fullName && <p className="error">{errors.fullName}</p>}
+            <input
+              className={errors.fullName ? "input--error" : ""}
+              placeholder="Enter your full name for certificate"
+              value={formValues.fullName}
+              name="fullName"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.gender ? "label--error" : ""}>
+              Gender <span className="required">*</span>
+            </label>
+            {errors.gender && <p className="error">{errors.gender}</p>}
+          </Form.Field>
+          <Form.Field>
+            <Radio
+              label="Male"
+              name="gender"
+              value="male"
+              onChange={handleRadioChange}
+              checked={formValues.gender === "male"}
+            />
+          </Form.Field>
+          <Form.Field>
+            <Radio
+              label="Female"
+              name="gender"
+              value="female"
+              onChange={handleRadioChange}
+              checked={formValues.gender === "female"}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.placeOfBirth ? "label--error" : ""}>
+              Place of birth <span className="required">*</span>
+            </label>
+            {errors.placeOfBirth && (
+              <p className="error">{errors.placeOfBirth}</p>
+            )}
+            <input
+              className={errors.placeOfBirth ? "input--error" : ""}
+              placeholder="Enter your place of birth"
+              value={formValues.placeOfBirth}
+              name="placeOfBirth"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.dateOfBirth ? "label--error" : ""}>
+              Date of birth <span className="required">*</span>
+            </label>
+            {errors.dateOfBirth && (
+              <p className="error">{errors.dateOfBirth}</p>
+            )}
+            <input
+              className={errors.dateOfBirth ? "input--error" : ""}
+              placeholder="Enter your date of birth"
+              value={formValues.dateOfBirth}
+              name="dateOfBirth"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.country ? "label--error" : ""}>
+              Country <span className="required">*</span>
+            </label>
+            {errors.country && <p className="error">{errors.country}</p>}
+            <input
+              className={errors.country ? "input--error" : ""}
+              placeholder="Enter your country"
+              value={formValues.country}
+              name="country"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.province ? "label--error" : ""}>
+              Province <span className="required">*</span>
+            </label>
+            {errors.province && <p className="error">{errors.province}</p>}
+            <input
+              className={errors.province ? "input--error" : ""}
+              placeholder="Enter your province"
+              value={formValues.province}
+              name="province"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.city ? "label--error" : ""}>
+              City <span className="required">*</span>
+            </label>
+            {errors.city && <p className="error">{errors.city}</p>}
+            <input
+              className={errors.city ? "input--error" : ""}
+              placeholder="Enter your city"
+              value={formValues.city}
+              name="city"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.email ? "label--error" : ""}>
+              Email Address <span className="required">*</span>
+            </label>
+            {errors.email && <p className="error">{errors.email}</p>}
+            <input
+              className={errors.email ? "input--error" : ""}
+              placeholder="Enter your email"
+              value={formValues.email}
+              name="email"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.emailConfirmation ? "label--error" : ""}>
+              Confirmation Email Address <span className="required">*</span>
+            </label>
+            {errors.emailConfirmation && (
+              <p className="error">{errors.emailConfirmation}</p>
+            )}
+            <input
+              className={errors.emailConfirmation ? "input--error" : ""}
+              placeholder="Enter your confirmation email address"
+              value={formValues.emailConfirmation}
+              name="emailConfirmation"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.phone ? "label--error" : ""}>
+              Mobile Phone Number <span className="required">*</span>
+            </label>
+            {errors.phone && <p className="error">{errors.phone}</p>}
+            <input
+              className={errors.phone ? "input--error" : ""}
+              placeholder="Enter your mobile phone number"
+              value={formValues.phone}
+              name="phone"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.affiliation ? "label--error" : ""}>
+              Affiliation
+            </label>
+            <input
+              className={errors.affiliation ? "input--error" : ""}
+              placeholder="Enter your affiliation"
+              value={formValues.affiliation}
+              name="affiliation"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.phoneOffice ? "label--error" : ""}>
+              Office Phone Number (including Area Code)
+            </label>
+            <input
+              className={errors.phoneOffice ? "input--error" : ""}
+              placeholder="Enter your office phone number"
+              value={formValues.phoneOffice}
+              name="phoneOffice"
+              onChange={handleChange}
+              onFocus={resetError}
+            />
+          </Form.Field>
+          <Button type="submit">Continue</Button>
+        </Form>
+      )}
+      {step === "event" && (
+        <Form>
+          <div>ini event detail</div>
+        </Form>
+      )}
+    </div>
+  );
+}
+
+function validateRegister(payload) {
+  let schema = yup.object().shape({
+    firstName: yup.string().required("First name must be filled"),
+    lastName: yup.string().required("Last name must be filled"),
+    fullName: yup.string().required("Full name must be filled"),
+    gender: yup.string().required("One of the gender options must be selected"),
+    placeOfBirth: yup.string().required("Place of birth must be filled"),
+    dateOfBirth: yup.string().required("Date of birth must be filled"),
+    country: yup.string().required("Country must be filled"),
+    province: yup.string().required("Province must be filled"),
+    city: yup.string().required("City must be filled"),
+    email: yup
+      .string()
+      .email("Email is not valid")
+      .required("Email must be filled"),
+    emailConfirmation: yup
+      .string()
+      .required("Email confirmation must be filled")
+      .oneOf([yup.ref("email")], "Email confirmation must match"),
+    phone: yup.string().required("Phone must be filled"),
+    affiliation: yup.string(),
+    phoneOffice: yup.string(),
+  });
+
+  try {
+    schema.validateSync(payload, { abortEarly: false });
+
+    return null;
+  } catch (err) {
+    let errors = {};
+
+    err.inner.map((el) => {
+      errors[el.path] = el.message;
+
+      return null;
+    });
+
+    return errors;
+  }
+}

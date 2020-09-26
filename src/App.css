@@ -40,3 +40,23 @@
 .page {
   margin-top: 50px;
 }
+
+.label--error {
+  color: rgb(201, 56, 56) !important;
+}
+
+.input--error {
+  border-color: rgb(201, 56, 56) !important;
+}
+
+.input--error::placeholder {
+  color: rgb(201, 56, 56) !important;
+}
+
+.error {
+  color: rgb(201, 56, 56) !important;
+}
+
+.required {
+  color: rgb(201, 56, 56) !important;
+}
