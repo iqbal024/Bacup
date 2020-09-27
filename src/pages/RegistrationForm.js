@@ -22,7 +22,7 @@ const personalSchema = {
 const eventSchema = {
   category: "",
   package: "",
-  price: "",
+  price: 0,
 };
 
 export default function RegistrationForm() {
@@ -57,7 +57,7 @@ export default function RegistrationForm() {
   }
 
   function handleSubmit() {
-    const err = validateRegister(formValues);
+    const err = validatePersonal(formValues);
 
     if (!err) {
       localStorage.setItem("personal", JSON.stringify(formValues));
@@ -366,36 +366,125 @@ export default function RegistrationForm() {
               onChange={handleDropdownChange}
             />
           </Form.Field>
-          <Form.Field>
-            <label className={errors.phoneOffice ? "label--error" : ""}>
-              Package <span className="required">*</span>
-            </label>
-            <Dropdown
-              placeholder="Select Package"
-              selection
-              name="package"
-              options={[
-                {
-                  key: "silver",
-                  text: "Silver (1 workshop or symposium)",
-                  value: "silver",
-                },
-                {
-                  key: "gold",
-                  text: "Gold (1 workshop and symposium)",
-                  value: "gold",
-                },
-                {
-                  key: "platinum",
-                  text: "Platinum (2 workshop and symposium)",
-                  value: "platinum",
-                },
-              ]}
-            />
-          </Form.Field>
-          <div>workshop</div>
-          <div>package price</div>
-
+          {eventFormValues.price ? (
+            <Form.Field>
+              <label className={errors.phoneOffice ? "label--error" : ""}>
+                Event <span className="required">*</span>
+              </label>
+              {eventFormValues.package === "silver" ? (
+                <Dropdown
+                  placeholder="Select Event"
+                  selection
+                  name="event1"
+                  options={[
+                    {
+                      key: "ws1",
+                      text: "Workshop 1 : Workshop of ACS",
+                      value: "ws1",
+                    },
+                    {
+                      key: "ws2",
+                      text:
+                        "Workshop II : Workshop of Echocardiography in congenital heart disease",
+                      value: "ws2",
+                    },
+                    {
+                      key: "ws3",
+                      text:
+                        "Workshop III : Workshop of Arrhythmia in Clinical Practice",
+                      value: "ws3",
+                    },
+                    {
+                      key: "ws4",
+                      text: "Workshop IV : Workshop of Acute Heart Failure",
+                      value: "ws4",
+                    },
+                    {
+                      key: "sy",
+                      text: "Symposium",
+                      value: "sy",
+                    },
+                  ]}
+                />
+              ) : (
+                <Dropdown
+                  selection
+                  name="event1"
+                  value="sy"
+                  options={[
+                    {
+                      key: "sy",
+                      text: "Symposium",
+                      value: "sy",
+                    },
+                  ]}
+                  disabled
+                />
+              )}
+              {eventFormValues.package !== "silver" && (
+                <Dropdown
+                  placeholder="Select Workshop"
+                  selection
+                  name="event2"
+                  options={[
+                    {
+                      key: "ws1",
+                      text: "Workshop 1 : Workshop of ACS",
+                      value: "ws1",
+                    },
+                    {
+                      key: "ws2",
+                      text:
+                        "Workshop II : Workshop of Echocardiography in congenital heart disease",
+                      value: "ws2",
+                    },
+                    {
+                      key: "ws3",
+                      text:
+                        "Workshop III : Workshop of Arrhythmia in Clinical Practice",
+                      value: "ws3",
+                    },
+                    {
+                      key: "ws4",
+                      text: "Workshop IV : Workshop of Acute Heart Failure",
+                      value: "ws4",
+                    },
+                  ]}
+                />
+              )}
+              {eventFormValues.package === "platinum" && (
+                <Dropdown
+                  placeholder="Select Another Workshop"
+                  selection
+                  name="event3"
+                  options={[
+                    {
+                      key: "ws1",
+                      text: "Workshop 1 : Workshop of ACS",
+                      value: "ws1",
+                    },
+                    {
+                      key: "ws2",
+                      text:
+                        "Workshop II : Workshop of Echocardiography in congenital heart disease",
+                      value: "ws2",
+                    },
+                    {
+                      key: "ws3",
+                      text:
+                        "Workshop III : Workshop of Arrhythmia in Clinical Practice",
+                      value: "ws3",
+                    },
+                    {
+                      key: "ws4",
+                      text: "Workshop IV : Workshop of Acute Heart Failure",
+                      value: "ws4",
+                    },
+                  ]}
+                />
+              )}
+            </Form.Field>
+          ) : null}
           <Form.Field>
             <label className={errors.firstName ? "label--error" : ""}>
               Package Price
@@ -415,7 +504,7 @@ export default function RegistrationForm() {
   );
 }
 
-function validateRegister(payload) {
+function validatePersonal(payload) {
   let schema = yup.object().shape({
     firstName: yup.string().required("First name must be filled"),
     lastName: yup.string().required("Last name must be filled"),
