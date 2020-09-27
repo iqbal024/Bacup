@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Form, Button, Radio, Dropdown } from "semantic-ui-react";
 import * as yup from "yup";
 
-const registrationSchema = {
+const personalSchema = {
   firstName: "",
   lastName: "",
   fullName: "",
@@ -19,12 +19,21 @@ const registrationSchema = {
   phoneOffice: "",
 };
 
+const eventSchema = {
+  category: "",
+  package: "",
+  price: "",
+};
+
 export default function RegistrationForm() {
   const [formValues, setFormValues] = useState(
-    JSON.parse(localStorage.getItem("personal")) || registrationSchema
+    JSON.parse(localStorage.getItem("personal")) || personalSchema
   );
-  const [errors, setErrors] = useState(registrationSchema);
+  const [errors, setErrors] = useState(personalSchema);
   const [step, setStep] = useState("personal");
+
+  const [eventFormValues, setEventFormValues] = useState(eventSchema);
+  const [eventErrors, setEventErrors] = useState(eventSchema);
 
   function handleChange(e) {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
@@ -35,8 +44,15 @@ export default function RegistrationForm() {
     setErrors({ ...errors, gender: "" });
   }
 
+  function handleChangeEvent(e) {
+    setEventFormValues({ ...eventFormValues, [e.target.name]: e.target.value });
+  }
+
+  function handleDropdownChange(_, { value, name }) {
+    handleChangeEvent({ target: { value, name } });
+  }
+
   function resetError(e) {
-    console.log(e.target.name);
     setErrors({ ...errors, [e.target.name]: "" });
   }
 
@@ -50,6 +66,42 @@ export default function RegistrationForm() {
       setErrors({ ...errors, ...err });
     }
   }
+
+  useEffect(() => {
+    function getPrice() {
+      const categoryPackagePriceMapping = {
+        sp: {
+          silver: 300_000,
+          gold: 450_000,
+          platinum: 550_000,
+        },
+        gp: {
+          silver: 250_000,
+          gold: 300_000,
+          platinum: 400_000,
+        },
+        msn: {
+          silver: 150_000,
+          gold: 200_000,
+          platinum: 250_000,
+        },
+      };
+
+      return categoryPackagePriceMapping[eventFormValues.category] &&
+        categoryPackagePriceMapping[eventFormValues.category][
+          eventFormValues.package
+        ]
+        ? categoryPackagePriceMapping[eventFormValues.category][
+            eventFormValues.package
+          ]
+        : 0;
+    }
+
+    setEventFormValues((latestState) => ({
+      ...latestState,
+      price: getPrice(),
+    }));
+  }, [eventFormValues.category, eventFormValues.package]);
 
   return (
     <div className="page">
@@ -277,11 +329,13 @@ export default function RegistrationForm() {
             <Dropdown
               placeholder="Select Category"
               selection
+              name="category"
               options={[
-                { key: "gp", text: "General Practitioner", value: "gp" },
                 { key: "sp", text: "Specialist", value: "sp" },
+                { key: "gp", text: "General Practitioner", value: "gp" },
                 { key: "msn", text: "Medical student & nurse", value: "msn" },
               ]}
+              onChange={handleDropdownChange}
             />
           </Form.Field>
           <Form.Field>
@@ -291,6 +345,35 @@ export default function RegistrationForm() {
             <Dropdown
               placeholder="Select Package"
               selection
+              name="package"
+              options={[
+                {
+                  key: "silver",
+                  text: "Silver (1 workshop or symposium)",
+                  value: "silver",
+                },
+                {
+                  key: "gold",
+                  text: "Gold (1 workshop and symposium)",
+                  value: "gold",
+                },
+                {
+                  key: "platinum",
+                  text: "Platinum (2 workshop and symposium)",
+                  value: "platinum",
+                },
+              ]}
+              onChange={handleDropdownChange}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label className={errors.phoneOffice ? "label--error" : ""}>
+              Package <span className="required">*</span>
+            </label>
+            <Dropdown
+              placeholder="Select Package"
+              selection
+              name="package"
               options={[
                 {
                   key: "silver",
@@ -310,9 +393,22 @@ export default function RegistrationForm() {
               ]}
             />
           </Form.Field>
-          <div>symposium</div>
           <div>workshop</div>
           <div>package price</div>
+
+          <Form.Field>
+            <label className={errors.firstName ? "label--error" : ""}>
+              Package Price
+            </label>
+            {/* {errors.firstName && <p className="error">{errors.firstName}</p>} */}
+            <input
+              // className={errors.firstName ? "input--error" : ""}
+              // placeholder="Enter your first name"
+              value={eventFormValues.price}
+              name="price"
+              disabled
+            />
+          </Form.Field>
         </Form>
       )}
     </div>
