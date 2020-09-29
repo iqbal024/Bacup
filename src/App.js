@@ -9,6 +9,7 @@ import Symposium from "./pages/Symposium";
 import AbstractSubmission from "./pages/AbstractSubmission";
 import Login from "./pages/Login";
 import RegistrationForm from "./pages/RegistrationForm";
+import Users from "./pages/Users";
 
 import "./App.css";
 import "semantic-ui-css/semantic.min.css";
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/symposium" component={Symposium} />
           <Route exact path="/abstract" component={AbstractSubmission} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/users" component={Users} />
         </Switch>
       </Router>
     </div>
