@@ -34,7 +34,9 @@ export default function Navbar() {
         <Link to="/register">
           <Menu.Item>Register</Menu.Item>
         </Link>
-        <Menu.Item>Contact Person</Menu.Item>
+        <Link to="/contact-us">
+          <Menu.Item>Contact Us</Menu.Item>
+        </Link>
         <Link to="/login">
           <Menu.Item>
             <Icon name="sign in" />
