@@ -41,6 +41,21 @@ export default function Navbar() {
             Login
           </Menu.Item>
         </Link>
+        <Link to="/joinSymposium">
+          <Menu.Item>
+            JoinSymposium
+          </Menu.Item>
+        </Link>
+        <Link to="/joinWorkshop">
+          <Menu.Item>
+            JoinWorkshop
+          </Menu.Item>
+        </Link>
+        <Link to="/seePoster">
+          <Menu.Item>
+            SeePoster
+          </Menu.Item>
+        </Link>
       </Menu>
       <div className="link-wa">
         <a

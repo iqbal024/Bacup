@@ -8,10 +8,17 @@ const Login = () => (
       <Grid.Column>
         <Form>
           <Form.Input
-            icon="at"
+            icon="mail"
             iconPosition="left"
             label="Email"
             placeholder="Enter your email"
+          />
+          <Form.Input
+            icon='lock'
+            iconPosition='left'
+            label='Password'
+            placeholder='Enter your Password'
+            type='password'
           />
 
           <Button content="Login" primary />
@@ -19,7 +26,7 @@ const Login = () => (
       </Grid.Column>
 
       <Grid.Column verticalAlign="middle">
-        <Link to="/formRegistration">
+        <Link to="/Registration">
           <Button content="Registration" icon="signup" size="big" />
         </Link>
       </Grid.Column>
