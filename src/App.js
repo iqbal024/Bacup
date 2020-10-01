@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./layout/Navbar";
+import Footer from "./layout/Footer";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Workshop from "./pages/Workshop";
@@ -24,6 +25,10 @@ import DetailWorkshop2 from "./pages/Workshop/DetailWorkshop2";
 import DetailWorkshop3 from "./pages/Workshop/DetailWorkshop3";
 import DetailWorkshop4 from "./pages/Workshop/DetailWorkshop4";
 import SeePoster from "./pages/Poster";
+import Users from "./pages/Users";
+import ContactUs from "./pages/ContactUs";
+import Posters from "./pages/Posters";
+import Sponsors from "./pages/Sponsors";
 
 import "./App.css";
 import "semantic-ui-css/semantic.min.css";
@@ -56,7 +61,12 @@ function App() {
           <Route exact path="/joinWorkshop/workshop3" component={DetailWorkshop3} />
           <Route exact path="/joinWorkshop/workshop4" component={DetailWorkshop4} />
           <Route exact path="/seePoster" component={SeePoster} />
+          <Route exact path="/users" component={Users} />
+          <Route exact path="/posters" component={Posters} />
+          <Route exact path="/sponsors" component={Sponsors} />
+          <Route exact path="/contact-us" component={ContactUs} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
