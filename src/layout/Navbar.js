@@ -58,6 +58,11 @@ export default function Navbar() {
             SeePoster
           </Menu.Item>
         </Link>
+        <Link to="/sponsors">
+          <Menu.Item>
+            Sponsor
+          </Menu.Item>
+        </Link>
       </Menu>
       <div className="link-wa">
         <a
