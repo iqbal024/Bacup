@@ -5,7 +5,7 @@ import { Table, Button } from "semantic-ui-react";
 const TableCategoryRegister = () => (
   <>
     <div className="Register">
-      <h3 className="Register-title">Package</h3>
+      <h1 className="Register-title">Package</h1>
       <Table celled>
         <Table.Header>
           <Table.Row>
@@ -64,10 +64,10 @@ const TableCategoryRegister = () => (
         </Table.Body>
       </Table>
     </div>
-    <div>
-      <h3>Registration</h3>
+    <div className="button-registration">
+      <h1>Registration</h1>
       <Link to="/registration">
-        <Button className="Register-title">Register</Button>
+        <Button primary>Register</Button>
       </Link>
     </div>
   </>
