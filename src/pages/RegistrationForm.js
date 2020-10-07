@@ -1,28 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { Form, Button, Radio, Dropdown } from "semantic-ui-react";
 import * as yup from "yup";
+import axios from "axios";
 
 const personalSchema = {
-  firstName: "",
-  lastName: "",
-  fullName: "",
-  gender: "",
-  placeOfBirth: "",
-  dateOfBirth: "",
-  country: "",
-  province: "",
-  city: "",
-  email: "",
+  FirstName: "",
+  LastName: "",
+  FullName: "",
+  Gender: "",
+  PlaceBirth: "",
+  DateBirth: "",
+  Country: "",
+  Province: "",
+  City: "",
+  Email: "",
   emailConfirmation: "",
-  phone: "",
-  affiliation: "",
-  phoneOffice: "",
+  PhoneNumber: "",
+  Affiliation: "",
+  OfficePhoneNumber: "",
 };
 
 const eventSchema = {
-  category: "",
-  package: "",
-  price: 0,
+  Category: "",
+  Package: "",
+  Price: 0,
+  event1: null,
+  event2: null,
+  event3: null,
 };
 
 export default function RegistrationForm() {
@@ -41,7 +45,7 @@ export default function RegistrationForm() {
 
   function handleRadioChange(_, { value, name }) {
     handleChange({ target: { value, name } });
-    setErrors({ ...errors, gender: "" });
+    setErrors({ ...errors, Gender: "" });
   }
 
   function handleChangeEvent(e) {
@@ -49,11 +53,16 @@ export default function RegistrationForm() {
   }
 
   function handleDropdownChange(_, { value, name }) {
+    resetEventError({ target: { value, name } });
     handleChangeEvent({ target: { value, name } });
   }
 
   function resetError(e) {
     setErrors({ ...errors, [e.target.name]: "" });
+  }
+
+  function resetEventError(e) {
+    setEventErrors({ ...eventErrors, [e.target.name]: "" });
   }
 
   function handleSubmit() {
@@ -64,6 +73,35 @@ export default function RegistrationForm() {
       setStep("event");
     } else {
       setErrors({ ...errors, ...err });
+    }
+  }
+
+  function handleSubmitEvent() {
+    const err = validateEvent(eventFormValues);
+
+    console.log("errrrr");
+    console.log(err);
+
+    if (!err) {
+      // success
+      const payload = {
+        ...JSON.parse(localStorage.getItem("personal")),
+        ...eventFormValues,
+      };
+
+      console.log("payloadddd");
+      console.log(payload);
+
+      // axios
+      //   .post("backend.bacup.co/register", payload)
+      //   .then((res) => {
+      //     console.log(res);
+      //   })
+      //   .catch((err) => {
+      //     console.log(err);
+      //   });
+    } else {
+      setEventErrors({ ...eventErrors, ...err });
     }
   }
 
@@ -87,176 +125,194 @@ export default function RegistrationForm() {
         },
       };
 
-      return categoryPackagePriceMapping[eventFormValues.category] &&
-        categoryPackagePriceMapping[eventFormValues.category][
-          eventFormValues.package
+      return categoryPackagePriceMapping[eventFormValues.Category] &&
+        categoryPackagePriceMapping[eventFormValues.Category][
+          eventFormValues.Package
         ]
-        ? categoryPackagePriceMapping[eventFormValues.category][
-            eventFormValues.package
+        ? categoryPackagePriceMapping[eventFormValues.Category][
+            eventFormValues.Package
           ]
         : 0;
     }
 
     setEventFormValues((latestState) => ({
       ...latestState,
-      price: getPrice(),
+      Price: getPrice(),
     }));
-  }, [eventFormValues.category, eventFormValues.package]);
+  }, [eventFormValues.Category, eventFormValues.Package]);
+
+  useEffect(() => {
+    if (eventFormValues.Package === "silver") {
+      setEventFormValues((latestState) => ({
+        ...latestState,
+        event2: null,
+        event3: null,
+      }));
+    } else {
+      setEventFormValues((latestState) => ({
+        ...latestState,
+        event1: "sy",
+      }));
+    }
+
+    if (eventFormValues.Package === "gold") {
+      setEventFormValues((latestState) => ({
+        ...latestState,
+        event3: null,
+      }));
+    }
+  }, [eventFormValues.Package]);
 
   return (
     <div className="page">
       {step === "personal" && (
         <Form onSubmit={handleSubmit}>
           <Form.Field>
-            <label className={errors.firstName ? "label--error" : ""}>
+            <label className={errors.FirstName ? "label--error" : ""}>
               First Name <span className="required">*</span>
             </label>
-            {errors.firstName && <p className="error">{errors.firstName}</p>}
+            {errors.FirstName && <p className="error">{errors.FirstName}</p>}
             <input
-              className={errors.firstName ? "input--error" : ""}
+              className={errors.FirstName ? "input--error" : ""}
               placeholder="Enter your first name"
-              value={formValues.firstName}
-              name="firstName"
+              value={formValues.FirstName}
+              name="FirstName"
               onChange={handleChange}
               onFocus={resetError}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.lastName ? "label--error" : ""}>
+            <label className={errors.LastName ? "label--error" : ""}>
               Last Name <span className="required">*</span>
             </label>
-            {errors.lastName && <p className="error">{errors.lastName}</p>}
+            {errors.LastName && <p className="error">{errors.LastName}</p>}
             <input
-              className={errors.lastName ? "input--error" : ""}
+              className={errors.LastName ? "input--error" : ""}
               placeholder="Enter your last name"
-              value={formValues.lastName}
-              name="lastName"
+              value={formValues.LastName}
+              name="LastName"
               onChange={handleChange}
               onFocus={resetError}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.fullName ? "label--error" : ""}>
+            <label className={errors.FullName ? "label--error" : ""}>
               Full Name (for certificate) <span className="required">*</span>
             </label>
-            {errors.fullName && <p className="error">{errors.fullName}</p>}
+            {errors.FullName && <p className="error">{errors.FullName}</p>}
             <input
-              className={errors.fullName ? "input--error" : ""}
+              className={errors.FullName ? "input--error" : ""}
               placeholder="Enter your full name for certificate"
-              value={formValues.fullName}
-              name="fullName"
+              value={formValues.FullName}
+              name="FullName"
               onChange={handleChange}
               onFocus={resetError}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.gender ? "label--error" : ""}>
+            <label className={errors.Gender ? "label--error" : ""}>
               Gender <span className="required">*</span>
             </label>
-            {errors.gender && <p className="error">{errors.gender}</p>}
+            {errors.Gender && <p className="error">{errors.Gender}</p>}
           </Form.Field>
           <Form.Field>
             <Radio
               label="Male"
-              name="gender"
-              value="male"
+              name="Gender"
+              value="Laki Laki"
               onChange={handleRadioChange}
-              checked={formValues.gender === "male"}
+              checked={formValues.Gender === "Laki Laki"}
             />
           </Form.Field>
           <Form.Field>
             <Radio
               label="Female"
-              name="gender"
-              value="female"
+              name="Gender"
+              value="Perempuan"
               onChange={handleRadioChange}
-              checked={formValues.gender === "female"}
+              checked={formValues.Gender === "Perempuan"}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.placeOfBirth ? "label--error" : ""}>
+            <label className={errors.PlaceBirth ? "label--error" : ""}>
               Place of birth <span className="required">*</span>
             </label>
-            {errors.placeOfBirth && (
-              <p className="error">{errors.placeOfBirth}</p>
-            )}
+            {errors.PlaceBirth && <p className="error">{errors.PlaceBirth}</p>}
             <input
-              className={errors.placeOfBirth ? "input--error" : ""}
+              className={errors.PlaceBirth ? "input--error" : ""}
               placeholder="Enter your place of birth"
-              value={formValues.placeOfBirth}
-              name="placeOfBirth"
+              value={formValues.PlaceBirth}
+              name="PlaceBirth"
               onChange={handleChange}
               onFocus={resetError}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.dateOfBirth ? "label--error" : ""}>
+            <label className={errors.DateBirth ? "label--error" : ""}>
               Date of birth <span className="required">*</span>
             </label>
-            {errors.dateOfBirth && (
-              <p className="error">{errors.dateOfBirth}</p>
-            )}
+            {errors.DateBirth && <p className="error">{errors.DateBirth}</p>}
             <input
-              className={errors.dateOfBirth ? "input--error" : ""}
+              className={errors.DateBirth ? "input--error" : ""}
               placeholder="Enter your date of birth"
-              value={formValues.dateOfBirth}
-              name="dateOfBirth"
+              value={formValues.DateBirth}
+              name="DateBirth"
               onChange={handleChange}
               onFocus={resetError}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.country ? "label--error" : ""}>
+            <label className={errors.Country ? "label--error" : ""}>
               Country <span className="required">*</span>
             </label>
-            {errors.country && <p className="error">{errors.country}</p>}
+            {errors.Country && <p className="error">{errors.Country}</p>}
             <input
-              className={errors.country ? "input--error" : ""}
+              className={errors.Country ? "input--error" : ""}
               placeholder="Enter your country"
-              value={formValues.country}
-              name="country"
+              value={formValues.Country}
+              name="Country"
               onChange={handleChange}
               onFocus={resetError}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.province ? "label--error" : ""}>
+            <label className={errors.Province ? "label--error" : ""}>
               Province <span className="required">*</span>
             </label>
-            {errors.province && <p className="error">{errors.province}</p>}
+            {errors.Province && <p className="error">{errors.Province}</p>}
             <input
-              className={errors.province ? "input--error" : ""}
+              className={errors.Province ? "input--error" : ""}
               placeholder="Enter your province"
-              value={formValues.province}
-              name="province"
+              value={formValues.Province}
+              name="Province"
               onChange={handleChange}
               onFocus={resetError}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.city ? "label--error" : ""}>
+            <label className={errors.City ? "label--error" : ""}>
               City <span className="required">*</span>
             </label>
-            {errors.city && <p className="error">{errors.city}</p>}
+            {errors.City && <p className="error">{errors.City}</p>}
             <input
-              className={errors.city ? "input--error" : ""}
+              className={errors.City ? "input--error" : ""}
               placeholder="Enter your city"
-              value={formValues.city}
-              name="city"
+              value={formValues.City}
+              name="City"
               onChange={handleChange}
               onFocus={resetError}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.email ? "label--error" : ""}>
+            <label className={errors.Email ? "label--error" : ""}>
               Email Address <span className="required">*</span>
             </label>
-            {errors.email && <p className="error">{errors.email}</p>}
+            {errors.Email && <p className="error">{errors.Email}</p>}
             <input
-              className={errors.email ? "input--error" : ""}
+              className={errors.Email ? "input--error" : ""}
               placeholder="Enter your email"
-              value={formValues.email}
-              name="email"
+              value={formValues.Email}
+              name="Email"
               onChange={handleChange}
               onFocus={resetError}
             />
@@ -278,41 +334,43 @@ export default function RegistrationForm() {
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.phone ? "label--error" : ""}>
+            <label className={errors.PhoneNumber ? "label--error" : ""}>
               Mobile Phone Number <span className="required">*</span>
             </label>
-            {errors.phone && <p className="error">{errors.phone}</p>}
+            {errors.PhoneNumber && (
+              <p className="error">{errors.PhoneNumber}</p>
+            )}
             <input
-              className={errors.phone ? "input--error" : ""}
+              className={errors.PhoneNumber ? "input--error" : ""}
               placeholder="Enter your mobile phone number"
-              value={formValues.phone}
-              name="phone"
+              value={formValues.PhoneNumber}
+              name="PhoneNumber"
               onChange={handleChange}
               onFocus={resetError}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.affiliation ? "label--error" : ""}>
+            <label className={errors.Affiliation ? "label--error" : ""}>
               Affiliation
             </label>
             <input
-              className={errors.affiliation ? "input--error" : ""}
+              className={errors.Affiliation ? "input--error" : ""}
               placeholder="Enter your affiliation"
-              value={formValues.affiliation}
-              name="affiliation"
+              value={formValues.Affiliation}
+              name="Affiliation"
               onChange={handleChange}
               onFocus={resetError}
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.phoneOffice ? "label--error" : ""}>
+            <label className={errors.OfficePhoneNumber ? "label--error" : ""}>
               Office Phone Number (including Area Code)
             </label>
             <input
-              className={errors.phoneOffice ? "input--error" : ""}
+              className={errors.OfficePhoneNumber ? "input--error" : ""}
               placeholder="Enter your office phone number"
-              value={formValues.phoneOffice}
-              name="phoneOffice"
+              value={formValues.OfficePhoneNumber}
+              name="OfficePhoneNumber"
               onChange={handleChange}
               onFocus={resetError}
             />
@@ -321,15 +379,18 @@ export default function RegistrationForm() {
         </Form>
       )}
       {step === "event" && (
-        <Form>
+        <Form onSubmit={handleSubmitEvent}>
           <Form.Field>
-            <label className={errors.phoneOffice ? "label--error" : ""}>
+            <label className={eventErrors.Category ? "label--error" : ""}>
               Category <span className="required">*</span>
             </label>
+            {eventErrors.Category && (
+              <p className="error">{eventErrors.Category}</p>
+            )}
             <Dropdown
               placeholder="Select Category"
               selection
-              name="category"
+              name="Category"
               options={[
                 { key: "sp", text: "Specialist", value: "sp" },
                 { key: "gp", text: "General Practitioner", value: "gp" },
@@ -339,13 +400,16 @@ export default function RegistrationForm() {
             />
           </Form.Field>
           <Form.Field>
-            <label className={errors.phoneOffice ? "label--error" : ""}>
+            <label className={eventErrors.Package ? "label--error" : ""}>
               Package <span className="required">*</span>
             </label>
+            {eventErrors.Package && (
+              <p className="error">{eventErrors.Package}</p>
+            )}
             <Dropdown
               placeholder="Select Package"
               selection
-              name="package"
+              name="Package"
               options={[
                 {
                   key: "silver",
@@ -366,16 +430,27 @@ export default function RegistrationForm() {
               onChange={handleDropdownChange}
             />
           </Form.Field>
-          {eventFormValues.price ? (
+          {eventFormValues.Price ? (
             <Form.Field>
-              <label className={errors.phoneOffice ? "label--error" : ""}>
+              <label
+                className={
+                  eventErrors.event1 || eventErrors.even2 || eventErrors.event3
+                    ? "label--error"
+                    : ""
+                }
+              >
                 Event <span className="required">*</span>
               </label>
-              {eventFormValues.package === "silver" ? (
+              {eventErrors.event1 && (
+                <p className="error">{eventErrors.event1}</p>
+              )}
+              {eventFormValues.Package === "silver" ? (
                 <Dropdown
                   placeholder="Select Event"
                   selection
                   name="event1"
+                  value={eventFormValues.event1}
+                  onChange={handleDropdownChange}
                   options={[
                     {
                       key: "ws1",
@@ -407,97 +482,121 @@ export default function RegistrationForm() {
                   ]}
                 />
               ) : (
-                <Dropdown
-                  selection
-                  name="event1"
-                  value="sy"
-                  options={[
-                    {
-                      key: "sy",
-                      text: "Symposium",
-                      value: "sy",
-                    },
-                  ]}
-                  disabled
-                />
+                <>
+                  {eventErrors.event1 && (
+                    <p className="error">{eventErrors.event1}</p>
+                  )}
+                  <Dropdown
+                    selection
+                    name="event1"
+                    value={eventFormValues.event1}
+                    options={[
+                      {
+                        key: "sy",
+                        text: "Symposium",
+                        value: "sy",
+                      },
+                    ]}
+                    disabled
+                  />
+                </>
               )}
-              {eventFormValues.package !== "silver" && (
-                <Dropdown
-                  placeholder="Select Workshop"
-                  selection
-                  name="event2"
-                  options={[
-                    {
-                      key: "ws1",
-                      text: "Workshop 1 : Workshop of ACS",
-                      value: "ws1",
-                    },
-                    {
-                      key: "ws2",
-                      text:
-                        "Workshop II : Workshop of Echocardiography in congenital heart disease",
-                      value: "ws2",
-                    },
-                    {
-                      key: "ws3",
-                      text:
-                        "Workshop III : Workshop of Arrhythmia in Clinical Practice",
-                      value: "ws3",
-                    },
-                    {
-                      key: "ws4",
-                      text: "Workshop IV : Workshop of Acute Heart Failure",
-                      value: "ws4",
-                    },
-                  ]}
-                />
+              {eventFormValues.Package !== "silver" && (
+                <>
+                  {eventErrors.event2 && (
+                    <p className="error">{eventErrors.event2}</p>
+                  )}
+                  <Dropdown
+                    placeholder="Select Workshop"
+                    selection
+                    name="event2"
+                    value={eventFormValues.event2}
+                    onChange={handleDropdownChange}
+                    options={[
+                      {
+                        key: "ws1",
+                        text: "Workshop 1 : Workshop of ACS",
+                        value: "ws1",
+                      },
+                      {
+                        key: "ws2",
+                        text:
+                          "Workshop II : Workshop of Echocardiography in congenital heart disease",
+                        value: "ws2",
+                      },
+                      {
+                        key: "ws3",
+                        text:
+                          "Workshop III : Workshop of Arrhythmia in Clinical Practice",
+                        value: "ws3",
+                      },
+                      {
+                        key: "ws4",
+                        text: "Workshop IV : Workshop of Acute Heart Failure",
+                        value: "ws4",
+                      },
+                    ]}
+                  />
+                </>
               )}
-              {eventFormValues.package === "platinum" && (
-                <Dropdown
-                  placeholder="Select Another Workshop"
-                  selection
-                  name="event3"
-                  options={[
-                    {
-                      key: "ws1",
-                      text: "Workshop 1 : Workshop of ACS",
-                      value: "ws1",
-                    },
-                    {
-                      key: "ws2",
-                      text:
-                        "Workshop II : Workshop of Echocardiography in congenital heart disease",
-                      value: "ws2",
-                    },
-                    {
-                      key: "ws3",
-                      text:
-                        "Workshop III : Workshop of Arrhythmia in Clinical Practice",
-                      value: "ws3",
-                    },
-                    {
-                      key: "ws4",
-                      text: "Workshop IV : Workshop of Acute Heart Failure",
-                      value: "ws4",
-                    },
-                  ]}
-                />
+              {eventFormValues.Package === "platinum" && (
+                <>
+                  {eventErrors.event3 && (
+                    <p className="error">{eventErrors.event3}</p>
+                  )}
+                  <Dropdown
+                    placeholder="Select Another Workshop"
+                    selection
+                    name="event3"
+                    value={eventFormValues.event3}
+                    onChange={handleDropdownChange}
+                    options={[
+                      {
+                        key: "ws1",
+                        text: "Workshop 1 : Workshop of ACS",
+                        value: "ws1",
+                      },
+                      {
+                        key: "ws2",
+                        text:
+                          "Workshop II : Workshop of Echocardiography in congenital heart disease",
+                        value: "ws2",
+                      },
+                      {
+                        key: "ws3",
+                        text:
+                          "Workshop III : Workshop of Arrhythmia in Clinical Practice",
+                        value: "ws3",
+                      },
+                      {
+                        key: "ws4",
+                        text: "Workshop IV : Workshop of Acute Heart Failure",
+                        value: "ws4",
+                      },
+                    ]}
+                  />
+                </>
               )}
             </Form.Field>
           ) : null}
           <Form.Field>
-            <label className={errors.firstName ? "label--error" : ""}>
+            <label
+            // className={eventErrors.Package ? "label--error" : ""}
+            >
               Package Price
             </label>
-            {/* {errors.firstName && <p className="error">{errors.firstName}</p>} */}
+            {/* {eventErrors.Package && (
+              <p className="error">{eventErrors.Package}</p>
+            )} */}
             <input
-              // className={errors.firstName ? "input--error" : ""}
+              // className={errors.FirstName ? "input--error" : ""}
               // placeholder="Enter your first name"
-              value={eventFormValues.price}
-              name="price"
+              value={eventFormValues.Price}
+              name="Price"
               disabled
             />
           </Form.Field>
+          <Button type="submit">Register</Button>
         </Form>
       )}
     </div>
@@ -506,26 +605,73 @@ export default function RegistrationForm() {
 
 function validatePersonal(payload) {
   let schema = yup.object().shape({
-    firstName: yup.string().required("First name must be filled"),
-    lastName: yup.string().required("Last name must be filled"),
-    fullName: yup.string().required("Full name must be filled"),
-    gender: yup.string().required("One of the gender options must be selected"),
-    placeOfBirth: yup.string().required("Place of birth must be filled"),
-    dateOfBirth: yup.string().required("Date of birth must be filled"),
-    country: yup.string().required("Country must be filled"),
-    province: yup.string().required("Province must be filled"),
-    city: yup.string().required("City must be filled"),
-    email: yup
+    FirstName: yup.string().required("First name must be filled"),
+    LastName: yup.string().required("Last name must be filled"),
+    FullName: yup.string().required("Full name must be filled"),
+    Gender: yup.string().required("One of the gender options must be selected"),
+    PlaceBirth: yup.string().required("Place of birth must be filled"),
+    DateBirth: yup.string().required("Date of birth must be filled"),
+    Country: yup.string().required("Country must be filled"),
+    Province: yup.string().required("Province must be filled"),
+    City: yup.string().required("City must be filled"),
+    Email: yup
       .string()
       .email("Email is not valid")
       .required("Email must be filled"),
     emailConfirmation: yup
       .string()
       .required("Email confirmation must be filled")
-      .oneOf([yup.ref("email")], "Email confirmation must match"),
-    phone: yup.string().required("Phone must be filled"),
-    affiliation: yup.string(),
-    phoneOffice: yup.string(),
+      .oneOf([yup.ref("Email")], "Email confirmation must match"),
+    PhoneNumber: yup.string().required("Phone must be filled"),
+    Affiliation: yup.string(),
+    OfficePhoneNumber: yup.string(),
+  });
+
+  try {
+    schema.validateSync(payload, { abortEarly: false });
+
+    return null;
+  } catch (err) {
+    let errors = {};
+
+    err.inner.map((el) => {
+      errors[el.path] = el.message;
+
+      return null;
+    });
+
+    return errors;
+  }
+}
+
+function validateEvent(payload) {
+  let schema = yup.object().shape({
+    Category: yup.string().required("Category must be filled"),
+    Package: yup.string().required("Package must be filled"),
+    event1: yup.string().required("The first event must be filled"),
+    event2: yup
+      .string()
+      .when("Package", {
+        is: (val) => val === "gold" || val === "platinum",
+        then: yup.string().required("The second event must be filled"),
+      })
+      .nullable(),
+    event3: yup
+      .string()
+      .when("Package", {
+        is: (val) => val === "platinum",
+        then: yup.string().required("The third event must be filled"),
+      })
+      .when("event2", {
+        is: (val) => val !== null,
+        then: yup
+          .string()
+          .notOneOf(
+            [yup.ref("event2")],
+            "The third event cannot be the same as second event"
+          ),
+      })
+      .nullable(),
   });
 
   try {
