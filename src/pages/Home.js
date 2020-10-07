@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export default function Home() {
   const calculateTimeLeft = () => {
+    // 1607670000000 is 11 December 2020 14:00 UTC+7
     const difference = +new Date(1607670000000) - +new Date();
     let timeLeft = {};
 
@@ -24,23 +25,6 @@ export default function Home() {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
   });
-
-  const timerComponents = [];
-
-  Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
-      return;
-    }
-
-    timerComponents.push(
-      <span>
-        {timeLeft[interval]} {interval}{" "}
-      </span>
-    );
-  });
-
-  // console.log("timerComponentssss")
-  // console.log(timerComponents)
 
   return (
     <div className="page">
@@ -115,7 +99,6 @@ export default function Home() {
         </div>
       </div>
       <div className="timer">
-        {/* {timerComponents.length ? timerComponents : <span>Time's up!</span>} */}
         <div>
           {Object.keys(timeLeft)
             .map(
