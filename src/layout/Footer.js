@@ -1,9 +1,11 @@
 import React from "react";
+import { Image } from "semantic-ui-react";
+import logo from "../assets/images/Logo.jpg";
 
 export default function Footer() {
   return (
     <div className="footer">
-      <p>logonya</p>
+      <Image src={logo} size="small"/>
       <p>The 9th BALI Cardiology Update (BAC-UP) 2020</p>
       <p>Sekretariat PERKI BALI</p>
       <p>Lantai 4, Gedung Pelayanan Jantung Terpadu RSUP Sanglah</p>
