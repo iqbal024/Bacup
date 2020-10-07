@@ -29,6 +29,62 @@ const eventSchema = {
   event3: null,
 };
 
+const categoryOptions = [
+  { key: "sp", text: "Specialist", value: "sp" },
+  { key: "gp", text: "General Practitioner", value: "gp" },
+  { key: "msn", text: "Medical Student & Nurse", value: "msn" },
+];
+
+const packageOptions = [
+  {
+    key: "silver",
+    text: "Silver (1 workshop or symposium)",
+    value: "silver",
+  },
+  {
+    key: "gold",
+    text: "Gold (1 workshop and symposium)",
+    value: "gold",
+  },
+  {
+    key: "platinum",
+    text: "Platinum (2 workshop and symposium)",
+    value: "platinum",
+  },
+];
+
+const eventOptions = [
+  {
+    key: "ws1",
+    text: "Workshop 1 : Workshop of ACS",
+    value: "ws1",
+  },
+  {
+    key: "ws2",
+    text:
+      "Workshop II : Workshop of Echocardiography in congenital heart disease",
+    value: "ws2",
+  },
+  {
+    key: "ws3",
+    text: "Workshop III : Workshop of Arrhythmia in Clinical Practice",
+    value: "ws3",
+  },
+  {
+    key: "ws4",
+    text: "Workshop IV : Workshop of Acute Heart Failure",
+    value: "ws4",
+  },
+  {
+    key: "sy",
+    text: "Symposium",
+    value: "sy",
+  },
+];
+
+const sympoTitles =
+  "Symposium 1 : Thromboembolic complications in COVID-19 infection, Symposium 2 : Acute Coronary Syndrome, Symposium III : Congenital Heart Disease and Pulmonary Hypertension, Symposium IV : Hypertension, Symposium V : Coronary Artery Disease, Symposium VI : Metabolic Disease (Dyslipidemia), Symposium VII : Heart Failure, Symposium VIII : Arhythmia";
+
 export default function RegistrationForm() {
   const [formValues, setFormValues] = useState(
     JSON.parse(localStorage.getItem("personal")) || personalSchema
@@ -79,27 +135,58 @@ export default function RegistrationForm() {
   function handleSubmitEvent() {
     const err = validateEvent(eventFormValues);
 
-    console.log("errrrr");
-    console.log(err);
-
     if (!err) {
       // success
-      const payload = {
+      const {
+        emailConfirmation,
+        event1,
+        event2,
+        event3,
+        Package,
+        Category,
+        ...rawPayload
+      } = {
         ...JSON.parse(localStorage.getItem("personal")),
         ...eventFormValues,
       };
 
       console.log("payloadddd");
-      console.log(payload);
+      console.log(rawPayload);
 
-      // axios
-      //   .post("backend.bacup.co/register", payload)
-      //   .then((res) => {
-      //     console.log(res);
-      //   })
-      //   .catch((err) => {
-      //     console.log(err);
-      //   });
+      console.log(packageOptions.find((pkg) => pkg.key === Package));
+
+      const fixedPayload = {
+        ...rawPayload,
+        Category: categoryOptions.find((cat) => cat.key === Category).text,
+        Package: packageOptions.find((pkg) => pkg.key === Package).text,
+        Symposhium: event1 === "sy" ? sympoTitles : null,
+        Workshop1:
+          event1 === "sy"
+            ? eventOptions.find((event) => event.key === event2)
+              ? eventOptions.find((event) => event.key === event2).text
+              : null
+            : eventOptions.find((event) => event.key === event1)
+            ? eventOptions.find((event) => event.key === event1).text
+            : null,
+        Workshop2:
+          event1 === "sy"
+            ? eventOptions.find((event) => event.key === event3)
+              ? eventOptions.find((event) => event.key === event3).text
+              : null
+            : eventOptions.find((event) => event.key === event2)
+            ? eventOptions.find((event) => event.key === event2).text
+            : null,
+        Status: 1,
+      };
+
+      axios
+        .post("http://backend.bacup.co/register", fixedPayload)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     } else {
       setEventErrors({ ...eventErrors, ...err });
     }
@@ -391,11 +478,7 @@ export default function RegistrationForm() {
               placeholder="Select Category"
               selection
               name="Category"
-              options={[
-                { key: "sp", text: "Specialist", value: "sp" },
-                { key: "gp", text: "General Practitioner", value: "gp" },
-                { key: "msn", text: "Medical student & nurse", value: "msn" },
-              ]}
+              options={categoryOptions}
               onChange={handleDropdownChange}
             />
           </Form.Field>
@@ -410,23 +493,7 @@ export default function RegistrationForm() {
               placeholder="Select Package"
               selection
               name="Package"
-              options={[
-                {
-                  key: "silver",
-                  text: "Silver (1 workshop or symposium)",
-                  value: "silver",
-                },
-                {
-                  key: "gold",
-                  text: "Gold (1 workshop and symposium)",
-                  value: "gold",
-                },
-                {
-                  key: "platinum",
-                  text: "Platinum (2 workshop and symposium)",
-                  value: "platinum",
-                },
-              ]}
+              options={packageOptions}
               onChange={handleDropdownChange}
             />
           </Form.Field>
@@ -451,35 +518,7 @@ export default function RegistrationForm() {
                   name="event1"
                   value={eventFormValues.event1}
                   onChange={handleDropdownChange}
-                  options={[
-                    {
-                      key: "ws1",
-                      text: "Workshop 1 : Workshop of ACS",
-                      value: "ws1",
-                    },
-                    {
-                      key: "ws2",
-                      text:
-                        "Workshop II : Workshop of Echocardiography in congenital heart disease",
-                      value: "ws2",
-                    },
-                    {
-                      key: "ws3",
-                      text:
-                        "Workshop III : Workshop of Arrhythmia in Clinical Practice",
-                      value: "ws3",
-                    },
-                    {
-                      key: "ws4",
-                      text: "Workshop IV : Workshop of Acute Heart Failure",
-                      value: "ws4",
-                    },
-                    {
-                      key: "sy",
-                      text: "Symposium",
-                      value: "sy",
-                    },
-                  ]}
+                  options={eventOptions}
                 />
               ) : (
                 <>
@@ -490,13 +529,7 @@ export default function RegistrationForm() {
                     selection
                     name="event1"
                     value={eventFormValues.event1}
-                    options={[
-                      {
-                        key: "sy",
-                        text: "Symposium",
-                        value: "sy",
-                      },
-                    ]}
+                    options={eventOptions.slice(4)}
                     disabled
                   />
                 </>
@@ -512,30 +545,7 @@ export default function RegistrationForm() {
                     name="event2"
                     value={eventFormValues.event2}
                     onChange={handleDropdownChange}
-                    options={[
-                      {
-                        key: "ws1",
-                        text: "Workshop 1 : Workshop of ACS",
-                        value: "ws1",
-                      },
-                      {
-                        key: "ws2",
-                        text:
-                          "Workshop II : Workshop of Echocardiography in congenital heart disease",
-                        value: "ws2",
-                      },
-                      {
-                        key: "ws3",
-                        text:
-                          "Workshop III : Workshop of Arrhythmia in Clinical Practice",
-                        value: "ws3",
-                      },
-                      {
-                        key: "ws4",
-                        text: "Workshop IV : Workshop of Acute Heart Failure",
-                        value: "ws4",
-                      },
-                    ]}
+                    options={eventOptions.slice(0, 4)}
                   />
                 </>
               )}
