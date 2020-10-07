@@ -78,6 +78,32 @@
   margin-top: 110px;
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__image {
+  width: 1000px;
+  max-width: 100%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 16px;
+}
+
+.intro__image {
+  width: 400px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
 .join-symposium {
   margin-top: 170px;
 }
