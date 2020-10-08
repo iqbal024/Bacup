@@ -1,39 +1,34 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Button, Divider, Form, Grid, Segment } from "semantic-ui-react";
+import React from 'react'
+import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import logo from '../assets/images/Logo.jpg';
 
-const Login = () => (
-  <Segment placeholder>
-    <Grid columns={2} relaxed="very" stackable>
-      <Grid.Column>
-        <Form>
+const LoginForm = () => (
+  <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
+    <Grid.Column style={{ maxWidth: 450 }}>
+      <Header as='h2' color='teal' textAlign='center'>
+        <Image src={logo} /> Log-in to your account
+      </Header>
+      <Form size='large'>
+        <Segment stacked>
+          <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
           <Form.Input
-            icon="mail"
-            iconPosition="left"
-            label="Email"
-            placeholder="Enter your email"
-          />
-          <Form.Input
+            fluid
             icon='lock'
             iconPosition='left'
-            label='Password'
-            placeholder='Enter your Password'
+            placeholder='Password'
             type='password'
           />
 
-          <Button content="Login" primary />
-        </Form>
-      </Grid.Column>
+          <Button color='teal' fluid size='large'>
+            Login
+          </Button>
+        </Segment>
+      </Form>
+      <Message>
+        New to us? <a href='/registration'>Sign Up</a>
+      </Message>
+    </Grid.Column>
+  </Grid>
+)
 
-      <Grid.Column verticalAlign="middle">
-        <Link to="/Registration">
-          <Button content="Registration" icon="signup" size="big" />
-        </Link>
-      </Grid.Column>
-    </Grid>
-
-    <Divider vertical>Or</Divider>
-  </Segment>
-);
-
-export default Login;
+export default LoginForm
