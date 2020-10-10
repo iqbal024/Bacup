@@ -1,6 +1,6 @@
 import React from "react";
 import { Image } from "semantic-ui-react";
-import logo from "../assets/images/Logo.jpg";
+import logo from "../assets/images/LOGO.png";
 
 export default function Footer() {
   return (

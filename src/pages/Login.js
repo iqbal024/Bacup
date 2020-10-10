@@ -1,17 +1,45 @@
-import React from 'react'
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import React, { useState } from 'react';
+import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react';
+import axios from "axios";
 import logo from '../assets/images/Logo.jpg';
 
-const LoginForm = () => (
-  <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
+const LoginForm = () => {
+  const [formValues, setFormValues] = useState( {
+    Email: '',
+    Password: '',
+  });
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    console.log(formValues);
+    axios
+      .post("http://backend.bacup.co/login", formValues)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  function handleChange(e) {
+    setFormValues({...formValues,
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  return <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
       <Header as='h2' color='teal' textAlign='center'>
         <Image src={logo} /> Log-in to your account
       </Header>
-      <Form size='large'>
+      <Form size='large' onSubmit={handleSubmit}>
         <Segment stacked>
-          <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
+          <Form.Input fluid name='Email' value={formValues.Email} onChange={handleChange} icon='user' iconPosition='left' placeholder='E-mail address' />
           <Form.Input
+            name='Password'
+            value={formValues.Password}
+            onChange={handleChange}
             fluid
             icon='lock'
             iconPosition='left'
@@ -29,6 +57,6 @@ const LoginForm = () => (
       </Message>
     </Grid.Column>
   </Grid>
-)
+}
 
 export default LoginForm
