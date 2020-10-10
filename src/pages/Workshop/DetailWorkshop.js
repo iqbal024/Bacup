@@ -2,20 +2,20 @@ import React from "react";
 import { Redirect, useParams } from "react-router-dom";
 import { Segment, Image } from "semantic-ui-react";
 
-import { symposiums } from "../../constants/index";
+import { workshops } from "../../constants/index";
 
-export default function DetailSympo() {
-  const { sympoId } = useParams();
+export default function DetailWorkshop() {
+  const { workshopId } = useParams();
 
-  const symposium = symposiums[sympoId - 1];
+  const workshop = workshops[workshopId - 1];
 
-  return !symposium ? (
+  return !workshop ? (
     <Redirect to="/404"></Redirect>
   ) : (
     <div className="page">
-      <h3>{symposium.title}</h3>
-      <h4>{symposium.date}</h4>
-      {symposium.sections.map((section, index) => (
+      <h3>{workshop.title}</h3>
+      <h4>{workshop.date}</h4>
+      {workshop.sections.map((section, index) => (
         <div key={`section-${index}-${section.title}`}>
           <Segment>
             {section.imgUrl && (
@@ -23,7 +23,7 @@ export default function DetailSympo() {
             )}
             <p>{section.title}</p>
             <p>{section.time}</p>
-            {section.speaker && <p>Speaker: {section.speaker}</p>}
+            {section.lecturer && <p>Lecturer: {section.lecturer}</p>}
           </Segment>
         </div>
       ))}

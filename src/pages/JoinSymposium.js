@@ -5,7 +5,7 @@ import { Segment } from "semantic-ui-react";
 export default function JoinSymposium() {
   return (
     <div class="join-symposium">
-      <h4>Saturday, 12 Desember 2020</h4>
+      <h4>Saturday, 12 December 2020</h4>
       <Segment secondary>
         <Link to="/joinSymposium/symposium-1">
           <div>
@@ -26,7 +26,7 @@ export default function JoinSymposium() {
           </div>
         </Link>
       </Segment>
-      <h4>Saturday, 13 Desember 2020</h4>
+      <h4>Saturday, 13 December 2020</h4>
       <Segment secondary>
         <Link to="/joinSymposium/symposium-3">
           <div>
@@ -48,7 +48,7 @@ export default function JoinSymposium() {
           </div>
         </Link>
       </Segment>
-      <h4>Saturday, 19 Desember 2020</h4>
+      <h4>Saturday, 19 December 2020</h4>
       <Segment secondary>
         <Link to="/joinSymposium/symposium-5">
           <div>
@@ -67,7 +67,7 @@ export default function JoinSymposium() {
           </div>
         </Link>
       </Segment>
-      <h4>Saturday, 20 Desember 2020</h4>
+      <h4>Saturday, 20 December 2020</h4>
       <Segment secondary>
         <Link to="/joinSymposium/symposium-7">
           <div>
