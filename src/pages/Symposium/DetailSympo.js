@@ -4,16 +4,18 @@ import { Segment, Image } from "semantic-ui-react";
 
 import { symposiums } from "../../constants/index";
 
-export default function DetailSympo(props) {
+export default function DetailSympo() {
   const { sympoId } = useParams();
 
-  return !symposiums[sympoId - 1] ? (
+  const symposium = symposiums[sympoId - 1];
+
+  return !symposium ? (
     <Redirect to="/404"></Redirect>
   ) : (
     <div>
-      <h3>{symposiums[sympoId - 1].title}</h3>
-      <h4>{symposiums[sympoId - 1].date}</h4>
-      {symposiums[sympoId - 1].sections.map((section, index) => (
+      <h3>{symposium.title}</h3>
+      <h4>{symposium.date}</h4>
+      {symposium.sections.map((section, index) => (
         <div key={`section-${index}`}>
           <Segment>
             {section.imgUrl && (
