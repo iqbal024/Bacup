@@ -14,10 +14,7 @@ import RegistrationForm from "./pages/RegistrationForm";
 import JoinSymposium from "./pages/JoinSymposium";
 import DetailSympo from "./pages/Symposium/DetailSympo";
 import JoinWorkshop from "./pages/JoinWorkshop";
-import DetailWorkshop1 from "./pages/Workshop/DetailWorkshop1";
-import DetailWorkshop2 from "./pages/Workshop/DetailWorkshop2";
-import DetailWorkshop3 from "./pages/Workshop/DetailWorkshop3";
-import DetailWorkshop4 from "./pages/Workshop/DetailWorkshop4";
+import DetailWorkshop from "./pages/Workshop/DetailWorkshop";
 import SeePoster from "./pages/Poster";
 import Users from "./pages/Users";
 import ContactUs from "./pages/ContactUs";
@@ -57,23 +54,8 @@ function App() {
           <Route exact path="/joinWorkshop" component={JoinWorkshop} />
           <Route
             exact
-            path="/joinWorkshop/workshop1"
-            component={DetailWorkshop1}
-          />
-          <Route
-            exact
-            path="/joinWorkshop/workshop2"
-            component={DetailWorkshop2}
-          />
-          <Route
-            exact
-            path="/joinWorkshop/workshop3"
-            component={DetailWorkshop3}
-          />
-          <Route
-            exact
-            path="/joinWorkshop/workshop4"
-            component={DetailWorkshop4}
+            path="/joinWorkshop/:workshop-:workshopId"
+            component={DetailWorkshop}
           />
           <Route exact path="/seePoster" component={SeePoster} />
           <Route exact path="/users" component={Users} />

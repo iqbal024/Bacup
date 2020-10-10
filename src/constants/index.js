@@ -235,6 +235,208 @@ export const symposiums = [
   },
 ];
 
+export const workshops = [
+  {
+    title: "Workshop 1 : Workshop of ACS",
+    date: "Friday, 11 December 2020",
+    sections: [
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Pre-test",
+        time: "14.00 - 14.15",
+      },
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title:
+          "Stepwise approach in diagnosing ACS and how to give initial management of ACS patient: What should we do in primary health care",
+        time: "14.15 - 14.45",
+        lecturer: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
+      },
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Discussion",
+        time: "14.45 - 14.50",
+      },
+      {
+        title:
+          "Preparing patients for revascularization: the right timing, indication and contraindication focused on NSTE-ACS",
+        time: "14.50 - 15.20",
+        lecturer: "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
+      },
+      {
+        title: "Discussion",
+        time: "15.20 - 15.25",
+      },
+      {
+        title: "Management of complication in ACS patient",
+        time: "15.25 - 15.55",
+        lecturer:
+          "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA, FICA, FasCC",
+      },
+      {
+        title: "Discussion",
+        time: "15.55 - 16.00",
+      },
+      {
+        title: "Case Discussion",
+        time: "16.00 - 16.15",
+      },
+      {
+        title: "Post-test",
+        time: "16.15 - 16.30",
+      },
+    ],
+  },
+  {
+    title:
+      "Workshop II : Workshop of Echocardiography in congenital heart disease (Pokja Pediatric Cardiology PERKI)",
+    date: "Friday, 11 December 2020",
+    sections: [
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Pre-test",
+        time: "14.00 - 14.15",
+      },
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Lecture 1",
+        time: "14.15 - 14.45",
+        lecturer: "Pokja Pediatric Cardiology PERKI",
+      },
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Discussion",
+        time: "14.45 - 14.50",
+      },
+      {
+        title: "Lecture 2",
+        time: "14.50 - 15.20",
+        lecturer: "Pokja Pediatric Cardiology PERKI",
+      },
+      {
+        title: "Discussion",
+        time: "15.20 - 15.25",
+      },
+      {
+        title: "Lecture 3",
+        time: "15.25 - 15.55",
+        lecturer: "Pokja Pediatric Cardiology PERKI",
+      },
+      {
+        title: "Discussion",
+        time: "15.55 - 16.00",
+      },
+      {
+        title: "Case Discussion",
+        time: "16.00 - 16.15",
+      },
+      {
+        title: "Post-test",
+        time: "16.15 - 16.30",
+      },
+    ],
+  },
+  {
+    title: "Workshop III : Workshop of Arrhythmia in Clinical Practice",
+    date: "Friday, 18 December 2020",
+    sections: [
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Pre-test",
+        time: "14.00 - 14.15",
+      },
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Symptomatology of arrhythmia induced pre/syncope",
+        time: "14.15 - 14.45",
+        lecturer: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
+      },
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Discussion",
+        time: "14.45 - 14.50",
+      },
+      {
+        title: "Diagnostic approaches for bradhyarrhythmia",
+        time: "14.50 - 15.20",
+        lecturer: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
+      },
+      {
+        title: "Discussion",
+        time: "15.20 - 15.25",
+      },
+      {
+        title: "Management of bradhyarrhytmia",
+        time: "15.25 - 15.55",
+        lecturer: "dr. Gusti Ayu Suryawati, M.Biomed, Sp.JP, FIHA",
+      },
+      {
+        title: "Discussion",
+        time: "15.55 - 16.00",
+      },
+      {
+        title: "Case Discussion",
+        time: "16.00 - 16.15",
+      },
+      {
+        title: "Post-test",
+        time: "16.15 - 16.30",
+      },
+    ],
+  },
+  {
+    title: "Workshop IV : Workshop of Acute Heart Failure",
+    date: "Friday, 18 December 2020",
+    sections: [
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Pre-test",
+        time: "14.00 - 14.15",
+      },
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title:
+          "Diuretics vs Vasodilators: Choosing The Best Treatment Strategy For Acute Heart Failure In Emergency Department",
+        time: "14.15 - 14.45",
+        lecturer: "dr. I Gusti Agung Bagus Krisna Jayantika, SpJP, FIHA",
+      },
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Discussion",
+        time: "14.45 - 14.50",
+      },
+      {
+        title:
+          "The Best Toolkit To Evaluate The Effectiveness Of Decongestive Therapy",
+        time: "14.50 - 15.20",
+        lecturer: "dr. Ni Gusti Putu Sri Andayani, SpJP, FIHA, FAsCC",
+      },
+      {
+        title: "Discussion",
+        time: "15.20 - 15.25",
+      },
+      {
+        title:
+          "Acute Right Ventricular Dysfunction or Failure: The Importance Of Recognizing and Treating The Forgotten One",
+        time: "15.25 - 15.55",
+        lecturer: "dr. I Putu Gede Budiana, SpJP(K), FIHA",
+      },
+      {
+        title: "Discussion",
+        time: "15.55 - 16.00",
+      },
+      {
+        title: "Case Discussion",
+        time: "16.00 - 16.15",
+      },
+      {
+        title: "Post-test",
+        time: "16.15 - 16.30",
+      },
+    ],
+  },
+];
+
 // this is used in /symposiums
 export const sympoSchedules = [
   {
