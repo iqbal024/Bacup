@@ -8,7 +8,7 @@ export default function Footer() {
     <div className="footer">
       <Image src={logo} size="small"/>
       <div className="icon-sosmed">
-        <a href="" target="_blank">
+        <a href="https://www.instagram.com/perkibali" target="_blank">
           <Icon name='instagram' size='big'/>
         </a>
         <a href="https://youtu.be/lvO1o9ry8t8" target="_blank">

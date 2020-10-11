@@ -17,8 +17,8 @@ const schedules = [
           },
           {
             title:
-              "Stepwise approach in diagnosing ACS and how to give initial management of ACS patient: What should we do in primary health care",
-            lecturer: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
+              "Diagnosis and initial management of ACS in Primary Health Care",
+            lecturer: "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA, FICA, FasCC ",
             time: "14.15-14.45",
           },
           {
@@ -28,8 +28,8 @@ const schedules = [
           },
           {
             title:
-              "Preparing patients for revascularization: the right timing, indication and contraindication focused on NSTE-ACS",
-            lecturer: "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
+              "Role of fibrinolytics in STEMI: How to do?",
+            lecturer: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC ",
             time: "14.50-15.20",
           },
           {
@@ -38,9 +38,9 @@ const schedules = [
             time: "15.20-15.25",
           },
           {
-            title: "Management of complication in ACS patient",
+            title: "Risk stratifications and invasive management of NSTE-ACS",
             lecturer:
-              "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA, FICA, FasCC",
+              "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
             time: "15.25-15.55",
           },
           {
