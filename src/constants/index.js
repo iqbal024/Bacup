@@ -1,20 +1,40 @@
+import dr1 from '../assets/images/dr. A. A. Dwi Adelia Yasmin, Sp.JP.JPG';
+import dr2 from '../assets/images/dr-bagus.png';
+import dr3 from '../assets/images/Dr. dr. Ketut Rina, Sp.PD, Sp.JP(K).JPG';
+import dr4 from '../assets/images/dr. Hendy Wirawan, Sp.JP.jpg';
+import dr5 from '../assets/images/dr. I G N Putra Gunadhi, Sp.JP(K).JPG';
+import dr6 from '../assets/images/dr. I Made Junior Rina Artha, Sp.JP(K).jpg';
+import dr7 from '../assets/images/dr. I Made Putra Swi Antara, Sp.JP(K).JPG';
+import dr8 from '../assets/images/dr. I Nyoman Wiryawan, Sp.JP.JPG';
+import dr9 from '../assets/images/dr. I Putu Parwata Jaya, Sp.JP.jpg';
+import dr10 from '../assets/images/dr. I. B. Rangga Wibhuti, Sp.JP(K).JPG';
+import dr11 from '../assets/images/dr. K. Badjra Nadha, Sp.JP(K).JPG';
+import dr12 from '../assets/images/dr. Ketut Susila, Sp.JP(K).JPG';
+import dr13 from '../assets/images/dr. Krisna Jayantika, Sp.JP.jpg';
+import dr14 from '../assets/images/dr. Luh Oliva Saraswati Suastika, Sp.JP.JPG';
+import dr15 from '../assets/images/dr. Made Satria Yudha Dewangga, Sp.JP.jpg';
+import dr16 from '../assets/images/dr. Putu Agus Wismantara, Sp.JP.jpg';
+import dr17 from '../assets/images/dr. Susila Surya Darma, Sp.JP.JPG';
+import dr18 from '../assets/images/dr. Wayan Sutarmawan, Sp.JP(K).JPG';
+
+
 export const symposiums = [
   {
     title: "Symposium 1 - Thromboembolic complications in COVID-19 infection",
     date: "Saturday, 12 December 2020",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
-        title: "Venous thromboembolism in severe COVID-19",
+        imgUrl: {dr7},
+        title: "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
         time: "09.00-09.20",
         speaker:
-          "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA, FICA, FasCC",
+          "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
-        title: "Role of DOAC in Vein thrombosis",
+        imgUrl: {dr2},
+        title: "Tips and Trick of Management of Supraventricular Arrhythmia",
         time: "09.20 - 09.40",
-        speaker: "dr. Agung Pradnyana Suwirya, M,Biomed, Sp.JP, FIHA",
+        speaker: "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA",
       },
       {
         imgUrl: "/assets/images/placeholder.png",
