@@ -124,7 +124,7 @@ export default function Home() {
           </Grid.Row>
         </Grid>
       </Segment>
-      <Segment style={{ padding: '8em 0em' }} vertical>
+      <Segment style={{ padding: '8em 0em' }} vertical className='times'>
         <Grid container stackable verticalAlign='middle'>
           <Grid.Row>
             <Grid.Column width={8}>

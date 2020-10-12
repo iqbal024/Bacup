@@ -102,6 +102,8 @@
 .timer {
   display: flex;
   justify-content: center;
+  color: white;
+  font-size: 30px;
 }
 
 .join-symposium {
@@ -119,4 +121,19 @@
 
 .title-institution {
   text-align: center;
+}
+
+.times {
+  background-image: url('../src/assets/images/background.JPG') !important;
+  background-position: center !important;
+}
+
+.submission-background {
+  background-image: url('../src/assets/images/background3.JPG') !important;
+  background-position: center !important;
+}
+
+.submission-text {
+  margin-top: 160px;
+  color: #ffffff;
 }
