@@ -6,8 +6,8 @@ export default function AbstactSubmission() {
     <div className="page">
       <Segment className="submission submission-background">
         <Container textAlign="center" className="submission-text">
-          <h1 style={{ color: 'black' }}>ABSTRACT SUBMISSION</h1>
-          <p style={{ fontSize: '12px', marginBottom: '18px' }}>
+          <h1 style={{ color: 'black', marginTop: '250px' }}>ABSTRACT SUBMISSION</h1>
+          <p style={{ fontSize: '12px', marginBottom: '200px' }}>
             Author can not submit any abstracts that have been published in any
             journal
             <br />
