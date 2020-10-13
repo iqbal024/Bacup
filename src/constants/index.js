@@ -1,22 +1,21 @@
-import dr1 from '../assets/images/dr. A. A. Dwi Adelia Yasmin, Sp.JP.JPG';
-import dr2 from '../assets/images/dr-bagus.png';
-import dr3 from '../assets/images/Dr. dr. Ketut Rina, Sp.PD, Sp.JP(K).JPG';
-import dr4 from '../assets/images/dr. Hendy Wirawan, Sp.JP.jpg';
-import dr5 from '../assets/images/dr. I G N Putra Gunadhi, Sp.JP(K).JPG';
-import dr6 from '../assets/images/dr. I Made Junior Rina Artha, Sp.JP(K).jpg';
-import dr7 from '../assets/images/dr. I Made Putra Swi Antara, Sp.JP(K).JPG';
-import dr8 from '../assets/images/dr. I Nyoman Wiryawan, Sp.JP.JPG';
-import dr9 from '../assets/images/dr. I Putu Parwata Jaya, Sp.JP.jpg';
-import dr10 from '../assets/images/dr. I. B. Rangga Wibhuti, Sp.JP(K).JPG';
-import dr11 from '../assets/images/dr. K. Badjra Nadha, Sp.JP(K).JPG';
-import dr12 from '../assets/images/dr. Ketut Susila, Sp.JP(K).JPG';
-import dr13 from '../assets/images/dr. Krisna Jayantika, Sp.JP.jpg';
-import dr14 from '../assets/images/dr. Luh Oliva Saraswati Suastika, Sp.JP.JPG';
-import dr15 from '../assets/images/dr. Made Satria Yudha Dewangga, Sp.JP.jpg';
-import dr16 from '../assets/images/dr. Putu Agus Wismantara, Sp.JP.jpg';
-import dr17 from '../assets/images/dr. Susila Surya Darma, Sp.JP.JPG';
-import dr18 from '../assets/images/dr. Wayan Sutarmawan, Sp.JP(K).JPG';
-
+import dr1 from "../assets/images/dr. A. A. Dwi Adelia Yasmin, Sp.JP.JPG";
+import dr2 from "../assets/images/dr-bagus.png";
+import dr3 from "../assets/images/Dr. dr. Ketut Rina, Sp.PD, Sp.JP(K).JPG";
+import dr4 from "../assets/images/dr. Hendy Wirawan, Sp.JP.jpg";
+import dr5 from "../assets/images/dr. I G N Putra Gunadhi, Sp.JP(K).JPG";
+import dr6 from "../assets/images/dr. I Made Junior Rina Artha, Sp.JP(K).jpg";
+import dr7 from "../assets/images/dr. I Made Putra Swi Antara, Sp.JP(K).JPG";
+import dr8 from "../assets/images/dr. I Nyoman Wiryawan, Sp.JP.JPG";
+import dr9 from "../assets/images/dr. I Putu Parwata Jaya, Sp.JP.jpg";
+import dr10 from "../assets/images/dr. I. B. Rangga Wibhuti, Sp.JP(K).JPG";
+import dr11 from "../assets/images/dr. K. Badjra Nadha, Sp.JP(K).JPG";
+import dr12 from "../assets/images/dr. Ketut Susila, Sp.JP(K).JPG";
+import dr13 from "../assets/images/dr. Krisna Jayantika, Sp.JP.jpg";
+import dr14 from "../assets/images/dr. Luh Oliva Saraswati Suastika, Sp.JP.JPG";
+import dr15 from "../assets/images/dr. Made Satria Yudha Dewangga, Sp.JP.jpg";
+import dr16 from "../assets/images/dr. Putu Agus Wismantara, Sp.JP.jpg";
+import dr17 from "../assets/images/dr. Susila Surya Darma, Sp.JP.JPG";
+import dr18 from "../assets/images/dr. Wayan Sutarmawan, Sp.JP(K).JPG";
 
 export const symposiums = [
   {
@@ -24,20 +23,20 @@ export const symposiums = [
     date: "Saturday, 12 December 2020",
     sections: [
       {
-        imgUrl: {dr7},
-        title: "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
+        imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
+        title:
+          "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
         time: "09.00-09.20",
-        speaker:
-          "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
+        speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
       },
       {
-        imgUrl: {dr2},
+        imgUrl: "/assets/doctors/dr-bagus.png",
         title: "Tips and Trick of Management of Supraventricular Arrhythmia",
         time: "09.20 - 09.40",
         speaker: "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Case Studies",
         time: "09.40 - 10.00",
         speaker: "dr. Rani Paramitha Iswari Maliawan, M. Biomed, Sp.JP, FIHA",
@@ -53,21 +52,21 @@ export const symposiums = [
     date: "Saturday, 12 December 2020",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. I G N Putra Gunadhi, Sp.JP(K).JPG",
         title:
           "Diagnosis and Initial Management of ACS in Limited Resources Hospital",
         time: "10.20 - 10.40",
         speaker: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. Made Satria Yudha Dewangga, Sp.JP.jpg",
         title:
           "Antiplatelet and Anticoagualtion in ACS: Which is the best approach?",
         time: "10.40 - 11.00",
         speaker: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. Hendy Wirawan, Sp.JP.jpg",
         title: "Case Studies",
         time: "11.00 - 11.20",
         speaker: "dr. Hendy Wirawan,M.Biomed, Sp.JP, FIHA",
@@ -84,19 +83,19 @@ export const symposiums = [
     date: "Sunday, 13 December 2020",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "GUCH and pulmonary hypertension",
         time: "09.00 - 09.20",
         speaker: "dr. Ida Bagus Rangga Wibhuti, M.Biomed, Sp.JP(K), FIHA, FASE",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Role of sildenafil in treating pulmonary hypertension",
         time: "09.20 - 09.40",
         speaker: "dr. Eka Gunawijaya, Sp.A (K)",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. Luh Oliva Saraswati Suastika, Sp.JP.JPG",
         title: "Case Studies",
         time: "09.40 - 10.00",
         speaker: "dr. Luh Oliva Saraswati Suastika, Sp.JP, FIHA",
@@ -112,20 +111,20 @@ export const symposiums = [
     date: "Sunday, 13 December 2020",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/Dr. dr. Ketut Rina, Sp.PD, Sp.JP(K).JPG",
         title:
           "Targeting blood pressure control in people at risk of ASCVD: How far should we go?",
         time: "10.20 - 10.40",
         speaker: "dr.I Ketut Rina, Sp.PD, Sp.JP(K), FIHA, FAsCC",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. Susila Surya Darma, Sp.JP.JPG",
         title: "Hypertensive Crisis and Cardiovascular prevention",
         time: "10.40 - 11.00",
         speaker: "dr. I Kadek Susila Surya Darma, M.Biomed, Sp.JP, FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. I Putu Parwata Jaya, Sp.JP.jpg",
         title:
           "Secondary hypertension: Differential diagnosis and basic principles of treatment",
         time: "11.00 - 11.20",
@@ -142,20 +141,20 @@ export const symposiums = [
     date: "Saturday, 19 December 2020",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/Prof. Dr. dr. I Wayan Wita, Sp.JP(K).JPG",
         title: "Angina; Contemporary Diagnosis and Management",
         time: "09.00-09.20",
         speaker: "Prof.Dr.dr.I Wayan Wita, Sp.JP(K), FIHA, FAsC",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title:
           "Current management in Coronary Artery Disease; Controlling the risk factors",
         time: "09.20 - 09.40",
         speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Case Studies",
         time: "09.40 - 10.00",
         speaker: "dr. I Putu Gede Eka Ariawan Suyasa, M.Biomed, Sp.JP, FIHA",
@@ -171,19 +170,19 @@ export const symposiums = [
     date: "Saturday, 19 December 2020",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Management of dyslipidemia in very high risk patients",
         time: "10.20 - 10.40",
         speaker: "dr. Ketut Erna Bagiari, M.Biomed, Sp.JP, FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "When and how to treat hypertriglyceridemia?",
         time: "10.40 - 11.00",
         speaker: "dr. Ni Gusti Putu Sri Andayani Sp.JP, FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. Putu Agus Wismantara, Sp.JP.jpg",
         title: "Case Studies",
         time: "11.00 - 11.20",
         speaker: "dr. I Putu Agus Wismantara, M.Biomed, Sp.JP, FIHA",
@@ -199,20 +198,20 @@ export const symposiums = [
     date: "Sunday, 20 December 2020",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. I Nyoman Wiryawan, Sp.JP.JPG",
         title: "Increasing Survival in Heart Failure Patients: Introducing ARN",
         time: "09.00 - 09.20",
         speaker: "dr. I Nyoman Wiryawan, Sp.JP,FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title:
           "Tips & Tricks of Diuresis and symptomatic management of Heart Failure",
         time: "09.20 - 09.40",
         speaker: "dr. Siti Elkana Nauli, SpJP(K), FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Case Studies",
         time: "09.40 - 10.00",
         speaker: "dr. Ni Made Ayu Wulan Sari, M.Biomed, Sp.JP",
@@ -228,21 +227,21 @@ export const symposiums = [
     date: "Sunday, 20 December 2020",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. Ketut Susila, Sp.JP(K).JPG",
         title:
           "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
         time: "10.20 - 10.40",
         speaker: "dr. Ketut Susila, Sp.JP, FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
         title:
           "Interventional Management of Arrythmia: Ablation and the Devices",
         time: "10.40 - 11.00",
         speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
         title: "Case Studies",
         time: "11.00 - 11.20",
         speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
