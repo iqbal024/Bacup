@@ -10,7 +10,7 @@ export default function JoinSymposium() {
         <Link to="/joinSymposium/symposium-1">
           <div>
             <span>
-              Symposium 1 - Thromboembolic complications in COVID-19 infection
+              Symposium 1 - Arrhythmia
             </span>
             <br />
             <span>09.00 - 10.15</span>
@@ -42,7 +42,7 @@ export default function JoinSymposium() {
       <Segment secondary>
         <Link to="/joinSymposium/symposium-4">
           <div>
-            <span>Symposium IV - Hypertension</span>
+            <span>Symposium IV - Coronary Artery Disease</span>
             <br />
             <span>10.20 - 11.35</span>
           </div>
@@ -52,7 +52,7 @@ export default function JoinSymposium() {
       <Segment secondary>
         <Link to="/joinSymposium/symposium-5">
           <div>
-            <span>Symposium V - Coronary Artery Disease</span>
+            <span>Symposium V - Hypertension</span>
             <br />
             <span>09.00 - 10.15</span>
           </div>
@@ -80,7 +80,7 @@ export default function JoinSymposium() {
       <Segment secondary>
         <Link to="/joinSymposium/symposium-8">
           <div>
-            <span>Symposium VIII - Arhythmia</span>
+            <span>Symposium VIII - Thromboembolic Complications in COVID-19 Infection</span>
             <br />
             <span>10.20 - 11.35</span>
           </div>
