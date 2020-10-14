@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Form, Button, Radio, Dropdown } from "semantic-ui-react";
 import * as yup from "yup";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 
 const personalSchema = {
@@ -86,6 +87,8 @@ const sympoTitles =
   "Symposium 1 : Thromboembolic complications in COVID-19 infection, Symposium 2 : Acute Coronary Syndrome, Symposium III : Congenital Heart Disease and Pulmonary Hypertension, Symposium IV : Hypertension, Symposium V : Coronary Artery Disease, Symposium VI : Metabolic Disease (Dyslipidemia), Symposium VII : Heart Failure, Symposium VIII : Arhythmia";
 
 export default function RegistrationForm() {
+  const history = useHistory();
+
   const [formValues, setFormValues] = useState(
     JSON.parse(localStorage.getItem("personal")) || personalSchema
   );
@@ -150,11 +153,6 @@ export default function RegistrationForm() {
         ...eventFormValues,
       };
 
-      console.log("payloadddd");
-      console.log(rawPayload);
-
-      console.log(packageOptions.find((pkg) => pkg.key === Package));
-
       const fixedPayload = {
         ...rawPayload,
         Category: categoryOptions.find((cat) => cat.key === Category).text,
@@ -181,8 +179,10 @@ export default function RegistrationForm() {
 
       axios
         .post("http://backend.bacup.co/register", fixedPayload)
-        .then((res) => {
-          console.log(res);
+        .then(() => {
+          localStorage.setItem("registration", JSON.stringify(fixedPayload));
+          localStorage.removeItem("personal");
+          history.push("/registration/success");
         })
         .catch((err) => {
           console.log(err);

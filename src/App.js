@@ -11,6 +11,7 @@ import Symposium from "./pages/Symposium";
 import AbstractSubmission from "./pages/AbstractSubmission";
 import Login from "./pages/Login";
 import RegistrationForm from "./pages/RegistrationForm";
+import RegistrationSuccess from "./pages/RegistrationSuccess";
 import JoinSymposium from "./pages/JoinSymposium";
 import DetailSympo from "./pages/Symposium/DetailSympo";
 import JoinWorkshop from "./pages/JoinWorkshop";
@@ -36,6 +37,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/registration" component={RegistrationForm} />
+          <Route exact path="/registration/success" component={RegistrationSuccess} />
           <Route exact path="/workshop" component={Workshop} />
           <Route exact path="/symposium" component={Symposium} />
           <Route exact path="/abstract" component={AbstractSubmission} />
