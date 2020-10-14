@@ -19,11 +19,13 @@ export default function DetailSympo() {
         <div key={`section-${index}-${section.title}`}>
           <Segment>
             {section.imgUrl && (
-              <Image src={section.imgUrl} size="small" floated="left" />
+              <Image src={section.imgUrl} size="tiny" floated="left" />
             )}
-            <p>{section.title}</p>
-            <p>{section.time}</p>
-            {section.speaker && <p>Speaker: {section.speaker}</p>}
+            <span>
+              <p>{section.title}</p>
+              <p>{section.time}</p>
+              {section.speaker && <p>Speaker: {section.speaker}</p>}
+            </span>
           </Segment>
         </div>
       ))}
