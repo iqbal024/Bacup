@@ -50,12 +50,12 @@ export default function Navbar() {
           </Link>
           <Link to="/joinSymposium">
             <Menu.Item>
-              JoinSymposium
+              Join Symposium
             </Menu.Item>
           </Link>
           <Link to="/joinWorkshop">
             <Menu.Item>
-              JoinWorkshop
+              Join Workshop
             </Menu.Item>
           </Link>
           <Link to="/seePoster">

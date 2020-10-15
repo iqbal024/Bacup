@@ -1,5 +1,5 @@
 import React from "react";
-import { Tab, Table } from "semantic-ui-react";
+import { Tab, Table, Header, Grid } from "semantic-ui-react";
 
 const schedules = [
   {
@@ -7,7 +7,7 @@ const schedules = [
     symposiums: [
       {
         title:
-          "Symposium 1 : Arrhythmia",
+          "Symposium I : Arrhythmia",
         moderator: "dr. I Kadek Susila Surya Darma, M.Biomed, Sp.JP, FIHA",
         time: "09.00-10.15",
         topics: [
@@ -36,7 +36,7 @@ const schedules = [
         ],
       },
       {
-        title: "Symposium 2 : Acute Coronary Syndrome",
+        title: "Symposium II : Acute Coronary Syndrome",
         moderator: "dr. I Wayan Sutarmawan, Sp.JP, FIHA",
         time: "10.20-11.35",
         topics: [
@@ -261,9 +261,13 @@ export default function Symposium() {
       <div>
         {schedule.symposiums.map((sympo) => (
           <div>
-            <h1>{sympo.title}</h1>
-            <h2>Moderator: {sympo.moderator}</h2>
-            <p>Time: {sympo.time}</p>
+            <Header as='h2' textAlign="center" style={{ marginTop: "20px" }}>
+              {sympo.title}
+              <Header.Subheader>
+                Moderator: {sympo.moderator}
+              </Header.Subheader>
+            </Header>
+            <p style={{ textAlign: "center" }}>Time: {sympo.time}</p>
             <Table>
               <Table.Header>
                 <Table.Row>

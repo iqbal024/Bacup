@@ -155,12 +155,20 @@ export default function Home() {
       <Segment style={{ padding: "8em 0em" }} vertical>
         <Container text>
           <h1 className="title-institution">Our Institution</h1>
-          <Image.Group size="small">
-            <Image src={institution1} />
-            <Image src={institution2} />
-            <Image src={institution3} />
-            <Image src={institution4} />
-          </Image.Group>
+          <Grid relaxed='very' columns={4}>
+            <Grid.Column>
+              <Image src={institution1} />
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={institution2} />
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={institution3} />
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={institution4} />
+            </Grid.Column>
+          </Grid>
         </Container>
       </Segment>
     </div>

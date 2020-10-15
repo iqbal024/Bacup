@@ -10,7 +10,7 @@ export default function JoinSymposium() {
         <Link to="/joinSymposium/symposium-1">
           <div>
             <span>
-              Symposium 1 - Arrhythmia
+              Symposium I - Arrhythmia
             </span>
             <br />
             <span>09.00 - 10.15</span>
@@ -20,7 +20,7 @@ export default function JoinSymposium() {
       <Segment secondary>
         <Link to="/joinSymposium/symposium-2">
           <div>
-            <span>Symposium 2 - Acute Coronary Syndrome</span>
+            <span>Symposium II - Acute Coronary Syndrome</span>
             <br />
             <span>10.20 - 11.35</span>
           </div>

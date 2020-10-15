@@ -6,7 +6,7 @@ const schedules = [
     day: "Friday, 11 December 2020",
     workshops: [
       {
-        title: "Workshop 1 : Workshop of ACS",
+        title: "Workshop I : Workshop of ACS",
         chairman: "dr. Hendy Wirawan, M.Biomed, Sp.JP, FIHA",
         time: "14.00-16.30",
         lectures: [

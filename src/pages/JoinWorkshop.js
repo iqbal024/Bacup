@@ -9,7 +9,7 @@ export default function JoinWorkshop() {
       <Segment secondary>
         <Link to="/joinWorkshop/workshop-1">
           <div>
-            <span>Workshop 1 : Workshop of ACS</span>
+            <span>Workshop I : Workshop of ACS</span>
             <br />
             <span>14.00 - 16.30</span>
           </div>

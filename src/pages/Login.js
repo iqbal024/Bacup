@@ -30,8 +30,9 @@ const LoginForm = () => {
 
   return <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
-      <Header as='h2' color='teal' textAlign='center'>
-        <Image src={logo} /> Log-in to your account
+      <Image src={logo} size="big"/>
+      <Header as='h2' color='teal' textAlign='center' style={{ marginTop: '0px' }}>
+         Log-in to your account
       </Header>
       <Form size='large' onSubmit={handleSubmit}>
         <Segment stacked>

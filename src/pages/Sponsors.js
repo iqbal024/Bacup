@@ -10,8 +10,26 @@ export default function Sponsors() {
   return (
     <>
       <div className="sponsor">
-        <h1>Sponsor By</h1>
-        <Grid centered columns={2}>
+        <h1>Sponsor by:</h1>
+        <h3>Visit our virtual booth by clicking on the icons below</h3>
+        <Grid verticalAlign='middle' columns={5} centered>
+          <Grid.Row>
+            <Grid.Column>
+              <Image src={Sanofi} />
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={Novartis} />
+              <br />
+              <Image src={MSD} />
+              <br />
+              <Image src={Abbott_Laboratori} />
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={Pfizer} />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        {/* <Grid centered columns={2}>
           <Grid.Column>
             <Image src={Sanofi} />
           </Grid.Column>
@@ -33,7 +51,7 @@ export default function Sponsors() {
               <Image src={Abbott_Laboratori} />
             </Grid.Column>
           </Grid.Row>
-        </Grid>
+        </Grid> */}
       </div>
     </>
   );
