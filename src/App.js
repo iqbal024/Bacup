@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Provider } from "react-redux";
 
 import PrivateRoute from "./utils/PrivateRoute";
 import Navbar from "./layout/Navbar";
@@ -22,51 +23,58 @@ import ContactUs from "./pages/ContactUs";
 import Posters from "./pages/Posters";
 import Sponsors from "./pages/Sponsors";
 
+import store from "./helper/store";
+
 import "./App.css";
 import "semantic-ui-css/semantic.min.css";
 
 function App() {
-  // dynamically set user logged in or not
-  const user = true;
+  const user = store.getState().authReducer.user;
 
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/registration" component={RegistrationForm} />
-          <Route exact path="/registration/success" component={RegistrationSuccess} />
-          <Route exact path="/workshop" component={Workshop} />
-          <Route exact path="/symposium" component={Symposium} />
-          <Route exact path="/abstract" component={AbstractSubmission} />
-          <Route exact path="/login" component={Login} />
-          <PrivateRoute
-            exact
-            path="/joinSymposium"
-            component={JoinSymposium}
-            user={user}
-          />
-          <Route
-            exact
-            path="/joinSymposium/symposium-:sympoId"
-            component={DetailSympo}
-          />
-          <Route exact path="/joinWorkshop" component={JoinWorkshop} />
-          <Route
-            exact
-            path="/joinWorkshop/:workshop-:workshopId"
-            component={DetailWorkshop}
-          />
-          <Route exact path="/seePoster" component={SeePoster} />
-          <Route exact path="/users" component={Users} />
-          <Route exact path="/posters" component={Posters} />
-          <Route exact path="/sponsors" component={Sponsors} />
-          <Route exact path="/contact-us" component={ContactUs} />
-        </Switch>
-        <Footer />
-      </Router>
+      <Provider store={store}>
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/registration" component={RegistrationForm} />
+            <Route
+              exact
+              path="/registration/success"
+              component={RegistrationSuccess}
+            />
+            <Route exact path="/workshop" component={Workshop} />
+            <Route exact path="/symposium" component={Symposium} />
+            <Route exact path="/abstract" component={AbstractSubmission} />
+            <Route exact path="/login" component={Login} />
+            <PrivateRoute
+              exact
+              path="/joinSymposium"
+              component={JoinSymposium}
+              user={user}
+            />
+            <Route
+              exact
+              path="/joinSymposium/symposium-:sympoId"
+              component={DetailSympo}
+            />
+            <Route exact path="/joinWorkshop" component={JoinWorkshop} />
+            <Route
+              exact
+              path="/joinWorkshop/:workshop-:workshopId"
+              component={DetailWorkshop}
+            />
+            <Route exact path="/seePoster" component={SeePoster} />
+            <PrivateRoute exact path="/users" component={Users} user={user} />
+            <Route exact path="/posters" component={Posters} />
+            <Route exact path="/sponsors" component={Sponsors} />
+            <Route exact path="/contact-us" component={ContactUs} />
+          </Switch>
+          <Footer />
+        </Router>
+      </Provider>
     </div>
   );
 }

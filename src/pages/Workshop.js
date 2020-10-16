@@ -18,7 +18,8 @@ const schedules = [
           {
             title:
               "Diagnosis and initial management of ACS in Primary Health Care",
-            lecturer: "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA, FICA, FasCC ",
+            lecturer:
+              "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA, FICA, FasCC",
             time: "14.15-14.45",
           },
           {
@@ -27,8 +28,7 @@ const schedules = [
             time: "14.45-14.50",
           },
           {
-            title:
-              "Role of fibrinolytics in STEMI: How to do?",
+            title: "Role of fibrinolytics in STEMI: How to do?",
             lecturer: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC ",
             time: "14.50-15.20",
           },
@@ -39,8 +39,7 @@ const schedules = [
           },
           {
             title: "Risk stratifications and invasive management of NSTE-ACS",
-            lecturer:
-              "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
+            lecturer: "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
             time: "15.25-15.55",
           },
           {

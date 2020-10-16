@@ -3,7 +3,6 @@ import { Header } from "semantic-ui-react";
 
 export default function RegistrationSuccess() {
   const registrationDetails = JSON.parse(localStorage.getItem("registration"));
-  console.log(registrationDetails);
 
   return (
     <div className="page">

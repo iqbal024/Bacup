@@ -1,28 +1,117 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { Link, useHistory } from "react-router-dom";
 import { Menu, Dropdown, Icon, Image } from "semantic-ui-react";
+
+import { logout } from "../helper/actions/authActions";
+
 import logo from "../assets/images/LOGO.png";
 
 export default function Navbar() {
+  const dispatch = useDispatch();
+  const auth = useSelector((state) => state.authReducer);
+  const history = useHistory();
+
+  const userType = auth.user?.TypeUser;
+
+  let menus;
+
+  if (userType === "SuperAdmin") {
+    menus = [
+      {
+        displayName: "Users",
+        link: "/users",
+      },
+      {
+        displayName: "Log out",
+        link: null,
+        onClick: () => {
+          dispatch(logout());
+          history.push("/login");
+        },
+      },
+    ];
+  } else {
+    menus = [
+      {
+        displayName: "Home",
+        link: "/",
+      },
+      {
+        displayName: "Scientific Meeting",
+        link: null,
+        type: "dropdown",
+        children: [
+          {
+            displayName: "Symposium",
+            link: "/symposium",
+          },
+          {
+            displayName: "Workshop",
+            link: "/workshop",
+          },
+        ],
+      },
+      {
+        displayName: "Abstract Submission",
+        link: "/abstract",
+      },
+      {
+        displayName: "Register",
+        link: "/register",
+      },
+      {
+        displayName: "Contact Us",
+        link: "/contact-us",
+      },
+      {
+        displayName: "Login",
+        link: "/login",
+      },
+    ];
+  }
+
   return (
     <>
       <Menu fixed="top">
         <Link to="/">
-          <Image src={logo} size="tiny"/>
+          <Image src={logo} size="tiny" />
         </Link>
         <Menu.Menu position="right">
-          <Link to="/">
+          {menus.map((menu, index) =>
+            menu.type === "dropdown" ? (
+              <Menu.Item key={`menu-dropdown-${menu.displayName}-${index}`}>
+                <Dropdown text={menu.displayName}>
+                  <Dropdown.Menu>
+                    {menu.children.map((child, index) => (
+                      <Link
+                        to={child.link}
+                        key={`dropdown-item-${child.displayName}-${index}`}
+                      >
+                        <Dropdown.Item>{child.displayName}</Dropdown.Item>
+                      </Link>
+                    ))}
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Menu.Item>
+            ) : menu.link ? (
+              <Link to={menu.link} key={`menu-link-${menu.link}-${index}`}>
+                <Menu.Item onClick={menu.onClick}>{menu.displayName}</Menu.Item>
+              </Link>
+            ) : (
+              <Menu.Item
+                key={`menu-clickable-${menu.displayName}-${index}`}
+                onClick={menu.onClick}
+              >
+                {menu.displayName}
+              </Menu.Item>
+            )
+          )}
+          {/* <Link to="/">
             <Menu.Item>Home</Menu.Item>
           </Link>
           <Menu.Item>
-            <Dropdown
-              text="Scientific Meeting"
-              // icon="filter"
-              // floating
-              // labeled
-              // button
-              // className="icon"
-            >
+            <Dropdown text="Scientific Meeting">
               <Dropdown.Menu>
                 <Link to="/symposium">
                   <Dropdown.Item text="Symposium" />
@@ -49,25 +138,17 @@ export default function Navbar() {
             </Menu.Item>
           </Link>
           <Link to="/joinSymposium">
-            <Menu.Item>
-              Join Symposium
-            </Menu.Item>
+            <Menu.Item>Join Symposium</Menu.Item>
           </Link>
           <Link to="/joinWorkshop">
-            <Menu.Item>
-              Join Workshop
-            </Menu.Item>
+            <Menu.Item>Join Workshop</Menu.Item>
           </Link>
           <Link to="/seePoster">
-            <Menu.Item>
-              SeePoster
-            </Menu.Item>
+            <Menu.Item>SeePoster</Menu.Item>
           </Link>
           <Link to="/sponsors">
-            <Menu.Item>
-              Sponsor
-            </Menu.Item>
-          </Link>
+            <Menu.Item>Sponsor</Menu.Item>
+          </Link> */}
         </Menu.Menu>
       </Menu>
       <div className="link-wa">

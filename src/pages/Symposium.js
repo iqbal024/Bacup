@@ -1,31 +1,30 @@
 import React from "react";
-import { Tab, Table, Header, Grid } from "semantic-ui-react";
+import { Tab, Table, Header } from "semantic-ui-react";
 
 const schedules = [
   {
     day: "Saturday, 12 December 2020",
     symposiums: [
       {
-        title:
-          "Symposium I : Arrhythmia",
+        title: "Symposium I : Arrhythmia",
         moderator: "dr. I Kadek Susila Surya Darma, M.Biomed, Sp.JP, FIHA",
         time: "09.00-10.15",
         topics: [
           {
-            title: "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
-            speaker:
-              "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
+            title:
+              "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
+            speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
             time: "09.00-09.20",
           },
           {
-            title: "Tips and Trick of Management of Supraventricular Arrhythmia",
+            title:
+              "Tips and Trick of Management of Supraventricular Arrhythmia",
             speaker: "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA",
             time: "09.20 – 09.40",
           },
           {
             title: "Case Studies",
-            speaker:
-              "dr. I Putu Agus Wismantara, SpJP, FIHA",
+            speaker: "dr. I Putu Agus Wismantara, SpJP, FIHA",
             time: "09.40-10.00",
           },
           {
@@ -76,13 +75,14 @@ const schedules = [
         time: "09.00-10.15",
         topics: [
           {
-            title: "Diagnosis and Management of Acyanotic Congenital Heart Disease with Pulmonary Hypertension",
-            speaker:
-              "Dr. dr. Venny Kartika Yantie, Sp.A(K)",
+            title:
+              "Diagnosis and Management of Acyanotic Congenital Heart Disease with Pulmonary Hypertension",
+            speaker: "Dr. dr. Venny Kartika Yantie, Sp.A(K)",
             time: "09.00-09.20",
           },
           {
-            title: "Pharmacological Management of Pulmonary Arterial Hypertension : What’s the update ?",
+            title:
+              "Pharmacological Management of Pulmonary Arterial Hypertension : What’s the update ?",
             speaker: "dr. I.B Rangga Wibhuti, M.Biomed, Sp.JP(K), FIHA, FASE",
             time: "09.20 – 09.40",
           },
@@ -104,13 +104,13 @@ const schedules = [
         time: "10.20-11.35",
         topics: [
           {
-            title:
-              "Angina; Contemporary Diagnosis and Management",
+            title: "Angina; Contemporary Diagnosis and Management",
             speaker: "Prof. Dr. dr. I Wayan Wita, Sp.JP(K), FIHA, FAsC",
             time: "10.20-10.40",
           },
           {
-            title: "Current Management in Coronary Artery Disease; Controlling The Risk Factors",
+            title:
+              "Current Management in Coronary Artery Disease; Controlling The Risk Factors",
             speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
             time: "10.40-11.00",
           },
@@ -137,20 +137,20 @@ const schedules = [
         time: "09.00-10.15",
         topics: [
           {
-            title: "Targeting Blood Pressure Control in People at Risk of ASCVD: How Far Should We Go?",
+            title:
+              "Targeting Blood Pressure Control in People at Risk of ASCVD: How Far Should We Go?",
             speaker: "Dr. dr. I Ketut Rina, Sp.PD, Sp.JP(K), FIHA, FAsCC",
             time: "09.00-09.20",
           },
           {
-            title:
-              "Hypertensive Crisis and Cardiovascular prevention",
+            title: "Hypertensive Crisis and Cardiovascular prevention",
             speaker: "dr. A.A.A Dwi Adelia Yasmin, M.Biomed, Sp.JP, FIHA",
             time: "09.20 – 09.40",
           },
           {
-            title: "Secondary Hypertension: Differential Diagnosis and Basic Principles of Treatment",
-            speaker:
-              "dr. I Putu Parwata Jaya, Sp.JP, FIHA",
+            title:
+              "Secondary Hypertension: Differential Diagnosis and Basic Principles of Treatment",
+            speaker: "dr. I Putu Parwata Jaya, Sp.JP, FIHA",
             time: "09.40-10.00",
           },
           {
@@ -222,25 +222,25 @@ const schedules = [
         ],
       },
       {
-        title: "Symposium VIII : Thromboembolic Complications in COVID-19 Infection",
+        title:
+          "Symposium VIII : Thromboembolic Complications in COVID-19 Infection",
         moderator: "dr. Ni Wayan Lena Agustini, M.Biomed, Sp.JP, FIHA",
         time: "10.20-11.35",
         topics: [
           {
-            title:
-              "Venous Thromboembolism in Severe COVID-19",
+            title: "Venous Thromboembolism in Severe COVID-19",
             speaker: "dr. Ketut Susila, Sp.JP(K), FIHA",
             time: "10.20-10.40",
           },
           {
-            title:
-              "Role of DOAC in Vein Thrombosis",
+            title: "Role of DOAC in Vein Thrombosis",
             speaker: "dr. Agung Pradnyana Suwirya, M. Biomed, Sp.JP, FIHA",
             time: "10.40-11.00",
           },
           {
             title: "Case Studies",
-            speaker: "dr. Rani Paramitha Iswari Maliawan, M. Biomed, Sp.JP, FIHA",
+            speaker:
+              "dr. Rani Paramitha Iswari Maliawan, M. Biomed, Sp.JP, FIHA",
             time: "11.00-11.20",
           },
           {
@@ -261,11 +261,9 @@ export default function Symposium() {
       <div>
         {schedule.symposiums.map((sympo) => (
           <div>
-            <Header as='h2' textAlign="center" style={{ marginTop: "20px" }}>
+            <Header as="h2" textAlign="center" style={{ marginTop: "20px" }}>
               {sympo.title}
-              <Header.Subheader>
-                Moderator: {sympo.moderator}
-              </Header.Subheader>
+              <Header.Subheader>Moderator: {sympo.moderator}</Header.Subheader>
             </Header>
             <p style={{ textAlign: "center" }}>Time: {sympo.time}</p>
             <Table>
