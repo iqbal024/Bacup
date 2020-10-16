@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import {
@@ -25,7 +25,16 @@ const LoginForm = () => {
   });
 
   const dispatch = useDispatch();
+  const auth = useSelector((state) => state.authReducer);
   const history = useHistory();
+
+  if (auth.loggedIn) {
+    if (auth.user.TypeUser === "SuperAdmin") {
+      history.push("/users");
+    } else {
+      history.push("/joinSymposium");
+    }
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
