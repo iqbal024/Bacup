@@ -44,6 +44,8 @@
 .page {
   margin: 50px auto 0;
   min-height: calc(100% - 50px);
+  width: 80%;
+  max-width: 1440px;
 }
 
 .label--error {
@@ -70,6 +72,12 @@
   background-color: darkgray;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 

@@ -18,6 +18,7 @@ import { setUser } from "../helper/actions/authActions";
 import logo from "../assets/images/Logo.jpg";
 
 const LoginForm = () => {
+  const [error, setError] = useState(null);
   const [formValues, setFormValues] = useState({
     Email: "",
     Password: "",
@@ -35,8 +36,11 @@ const LoginForm = () => {
         const token = res.data.data[0];
         const user = jwt_decode(token);
 
-        if (token.UserID === "00000000-0000-0000-0000-000000000000") {
-          console.log("wrong credentials");
+        if (user.UserID === "00000000-0000-0000-0000-000000000000") {
+          setError({
+            header: "Login error",
+            description: "Please re-check the email and password submitted.",
+          });
         } else {
           localStorage.setItem("TOKEN", token);
 
@@ -59,9 +63,19 @@ const LoginForm = () => {
   }
 
   return (
-    <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
+    <Grid
+      textAlign="center"
+      verticalAlign="middle"
+      style={{ marginBottom: "48px" }}
+    >
       <Grid.Column style={{ maxWidth: 450 }}>
         <Image src={logo} size="big" />
+        {error && (
+          <Message negative onDismiss={() => setError(null)}>
+            <Message.Header>{error.header}</Message.Header>
+            <p>{error.description}</p>
+          </Message>
+        )}
         <Header
           as="h2"
           color="teal"
@@ -97,9 +111,6 @@ const LoginForm = () => {
             </Button>
           </Segment>
         </Form>
-        <Message>
-          New to us? <a href="/registration">Sign Up</a>
-        </Message>
       </Grid.Column>
     </Grid>
   );
