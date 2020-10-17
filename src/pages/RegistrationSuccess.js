@@ -6,7 +6,7 @@ export default function RegistrationSuccess() {
 
   return (
     <div className="page">
-      <Header>Registration Success!</Header>
+      <Header as="h1">Registration Success!</Header>
       <p>You've registered for these events:</p>
       <ul>
         {registrationDetails.Symposhium && <li>All symposiums</li>}
