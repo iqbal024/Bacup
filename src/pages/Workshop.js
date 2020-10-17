@@ -232,7 +232,7 @@ export default function Workshop() {
   const panes = schedules.map((schedule) => ({
     menuItem: schedule.day,
     render: () => (
-      <div>
+      <div style={{ marginBottom: '50px' }}>
         {schedule.workshops.map((workshop) => (
           <div>
             <Header as="h2" textAlign="center" style={{ marginTop: "20px" }}>
