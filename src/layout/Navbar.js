@@ -31,6 +31,33 @@ export default function Navbar() {
         },
       },
     ];
+  } else if (userType === "User") {
+    menus = [
+      {
+        displayName: "Join Symposium",
+        link: "/joinSymposium",
+      },
+      {
+        displayName: "Join Workshop",
+        link: "/joinWorkshop",
+      },
+      {
+        displayName: "Poster",
+        link: "/seePoster",
+      },
+      {
+        displayName: "Sponsors",
+        link: "/sponsors",
+      },
+      {
+        displayName: "Log out",
+        link: null,
+        onClick: () => {
+          dispatch(logout());
+          history.push("/login");
+        },
+      },
+    ];
   } else {
     menus = [
       {
