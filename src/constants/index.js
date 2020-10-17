@@ -1,7 +1,8 @@
 export const symposiums = [
   {
-    title: "Symposium 1 - Thromboembolic complications in COVID-19 infection",
+    title: "Symposium I - Thromboembolic complications in COVID-19 infection",
     date: "Saturday, 12 December 2020",
+    zoom: "https://meet.google.com/mst-bpaq-yfm",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
@@ -29,8 +30,9 @@ export const symposiums = [
     ],
   },
   {
-    title: "Symposium 2 : Acute Coronary Syndrome",
+    title: "Symposium II : Acute Coronary Syndrome",
     date: "Saturday, 12 December 2020",
+    zoom: "https://meet.google.com/mst-bpaq-yfm",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I G N Putra Gunadhi, Sp.JP(K).JPG",
@@ -62,6 +64,7 @@ export const symposiums = [
     title:
       "Symposium III : Congenital Heart Disease and Pulmonary Hypertension",
     date: "Sunday, 13 December 2020",
+    zoom: "https://meet.google.com/phu-gsia-pnk",
     sections: [
       {
         imgUrl: null,
@@ -90,6 +93,7 @@ export const symposiums = [
   {
     title: "Symposium IV : Hypertension",
     date: "Sunday, 13 December 2020",
+    zoom: "https://meet.google.com/phu-gsia-pnk",
     sections: [
       {
         imgUrl: "/assets/doctors/Dr. dr. Ketut Rina, Sp.PD, Sp.JP(K).JPG",
@@ -120,6 +124,7 @@ export const symposiums = [
   {
     title: "Symposium V : Coronary Artery Disease",
     date: "Saturday, 19 December 2020",
+    zoom: "https://meet.google.com/ffi-mnzn-szx",
     sections: [
       {
         imgUrl: "/assets/doctors/Prof. Dr. dr. I Wayan Wita, Sp.JP(K).JPG",
@@ -149,6 +154,7 @@ export const symposiums = [
   {
     title: "Symposium VI : Metabolic Disease (Dyslipidemia)",
     date: "Saturday, 19 December 2020",
+    zoom: "https://meet.google.com/ffi-mnzn-szx",
     sections: [
       {
         imgUrl: null,
@@ -177,6 +183,7 @@ export const symposiums = [
   {
     title: "Symposium VII : Heart Failure",
     date: "Sunday, 20 December 2020",
+    zoom: "https://meet.google.com/qux-gqwz-nma",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Nyoman Wiryawan, Sp.JP.JPG",
@@ -206,6 +213,7 @@ export const symposiums = [
   {
     title: "Symposium VIII : Arhythmia",
     date: "Sunday, 20 December 2020",
+    zoom: "https://meet.google.com/qux-gqwz-nma",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. Ketut Susila, Sp.JP(K).JPG",
@@ -237,8 +245,9 @@ export const symposiums = [
 
 export const workshops = [
   {
-    title: "Workshop 1 : Workshop of ACS",
+    title: "Workshop I : Workshop of ACS",
     date: "Friday, 11 December 2020",
+    zoom: "https://meet.google.com/uit-kmhf-bzh",
     sections: [
       {
         imgUrl: "/assets/images/placeholder.png",
@@ -291,6 +300,7 @@ export const workshops = [
     title:
       "Workshop II : Workshop of Echocardiography in congenital heart disease (Pokja Pediatric Cardiology PERKI)",
     date: "Friday, 11 December 2020",
+    zoom: "https://meet.google.com/uqw-qrpd-qii",
     sections: [
       {
         imgUrl: "/assets/images/placeholder.png",
@@ -339,6 +349,7 @@ export const workshops = [
   {
     title: "Workshop III : Workshop of Arrhythmia in Clinical Practice",
     date: "Friday, 18 December 2020",
+    zoom: "https://meet.google.com/vbo-rybb-ppk",
     sections: [
       {
         imgUrl: "/assets/images/placeholder.png",
@@ -387,6 +398,7 @@ export const workshops = [
   {
     title: "Workshop IV : Workshop of Acute Heart Failure",
     date: "Friday, 18 December 2020",
+    zoom: "https://meet.google.com/rch-pskz-nnq",
     sections: [
       {
         imgUrl: "/assets/images/placeholder.png",

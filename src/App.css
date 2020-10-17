@@ -121,7 +121,7 @@
 }
 
 .join-symposium {
-  margin-top: 170px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -164,4 +164,8 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.posters {
+  margin-top: 45px;
 }
