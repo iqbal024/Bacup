@@ -6,6 +6,10 @@
   min-height: 100vh;
 }
 
+.App__footer {
+  margin-top: 80px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -146,8 +150,8 @@
 
 .submission-text {
   margin-top: 160px;
-  background: rgba(255, 255, 255, .6);
-  border: 0.5px rgba(255,255,255,.25) solid;
+  background: rgba(255, 255, 255, 0.6);
+  border: 0.5px rgba(255, 255, 255, 0.25) solid;
   color: #000000;
   width: 45% !important;
 }
