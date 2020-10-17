@@ -8,6 +8,7 @@ export default function DetailSympo() {
   const { sympoId } = useParams();
 
   const symposium = symposiums[sympoId - 1];
+  console.log('test123', symposium);
 
   return !symposium ? (
     <Redirect to="/404"></Redirect>
@@ -16,7 +17,7 @@ export default function DetailSympo() {
       <h3>{symposium.title}</h3>
       <div className="btn-join">
         <h4 textAlign="left">{symposium.date}</h4>
-        <a href="">
+        <a href={symposium.zoom} target="_blank">
           <Button primary textAlign="right">Join Now</Button>
         </a>
       </div>

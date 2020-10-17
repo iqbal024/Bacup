@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Segment } from "semantic-ui-react";
 
 const posters = [
   {
@@ -36,15 +37,17 @@ const posters = [
 
 export default function Posters() {
   return (
-    <div>
+    <div className="posters">
       {posters.map((poster, index) => (
         <div key={`poster-${index}`}>
           <Link to={`/posters/${poster.id}`}>
-            <p>{poster.title}</p>
+            <Segment>
+              <p>{poster.title}</p>
+              <p>
+                {poster.dateSubmitted} | {poster.author}
+              </p>
+            </Segment>
           </Link>
-          <p>
-            {poster.dateSubmitted} | {poster.author}
-          </p>
         </div>
       ))}
     </div>

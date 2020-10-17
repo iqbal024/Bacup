@@ -16,7 +16,7 @@ export default function DetailWorkshop() {
       <h3>{workshop.title}</h3>
       <div className="btn-join">
         <h4 textAlign="left">{workshop.date}</h4>
-        <a href="">
+        <a href={workshop.zoom} target="_blank">
           <Button primary textAlign="right">Join Now</Button>
         </a>
       </div>
