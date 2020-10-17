@@ -1,5 +1,5 @@
 import React from "react";
-import { Tab, Table } from "semantic-ui-react";
+import { Tab, Table, Header } from "semantic-ui-react";
 
 const schedules = [
   {
@@ -235,14 +235,16 @@ export default function Workshop() {
       <div>
         {schedule.workshops.map((workshop) => (
           <div>
-            <h1>{workshop.title}</h1>
-            <h2>Chairman: {workshop.chairman}</h2>
-            <p>Time: {workshop.time}</p>
+            <Header as="h2" textAlign="center" style={{ marginTop: "20px" }}>
+              {workshop.title}
+              <Header.Subheader>Chairman: {workshop.chairman}</Header.Subheader>
+            </Header>
+            <p style={{ textAlign: "center" }}>Time: {workshop.time}</p>
             <Table>
               <Table.Header>
                 <Table.Row>
-                  <Table.HeaderCell>Time</Table.HeaderCell>
-                  <Table.HeaderCell>Schedule</Table.HeaderCell>
+                  <Table.HeaderCell style={{ background: '#800000', color: '#ffffff' }} >Time</Table.HeaderCell>
+                  <Table.HeaderCell style={{ background: '#800000', color: '#ffffff' }} >Schedule</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
 

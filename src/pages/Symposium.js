@@ -269,8 +269,8 @@ export default function Symposium() {
             <Table>
               <Table.Header>
                 <Table.Row>
-                  <Table.HeaderCell>Time</Table.HeaderCell>
-                  <Table.HeaderCell>Schedule</Table.HeaderCell>
+                  <Table.HeaderCell style={{ background: '#800000', color: '#ffffff' }} >Time</Table.HeaderCell>
+                  <Table.HeaderCell style={{ background: '#800000', color: '#ffffff' }} >Schedule</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
 

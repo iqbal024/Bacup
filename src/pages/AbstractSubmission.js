@@ -3,9 +3,9 @@ import { Container, Segment } from 'semantic-ui-react'
 
 export default function AbstactSubmission() {
   return (
-    <div className="page">
-      <Segment className="submission submission-background">
-        <Container textAlign="center" className="submission-text">
+    <div>
+      <Segment className="submission submission-background" >
+        <Container textAlign="center" className="submission-text" placeholder>
           <h1 style={{ color: 'black', marginTop: '250px' }}>ABSTRACT SUBMISSION</h1>
           <p style={{ fontSize: '12px', marginBottom: '200px' }}>
             Author can not submit any abstracts that have been published in any

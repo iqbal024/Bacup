@@ -4,14 +4,14 @@ import { Table, Button } from "semantic-ui-react";
 
 const TableCategoryRegister = () => (
   <>
-    <div className="Register">
+    <div className="Register page">
       <h1 className="Register-title">Package</h1>
       <Table celled>
         <Table.Header>
           <Table.Row>
-            <Table.HeaderCell>Category</Table.HeaderCell>
-            <Table.HeaderCell>Price</Table.HeaderCell>
-            <Table.HeaderCell>Benefit</Table.HeaderCell>
+            <Table.HeaderCell style={{ background: '#800000', color: '#ffffff' }} >Category</Table.HeaderCell>
+            <Table.HeaderCell style={{ background: '#800000', color: '#ffffff' }} >Price</Table.HeaderCell>
+            <Table.HeaderCell style={{ background: '#800000', color: '#ffffff' }} >Benefit</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
 

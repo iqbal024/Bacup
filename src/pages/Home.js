@@ -45,7 +45,7 @@ export default function Home() {
   }
 
   return (
-    <div className="page">
+    <div>
       <div className="hero">
         <img src="header.jpg" alt="bacup header" className="hero__image" />
       </div>
