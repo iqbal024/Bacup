@@ -67,7 +67,7 @@ export default function Users() {
 
   return (
     <div className="page">
-      <Header>List of Registered Participants</Header>
+      <Header as="h1">List of Registered Participants</Header>
       {loading ? (
         <Loader />
       ) : (

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Form, Button, Radio, Dropdown } from "semantic-ui-react";
+import { Form, Button, Radio, Dropdown, Header } from "semantic-ui-react";
 import * as yup from "yup";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
+import Loader from "../layout/Loader";
 
 const personalSchema = {
   FirstName: "",
@@ -97,6 +98,7 @@ export default function RegistrationForm() {
 
   const [eventFormValues, setEventFormValues] = useState(eventSchema);
   const [eventErrors, setEventErrors] = useState(eventSchema);
+  const [posting, setPosting] = useState(false);
 
   function handleChange(e) {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
@@ -177,6 +179,8 @@ export default function RegistrationForm() {
         Status: 1,
       };
 
+      setPosting(true);
+
       axios
         .post("http://backend.bacup.co/register", fixedPayload)
         .then(() => {
@@ -186,6 +190,9 @@ export default function RegistrationForm() {
         })
         .catch((err) => {
           console.log(err);
+        })
+        .finally(() => {
+          setPosting(false);
         });
     } else {
       setEventErrors({ ...eventErrors, ...err });
@@ -252,8 +259,12 @@ export default function RegistrationForm() {
 
   return (
     <div className="page">
+      {posting && <Loader floating></Loader>}
+      <Header as="h1">Registration</Header>
       {step === "personal" && (
         <Form onSubmit={handleSubmit}>
+          <Header as="h3">Personal data</Header>
+
           <Form.Field>
             <label className={errors.FirstName ? "label--error" : ""}>
               First Name <span className="required">*</span>
@@ -462,11 +473,15 @@ export default function RegistrationForm() {
               onFocus={resetError}
             />
           </Form.Field>
-          <Button type="submit">Continue</Button>
+          <Button color="blue" type="submit">
+            Continue
+          </Button>
         </Form>
       )}
       {step === "event" && (
         <Form onSubmit={handleSubmitEvent}>
+          <Header as="h3">Event data</Header>
+
           <Form.Field>
             <label className={eventErrors.Category ? "label--error" : ""}>
               Category <span className="required">*</span>
@@ -590,23 +605,16 @@ export default function RegistrationForm() {
             </Form.Field>
           ) : null}
           <Form.Field>
-            <label
-            // className={eventErrors.Package ? "label--error" : ""}
-            >
-              Package Price
-            </label>
-            {/* {eventErrors.Package && (
-              <p className="error">{eventErrors.Package}</p>
-            )} */}
+            <label>Package Price</label>
             <input
-              // className={errors.FirstName ? "input--error" : ""}
-              // placeholder="Enter your first name"
-              value={eventFormValues.Price}
+              value={`IDR ${eventFormValues.Price.toLocaleString()}`}
               name="Price"
               disabled
             />
           </Form.Field>
-          <Button type="submit">Register</Button>
+          <Button color="blue" disabled={posting} type="submit">
+            Register
+          </Button>
         </Form>
       )}
     </div>
