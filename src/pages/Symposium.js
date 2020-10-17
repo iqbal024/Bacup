@@ -258,7 +258,7 @@ export default function Symposium() {
   const panes = schedules.map((schedule) => ({
     menuItem: schedule.day,
     render: () => (
-      <div>
+      <div style={{ marginBottom: '50px' }}>
         {schedule.symposiums.map((sympo) => (
           <div>
             <Header as="h2" textAlign="center" style={{ marginTop: "20px" }}>

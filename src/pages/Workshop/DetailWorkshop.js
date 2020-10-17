@@ -1,6 +1,6 @@
 import React from "react";
 import { Redirect, useParams } from "react-router-dom";
-import { Segment, Image } from "semantic-ui-react";
+import { Segment, Image, Button } from "semantic-ui-react";
 
 import { workshops } from "../../constants/index";
 
@@ -14,7 +14,12 @@ export default function DetailWorkshop() {
   ) : (
     <div className="page">
       <h3>{workshop.title}</h3>
-      <h4>{workshop.date}</h4>
+      <div className="btn-join">
+        <h4 textAlign="left">{workshop.date}</h4>
+        <a href="">
+          <Button primary textAlign="right">Join Now</Button>
+        </a>
+      </div>
       {workshop.sections.map((section, index) => (
         <div key={`section-${index}-${section.title}`}>
           <Segment>
