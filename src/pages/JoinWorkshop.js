@@ -4,7 +4,7 @@ import { Segment } from "semantic-ui-react";
 
 export default function JoinWorkshop() {
   return (
-    <div class="join-symposium">
+    <div class="join-symposium page">
       <h4>Friday, 11 December 2020</h4>
       <Segment secondary>
         <Link to="/joinWorkshop/workshop-1">

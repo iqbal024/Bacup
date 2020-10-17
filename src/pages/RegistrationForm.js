@@ -84,9 +84,6 @@ const eventOptions = [
   },
 ];
 
-const sympoTitles =
-  "Symposium 1 : Thromboembolic complications in COVID-19 infection, Symposium 2 : Acute Coronary Syndrome, Symposium III : Congenital Heart Disease and Pulmonary Hypertension, Symposium IV : Hypertension, Symposium V : Coronary Artery Disease, Symposium VI : Metabolic Disease (Dyslipidemia), Symposium VII : Heart Failure, Symposium VIII : Arhythmia";
-
 export default function RegistrationForm() {
   const history = useHistory();
 
@@ -159,22 +156,22 @@ export default function RegistrationForm() {
         ...rawPayload,
         Category: categoryOptions.find((cat) => cat.key === Category).text,
         Package: packageOptions.find((pkg) => pkg.key === Package).text,
-        Symposhium: event1 === "sy" ? sympoTitles : null,
+        Symposhium: event1 === "sy" ? event1 : null,
         Workshop1:
           event1 === "sy"
             ? eventOptions.find((event) => event.key === event2)
-              ? eventOptions.find((event) => event.key === event2).text
+              ? eventOptions.find((event) => event.key === event2).value
               : null
             : eventOptions.find((event) => event.key === event1)
-            ? eventOptions.find((event) => event.key === event1).text
+            ? eventOptions.find((event) => event.key === event1).value
             : null,
         Workshop2:
           event1 === "sy"
             ? eventOptions.find((event) => event.key === event3)
-              ? eventOptions.find((event) => event.key === event3).text
+              ? eventOptions.find((event) => event.key === event3).value
               : null
             : eventOptions.find((event) => event.key === event2)
-            ? eventOptions.find((event) => event.key === event2).text
+            ? eventOptions.find((event) => event.key === event2).value
             : null,
         Status: 1,
       };

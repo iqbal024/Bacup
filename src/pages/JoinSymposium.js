@@ -4,14 +4,12 @@ import { Segment } from "semantic-ui-react";
 
 export default function JoinSymposium() {
   return (
-    <div class="join-symposium">
+    <div class="join-symposium page">
       <h4>Saturday, 12 December 2020</h4>
       <Segment secondary>
         <Link to="/joinSymposium/symposium-1">
           <div>
-            <span>
-              Symposium I - Arrhythmia
-            </span>
+            <span>Symposium I - Arrhythmia</span>
             <br />
             <span>09.00 - 10.15</span>
           </div>
@@ -80,7 +78,10 @@ export default function JoinSymposium() {
       <Segment secondary>
         <Link to="/joinSymposium/symposium-8">
           <div>
-            <span>Symposium VIII - Thromboembolic Complications in COVID-19 Infection</span>
+            <span>
+              Symposium VIII - Thromboembolic Complications in COVID-19
+              Infection
+            </span>
             <br />
             <span>10.20 - 11.35</span>
           </div>

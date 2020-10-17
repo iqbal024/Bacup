@@ -1,6 +1,35 @@
 import React from "react";
 import { Header } from "semantic-ui-react";
 
+const eventOptions = [
+  {
+    key: "ws1",
+    text: "Workshop 1 : Workshop of ACS",
+    value: "ws1",
+  },
+  {
+    key: "ws2",
+    text:
+      "Workshop II : Workshop of Echocardiography in congenital heart disease",
+    value: "ws2",
+  },
+  {
+    key: "ws3",
+    text: "Workshop III : Workshop of Arrhythmia in Clinical Practice",
+    value: "ws3",
+  },
+  {
+    key: "ws4",
+    text: "Workshop IV : Workshop of Acute Heart Failure",
+    value: "ws4",
+  },
+  {
+    key: "sy",
+    text: "Symposium",
+    value: "sy",
+  },
+];
+
 export default function RegistrationSuccess() {
   const registrationDetails = JSON.parse(localStorage.getItem("registration"));
 
@@ -11,10 +40,22 @@ export default function RegistrationSuccess() {
       <ul>
         {registrationDetails.Symposhium && <li>All symposiums</li>}
         {registrationDetails.Workshop1 && (
-          <li>{registrationDetails.Workshop1}</li>
+          <li>
+            {
+              eventOptions.find(
+                (event) => event.key === registrationDetails.Workshop1
+              ).text
+            }
+          </li>
         )}
         {registrationDetails.Workshop2 && (
-          <li>{registrationDetails.Workshop2}</li>
+          <li>
+            {
+              eventOptions.find(
+                (event) => event.key === registrationDetails.Workshop2
+              ).text
+            }
+          </li>
         )}
       </ul>
       <p>
