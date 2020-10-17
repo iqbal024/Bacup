@@ -1,6 +1,6 @@
 export const symposiums = [
   {
-    title: "Symposium I - Thromboembolic complications in COVID-19 infection",
+    title: "Symposium I - Arrhythmia",
     date: "Saturday, 12 December 2020",
     zoom: "https://meet.google.com/mst-bpaq-yfm",
     sections: [
@@ -68,15 +68,15 @@ export const symposiums = [
     sections: [
       {
         imgUrl: null,
-        title: "GUCH and pulmonary hypertension",
+        title: "Diagnosis and Management of Acyanotic Congenital Heart Disease with Pulmonary Hypertension",
         time: "09.00 - 09.20",
-        speaker: "dr. Ida Bagus Rangga Wibhuti, M.Biomed, Sp.JP(K), FIHA, FASE",
+        speaker: "Dr. dr. Venny Kartika Yantie, Sp.A(K)",
       },
       {
         imgUrl: null,
-        title: "Role of sildenafil in treating pulmonary hypertension",
+        title: "Pharmacological Management of Pulmonary Arterial Hypertension : What’s the update ?",
         time: "09.20 - 09.40",
-        speaker: "dr. Eka Gunawijaya, Sp.A (K)",
+        speaker: "dr. I.B Rangga Wibhuti, M.Biomed, Sp.JP(K), FIHA, FASE",
       },
       {
         imgUrl: "/assets/doctors/dr. Luh Oliva Saraswati Suastika, Sp.JP.JPG",
@@ -91,29 +91,29 @@ export const symposiums = [
     ],
   },
   {
-    title: "Symposium IV : Hypertension",
+    title: "Symposium IV : Coronary Artery Disease",
     date: "Sunday, 13 December 2020",
     zoom: "https://meet.google.com/phu-gsia-pnk",
     sections: [
       {
-        imgUrl: "/assets/doctors/Dr. dr. Ketut Rina, Sp.PD, Sp.JP(K).JPG",
+        imgUrl: null,
         title:
-          "Targeting blood pressure control in people at risk of ASCVD: How far should we go?",
+          "Angina; Contemporary Diagnosis and Management",
         time: "10.20 - 10.40",
-        speaker: "dr.I Ketut Rina, Sp.PD, Sp.JP(K), FIHA, FAsCC",
+        speaker: "Prof. Dr. dr. I Wayan Wita, Sp.JP(K), FIHA, FAsC",
       },
       {
-        imgUrl: "/assets/doctors/dr. Susila Surya Darma, Sp.JP.JPG",
-        title: "Hypertensive Crisis and Cardiovascular prevention",
+        imgUrl: null,
+        title: "Current Management in Coronary Artery Disease; Controlling The Risk Factors",
         time: "10.40 - 11.00",
-        speaker: "dr. I Kadek Susila Surya Darma, M.Biomed, Sp.JP, FIHA",
+        speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
       },
       {
-        imgUrl: "/assets/doctors/dr. I Putu Parwata Jaya, Sp.JP.jpg",
+        imgUrl: null,
         title:
-          "Secondary hypertension: Differential diagnosis and basic principles of treatment",
+          "Case studies",
         time: "11.00 - 11.20",
-        speaker: "dr. I Putu Parwata Jaya, Sp.JP, FIHA",
+        speaker: "dr. I Putu Gede Eka Ariawan S, M.Biomed, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
@@ -122,28 +122,28 @@ export const symposiums = [
     ],
   },
   {
-    title: "Symposium V : Coronary Artery Disease",
+    title: "Symposium V : Hypertension",
     date: "Saturday, 19 December 2020",
     zoom: "https://meet.google.com/ffi-mnzn-szx",
     sections: [
       {
-        imgUrl: "/assets/doctors/Prof. Dr. dr. I Wayan Wita, Sp.JP(K).JPG",
-        title: "Angina; Contemporary Diagnosis and Management",
+        imgUrl: "/assets/doctors/Dr. dr. Ketut Rina, Sp.PD, Sp.JP(K).JPG",
+        title: "Targeting Blood Pressure Control in People at Risk of ASCVD: How Far Should We Go?",
         time: "09.00-09.20",
-        speaker: "Prof.Dr.dr.I Wayan Wita, Sp.JP(K), FIHA, FAsC",
+        speaker: "Dr. dr. I Ketut Rina, Sp.PD, Sp.JP(K), FIHA, FAsCC",
       },
       {
         imgUrl: null,
         title:
-          "Current management in Coronary Artery Disease; Controlling the risk factors",
+          "Hypertensive Crisis and Cardiovascular prevention",
         time: "09.20 - 09.40",
-        speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
+        speaker: "dr. A.A.A Dwi Adelia Yasmin, M.Biomed, Sp.JP, FIHA",
       },
       {
         imgUrl: null,
-        title: "Case Studies",
+        title: "Secondary Hypertension: Differential Diagnosis and Basic Principles of Treatment",
         time: "09.40 - 10.00",
-        speaker: "dr. I Putu Gede Eka Ariawan Suyasa, M.Biomed, Sp.JP, FIHA",
+        speaker: "dr. I Putu Parwata Jaya, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
@@ -160,19 +160,19 @@ export const symposiums = [
         imgUrl: null,
         title: "Management of dyslipidemia in very high risk patients",
         time: "10.20 - 10.40",
-        speaker: "dr. Ketut Erna Bagiari, M.Biomed, Sp.JP, FIHA",
+        speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
       },
       {
         imgUrl: null,
         title: "When and how to treat hypertriglyceridemia?",
         time: "10.40 - 11.00",
-        speaker: "dr. Ni Gusti Putu Sri Andayani Sp.JP, FIHA",
+        speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
       },
       {
-        imgUrl: "/assets/doctors/dr. Putu Agus Wismantara, Sp.JP.jpg",
+        imgUrl: null,
         title: "Case Studies",
         time: "11.00 - 11.20",
-        speaker: "dr. I Putu Agus Wismantara, M.Biomed, Sp.JP, FIHA",
+        speaker: "dr. Ketut Erna Bagiari, M.Biomed, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
@@ -211,29 +211,29 @@ export const symposiums = [
     ],
   },
   {
-    title: "Symposium VIII : Arhythmia",
+    title: "Symposium VIII : Thromboembolic Complications in COVID-19 Infection",
     date: "Sunday, 20 December 2020",
     zoom: "https://meet.google.com/qux-gqwz-nma",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. Ketut Susila, Sp.JP(K).JPG",
         title:
-          "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
+          "Venous Thromboembolism in Severe COVID-19",
         time: "10.20 - 10.40",
-        speaker: "dr. Ketut Susila, Sp.JP, FIHA",
+        speaker: "dr. Ketut Susila, Sp.JP(K), FIHA",
       },
       {
-        imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
+        imgUrl: null,
         title:
-          "Interventional Management of Arrythmia: Ablation and the Devices",
+          "Role of DOAC in Vein Thrombosis",
         time: "10.40 - 11.00",
-        speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
+        speaker: "dr. Agung Pradnyana Suwirya, M. Biomed, Sp.JP, FIHA",
       },
       {
-        imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
+        imgUrl: null,
         title: "Case Studies",
         time: "11.00 - 11.20",
-        speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
+        speaker: "dr. Rani Paramitha Iswari Maliawan, M. Biomed, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
@@ -250,37 +250,37 @@ export const workshops = [
     zoom: "https://meet.google.com/uit-kmhf-bzh",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Pre-test",
         time: "14.00 - 14.15",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title:
-          "Stepwise approach in diagnosing ACS and how to give initial management of ACS patient: What should we do in primary health care",
+          "Diagnosis and initial management of ACS in Primary Health Care",
         time: "14.15 - 14.45",
-        lecturer: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
+        lecturer: "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA, FICA, FasCC",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Discussion",
         time: "14.45 - 14.50",
       },
       {
         title:
-          "Preparing patients for revascularization: the right timing, indication and contraindication focused on NSTE-ACS",
+          "Role of fibrinolytics in STEMI: How to do?",
         time: "14.50 - 15.20",
-        lecturer: "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
+        lecturer: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
       },
       {
         title: "Discussion",
         time: "15.20 - 15.25",
       },
       {
-        title: "Management of complication in ACS patient",
+        title: "Risk stratifications and invasive management of NSTE-ACS",
         time: "15.25 - 15.55",
         lecturer:
-          "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA, FICA, FasCC",
+          "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
       },
       {
         title: "Discussion",
@@ -357,7 +357,7 @@ export const workshops = [
         time: "14.00 - 14.15",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Symptomatology of arrhythmia induced pre/syncope",
         time: "14.15 - 14.45",
         lecturer: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",

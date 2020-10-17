@@ -38,6 +38,7 @@ const posters = [
 export default function Posters() {
   return (
     <div className="posters">
+      <h1 style={{ textAlign: 'center' }} >Poster</h1>
       {posters.map((poster, index) => (
         <div key={`poster-${index}`}>
           <Link to={`/posters/${poster.id}`}>
