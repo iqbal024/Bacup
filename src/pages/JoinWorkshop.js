@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Segment } from "semantic-ui-react";
+import { Header, Segment } from "semantic-ui-react";
 
 export default function JoinWorkshop() {
   return (
     <div class="join-symposium page">
+      <Header as="h1">Workshops</Header>
       <h4>Friday, 11 December 2020</h4>
       <Segment secondary>
         <Link to="/joinWorkshop/workshop-1">
