@@ -136,6 +136,30 @@
   font-size: 30px;
 }
 
+.timer-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.timer-unit--tens {
+  background-color: white;
+  color: #252525;
+  padding: 16px 8px;
+  margin-right: 8px;
+  border-radius: 3px;
+  font-size: 48px;
+}
+
+.timer-unit--ones {
+  background-color: white;
+  color: #252525;
+  padding: 16px 8px;
+  border-radius: 3px;
+  font-size: 48px;
+}
+
 .join-symposium {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -232,11 +256,11 @@
 
 .contact-us {
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: flex-end;
-	align-content: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: stretch;
 }
 
 /* .text-information {

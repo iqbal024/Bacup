@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Grid, Image, Segment, Container } from "semantic-ui-react";
 import YouTube from "react-youtube";
+import { AnimateOnChange, animations } from "react-animation";
 import institution1 from "../assets/images/insitusi.png";
 import institution2 from "../assets/images/institusi1.png";
 import institution3 from "../assets/images/institusi2.png";
@@ -13,11 +14,23 @@ export default function Home() {
     let timeLeft = {};
 
     if (difference > 0) {
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((difference / 1000 / 60) % 60);
+      const seconds = Math.floor((difference / 1000) % 60);
+
       timeLeft = {
-        day: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hour: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minute: Math.floor((difference / 1000 / 60) % 60),
-        second: Math.floor((difference / 1000) % 60),
+        days: [Math.trunc(days / 10), days % 10],
+        hours: [Math.trunc(hours / 10), hours % 10],
+        minutes: [Math.trunc(minutes / 10), minutes % 10],
+        seconds: [Math.trunc(seconds / 10), seconds % 10],
+      };
+    } else {
+      timeLeft = {
+        days: [0, 0],
+        hours: [0, 0],
+        minutes: [0, 0],
+        seconds: [0, 0],
       };
     }
 
@@ -49,7 +62,11 @@ export default function Home() {
       <div className="hero">
         <img src="header.jpg" alt="bacup header" className="hero__image" />
       </div>
-      <Segment style={{ padding: "8em 0em" }} vertical className="text-information">
+      <Segment
+        style={{ padding: "8em 0em" }}
+        vertical
+        className="text-information"
+      >
         <Grid container stackable verticalAlign="middle">
           <Grid.Row>
             <Grid.Column width={8}>
@@ -130,16 +147,31 @@ export default function Home() {
           <Grid.Row>
             <Grid.Column width={8}>
               <div className="timer">
-                <div>
-                  {Object.keys(timeLeft)
-                    .map(
-                      (unit) =>
-                        `${timeLeft[unit]} ${unit}${
-                          timeLeft[unit] > 1 ? "s" : ""
-                        }`
-                    )
-                    .join(" ")}
-                </div>
+                {Object.keys(timeLeft).map((unit) => (
+                  <div className="timer-unit">
+                    <div style={{ marginBottom: "16px" }}>{unit}</div>
+                    <div style={{ display: "flex" }}>
+                      <div className="timer-unit--tens">
+                        <AnimateOnChange
+                          animationIn="bounceIn"
+                          animationOut="bounceOut"
+                          durationOut={500}
+                        >
+                          {timeLeft[unit][0]}
+                        </AnimateOnChange>
+                      </div>
+                      <div className="timer-unit--ones">
+                        <AnimateOnChange
+                          animationIn="bounceIn"
+                          animationOut="bounceOut"
+                          durationOut={500}
+                        >
+                          {timeLeft[unit][1]}
+                        </AnimateOnChange>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </Grid.Column>
             <Grid.Column floated="right" width={6}>
@@ -155,7 +187,7 @@ export default function Home() {
       <Segment style={{ padding: "8em 0em" }} vertical>
         <Container text>
           <h1 className="title-institution">Our Institution</h1>
-          <Grid relaxed='very' columns={4}>
+          <Grid relaxed="very" columns={4}>
             <Grid.Column>
               <Image src={institution1} />
             </Grid.Column>

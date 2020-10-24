@@ -91,7 +91,7 @@ export default function RegistrationForm() {
     JSON.parse(localStorage.getItem("personal")) || personalSchema
   );
   const [errors, setErrors] = useState(personalSchema);
-  const [step, setStep] = useState("personal");
+  const [step, setStep] = useState("event");
 
   const [eventFormValues, setEventFormValues] = useState(eventSchema);
   const [eventErrors, setEventErrors] = useState(eventSchema);
@@ -557,7 +557,10 @@ export default function RegistrationForm() {
                     name="event2"
                     value={eventFormValues.event2}
                     onChange={handleDropdownChange}
-                    options={eventOptions.slice(0, 4)}
+                    options={eventOptions
+                      .slice(0, 4)
+                      .filter((el) => el.key !== eventFormValues.event3)}
+                    style={{ marginTop: "8px" }}
                   />
                 </>
               )}
@@ -572,30 +575,10 @@ export default function RegistrationForm() {
                     name="event3"
                     value={eventFormValues.event3}
                     onChange={handleDropdownChange}
-                    options={[
-                      {
-                        key: "ws1",
-                        text: "Workshop 1 : Workshop of ACS",
-                        value: "ws1",
-                      },
-                      {
-                        key: "ws2",
-                        text:
-                          "Workshop II : Workshop of Echocardiography in congenital heart disease",
-                        value: "ws2",
-                      },
-                      {
-                        key: "ws3",
-                        text:
-                          "Workshop III : Workshop of Arrhythmia in Clinical Practice",
-                        value: "ws3",
-                      },
-                      {
-                        key: "ws4",
-                        text: "Workshop IV : Workshop of Acute Heart Failure",
-                        value: "ws4",
-                      },
-                    ]}
+                    options={eventOptions
+                      .slice(0, 4)
+                      .filter((el) => el.key !== eventFormValues.event2)}
+                    style={{ marginTop: "8px" }}
                   />
                 </>
               )}
