@@ -58,7 +58,7 @@ const packageOptions = [
 const eventOptions = [
   {
     key: "ws1",
-    text: "Workshop 1 : Workshop of ACS",
+    text: "Workshop I : Workshop of ACS",
     value: "ws1",
   },
   {
