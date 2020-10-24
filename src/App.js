@@ -21,6 +21,7 @@ import Users from "./pages/Users";
 import ContactUs from "./pages/ContactUs";
 import Posters from "./pages/Posters";
 import Sponsors from "./pages/Sponsors";
+import ScrollToTop from "./utils/ScrollToTop";
 
 import store from "./helper/store";
 
@@ -35,6 +36,7 @@ function App() {
       <Provider store={store}>
         <Router>
           <Navbar />
+          <ScrollToTop />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/register" component={Register} />
