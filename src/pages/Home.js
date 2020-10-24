@@ -53,7 +53,7 @@ export default function Home() {
         <Grid container stackable verticalAlign="middle">
           <Grid.Row>
             <Grid.Column width={8}>
-              <p style={{ fontSize: "12px" }}>
+              <p>
                 On behalf of the Cardiovascular Department of Udayana
                 University, it gives us great pleasure to extend our warmest
                 welcome to you all in joining the 9th BALI Cardiology Update
