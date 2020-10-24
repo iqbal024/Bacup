@@ -91,7 +91,7 @@ export default function RegistrationForm() {
     JSON.parse(localStorage.getItem("personal")) || personalSchema
   );
   const [errors, setErrors] = useState(personalSchema);
-  const [step, setStep] = useState("event");
+  const [step, setStep] = useState("personal");
 
   const [eventFormValues, setEventFormValues] = useState(eventSchema);
   const [eventErrors, setEventErrors] = useState(eventSchema);
