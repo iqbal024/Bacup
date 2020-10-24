@@ -32,7 +32,11 @@ export default function DetailWorkshop() {
         }
       )
       .then((res) => {
-        setUser(res.data.data[0]);
+        if (res.data.data[0]) {
+          setUser(res.data.data[0]);
+        } else {
+          throw "User doesn't exist or token is expired";
+        }
       })
       .catch((err) => {
         console.log(err);
@@ -55,16 +59,17 @@ export default function DetailWorkshop() {
           )}
       </div>
       {workshop.sections.map((section, index) => (
-        <div key={`section-${index}-${section.title}`}>
-          <Segment>
-            {section.imgUrl && (
-              <Image src={section.imgUrl} size="small" floated="left" />
-            )}
-            <p>{section.title}</p>
-            <p>{section.time}</p>
-            {section.lecturer && <p>Lecturer: {section.lecturer}</p>}
-          </Segment>
-        </div>
+        <Segment
+          key={`section-${index}-${section.title}`}
+          style={{ overflow: "hidden" }}
+        >
+          {section.imgUrl && (
+            <Image src={section.imgUrl} size="small" floated="left" />
+          )}
+          <p>{section.title}</p>
+          <p>{section.time}</p>
+          {section.lecturer && <p>Lecturer: {section.lecturer}</p>}
+        </Segment>
       ))}
     </div>
   );

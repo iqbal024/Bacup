@@ -32,7 +32,11 @@ export default function DetailSympo() {
         }
       )
       .then((res) => {
-        setUser(res.data.data[0]);
+        if (res.data.data[0]) {
+          setUser(res.data.data[0]);
+        } else {
+          throw "User doesn't exist or token is expired";
+        }
       })
       .catch((err) => {
         console.log(err);
@@ -53,18 +57,19 @@ export default function DetailSympo() {
         )}
       </div>
       {symposium.sections.map((section, index) => (
-        <div key={`section-${index}-${section.title}`}>
-          <Segment>
-            {section.imgUrl && (
-              <Image src={section.imgUrl} size="tiny" floated="left" />
-            )}
-            <span>
-              <p>{section.title}</p>
-              <p>{section.time}</p>
-              {section.speaker && <p>Speaker: {section.speaker}</p>}
-            </span>
-          </Segment>
-        </div>
+        <Segment
+          key={`section-${index}-${section.title}`}
+          style={{ overflow: "hidden" }}
+        >
+          {section.imgUrl && (
+            <Image src={section.imgUrl} size="tiny" floated="left" />
+          )}
+          <span>
+            <p>{section.title}</p>
+            <p>{section.time}</p>
+            {section.speaker && <p>Speaker: {section.speaker}</p>}
+          </span>
+        </Segment>
       ))}
     </div>
   );

@@ -74,6 +74,7 @@
 }
 
 .footer {
+  padding: 16px;
   background-color: #000000;
   color: #fff;
   display: flex;
