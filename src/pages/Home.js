@@ -146,32 +146,35 @@ export default function Home() {
         <Grid container stackable verticalAlign="middle">
           <Grid.Row>
             <Grid.Column width={8}>
-              <div className="timer">
-                {Object.keys(timeLeft).map((unit) => (
-                  <div className="timer-unit">
-                    <div style={{ marginBottom: "16px" }}>{unit}</div>
-                    <div style={{ display: "flex" }}>
-                      <div className="timer-unit--tens">
-                        <AnimateOnChange
-                          animationIn="bounceIn"
-                          animationOut="bounceOut"
-                          durationOut={500}
-                        >
-                          {timeLeft[unit][0]}
-                        </AnimateOnChange>
-                      </div>
-                      <div className="timer-unit--ones">
-                        <AnimateOnChange
-                          animationIn="bounceIn"
-                          animationOut="bounceOut"
-                          durationOut={500}
-                        >
-                          {timeLeft[unit][1]}
-                        </AnimateOnChange>
+              <div className="countdown">
+                <h1 style={{ textAlign: "center", color: "#fff" }}>LIVE COUNTDOWN</h1>
+                <div className="timer">
+                  {Object.keys(timeLeft).map((unit) => (
+                    <div className="timer-unit">
+                      <div style={{ marginBottom: "16px" }}>{unit}</div>
+                      <div style={{ display: "flex" }}>
+                        <div className="timer-unit--tens">
+                          <AnimateOnChange
+                            animationIn="bounceIn"
+                            animationOut="bounceOut"
+                            durationOut={500}
+                          >
+                            {timeLeft[unit][0]}
+                          </AnimateOnChange>
+                        </div>
+                        <div className="timer-unit--ones">
+                          <AnimateOnChange
+                            animationIn="bounceIn"
+                            animationOut="bounceOut"
+                            durationOut={500}
+                          >
+                            {timeLeft[unit][1]}
+                          </AnimateOnChange>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </Grid.Column>
             <Grid.Column floated="right" width={6}>
