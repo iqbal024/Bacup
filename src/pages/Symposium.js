@@ -1,5 +1,5 @@
 import React from "react";
-import { Tab, Table, Header } from "semantic-ui-react";
+import { Tab, Table, Header, Icon } from "semantic-ui-react";
 
 const schedules = [
   {
@@ -294,8 +294,20 @@ export default function Symposium() {
   }));
 
   return (
-    <div className="page">
-      <Tab panes={panes} />
-    </div>
+    <>
+      <div class="header-logo container">
+        <nav aria-label="breadcrumb">
+          <h2 class="title-logo">Symposium</h2>
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="/" style={{ color: "#fff" }}>Home</a></li>
+            <Icon name="arrow right" style={{ color: "#fff", margin: "0px 5px" }} />
+            <li class="breadcrumb-item active" aria-current="page">Symposium</li>
+          </ol>
+        </nav>
+      </div>
+      <div className="page">
+        <Tab panes={panes} />
+      </div>
+    </>
   );
 }

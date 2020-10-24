@@ -23,10 +23,10 @@ export default function Footer() {
           <Icon name="youtube" size="big" />
         </a>
       </div>
-      <p>The 9th BALI Cardiology Update (BAC-UP) 2020</p>
-      <p>Sekretariat PERKI BALI</p>
-      <p>Lantai 4, Gedung Pelayanan Jantung Terpadu RSUP Sanglah</p>
-      <p>Telp. Fax: +62361 257518 / +62361 223190 ext 400</p>
+      <p style={{ margin: "0 0 0em" }}>The 9th BALI Cardiology Update (BAC-UP) 2020</p>
+      <p style={{ margin: "0 0 0em" }}>Sekretariat PERKI BALI</p>
+      <p style={{ margin: "0 0 0em" }}>Lantai 4, Gedung Pelayanan Jantung Terpadu RSUP Sanglah</p>
+      <p style={{ margin: "0 0 0em" }}>Telp. Fax: +62361 257518 / +62361 223190 ext 400</p>
     </div>
   );
 }

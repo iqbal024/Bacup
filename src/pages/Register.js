@@ -1,11 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Table, Button } from "semantic-ui-react";
+import { Table, Button, Icon } from "semantic-ui-react";
 
 const TableCategoryRegister = () => (
   <>
+    <div class="header-logo container">
+      <nav aria-label="breadcrumb">
+        <h2 class="title-logo">Package</h2>
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="/" style={{ color: "#fff" }}>Home</a></li>
+          <Icon name="arrow right" style={{ color: "#fff", margin: "0px 5px" }} />
+          <li class="breadcrumb-item active" aria-current="page">Package</li>
+        </ol>
+      </nav>
+    </div>
     <div className="Register page">
-      <h1 className="Register-title">Package</h1>
+      {/* <h1 className="Register-title">Package</h1> */}
       <Table celled>
         <Table.Header>
           <Table.Row>

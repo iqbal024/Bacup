@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Segment } from "semantic-ui-react";
+import { Segment, Icon } from "semantic-ui-react";
 
 const posters = [
   {
@@ -37,20 +37,31 @@ const posters = [
 
 export default function Posters() {
   return (
-    <div className="posters">
-      <h1 style={{ textAlign: 'center' }} >Poster</h1>
-      {posters.map((poster, index) => (
-        <div key={`poster-${index}`}>
-          <Link to={`/posters/${poster.id}`}>
-            <Segment>
-              <p>{poster.title}</p>
-              <p>
-                {poster.dateSubmitted} | {poster.author}
-              </p>
-            </Segment>
-          </Link>
-        </div>
-      ))}
-    </div>
+    <>
+      <div class="header-logo container">
+        <nav aria-label="breadcrumb">
+          <h2 class="title-logo">Poster</h2>
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="/" style={{ color: "#fff" }}>Home</a></li>
+            <Icon name="arrow right" style={{ color: "#fff", margin: "0px 5px" }} />
+            <li class="breadcrumb-item active" aria-current="page">Poster</li>
+          </ol>
+        </nav>
+      </div>
+      <div className="posters">
+        {posters.map((poster, index) => (
+          <div key={`poster-${index}`}>
+            <Link to={`/posters/${poster.id}`}>
+              <Segment>
+                <p>{poster.title}</p>
+                <p>
+                  {poster.dateSubmitted} | {poster.author}
+                </p>
+              </Segment>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }

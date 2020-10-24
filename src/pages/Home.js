@@ -49,7 +49,7 @@ export default function Home() {
       <div className="hero">
         <img src="header.jpg" alt="bacup header" className="hero__image" />
       </div>
-      <Segment style={{ padding: "8em 0em" }} vertical>
+      <Segment style={{ padding: "8em 0em" }} vertical className="text-information">
         <Grid container stackable verticalAlign="middle">
           <Grid.Row>
             <Grid.Column width={8}>
