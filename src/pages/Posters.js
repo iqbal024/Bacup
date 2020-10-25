@@ -48,20 +48,6 @@ export default function Posters() {
           </ol>
         </nav>
       </div>
-      <div className="posters">
-        {posters.map((poster, index) => (
-          <div key={`poster-${index}`}>
-            <Link to={`/posters/${poster.id}`}>
-              <Segment>
-                <p>{poster.title}</p>
-                <p>
-                  {poster.dateSubmitted} | {poster.author}
-                </p>
-              </Segment>
-            </Link>
-          </div>
-        ))}
-      </div>
     </>
   );
 }

@@ -267,3 +267,8 @@
   background-image: url("../src/assets/images/Background 2.jpg") !important;
   background-position: center !important;
 } */
+
+.registration-here {
+  text-align: center;
+  margin: 50px;
+}

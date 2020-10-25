@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Grid, Image, Segment, Container } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { Grid, Image, Segment, Container, Button } from "semantic-ui-react";
 import YouTube from "react-youtube";
 import { AnimateOnChange, animations } from "react-animation";
 import institution1 from "../assets/images/insitusi.png";
@@ -142,6 +143,11 @@ export default function Home() {
           </Grid.Row>
         </Grid>
       </Segment>
+      <div className="registration-here">
+        <Link to="/registration">
+          <Button primary style={{ width: "200px", height: "55px" }}>REGISTER HERE</Button>
+        </Link>
+      </div>
       <Segment style={{ padding: "8em 0em" }} vertical className="times">
         <Grid container stackable verticalAlign="middle">
           <Grid.Row>

@@ -5,7 +5,7 @@ import logo from "../assets/images/LOGO.png";
 
 export default function Footer() {
   return (
-    <div className="footer App__footer">
+    <div className="footer">
       <Image src={logo} size="small" />
       <div className="icon-sosmed">
         <a
