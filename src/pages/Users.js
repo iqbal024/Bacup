@@ -14,7 +14,7 @@ export default function Users() {
     setLoading(true);
 
     axios
-      .get("http://backend.bacup.co/v/1/user", {
+      .get("https://backend.bacup.co/v/1/user", {
         headers: { Authorization: localStorage.getItem("TOKEN") },
       })
       .then((res) => {
@@ -131,7 +131,7 @@ export default function Users() {
                         setUpdating(true);
                         axios
                           .patch(
-                            `http://backend.bacup.co/v/1/user?UserId=${user.UserID}`,
+                            `https://backend.bacup.co/v/1/user?UserId=${user.UserID}`,
                             { Status: 2 },
                             {
                               headers: {

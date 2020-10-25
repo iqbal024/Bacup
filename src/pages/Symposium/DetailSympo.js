@@ -24,7 +24,7 @@ export default function DetailSympo() {
   useEffect(() => {
     axios
       .get(
-        `http://backend.bacup.co/v/1/user/id?UserId=${userLoginData.UserID}`,
+        `https://backend.bacup.co/v/1/user/id?UserId=${userLoginData.UserID}`,
         {
           headers: {
             Authorization: localStorage.getItem("TOKEN"),

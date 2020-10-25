@@ -179,7 +179,7 @@ export default function RegistrationForm() {
       setPosting(true);
 
       axios
-        .post("http://backend.bacup.co/register", fixedPayload)
+        .post("https://backend.bacup.co/register", fixedPayload)
         .then(() => {
           localStorage.setItem("registration", JSON.stringify(fixedPayload));
           localStorage.removeItem("personal");

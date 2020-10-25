@@ -40,7 +40,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     axios
-      .post("http://backend.bacup.co/login", formValues)
+      .post("https://backend.bacup.co/login", formValues)
       .then((res) => {
         const token = res.data.data[0];
         const user = jwt_decode(token);
