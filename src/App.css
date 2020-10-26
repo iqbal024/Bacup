@@ -272,3 +272,35 @@
   text-align: center;
   margin: 50px;
 }
+
+.wdt{
+  width: 100% !important;
+}    
+.img {
+  height: 350px !important;
+  width: 100%;
+}    
+  
+.imgdetails {
+  height: 280px !important;
+  width: 600px !important;
+}
+  
+.imgpad {    
+  padding-bottom: 0px !important;    
+  padding-top: 0px !important;    
+  padding-left: 50px !important;    
+  padding-right: 50px !important;
+}    
+.cls {    
+  padding-right: 300px !important;    
+  background-color: blue    
+}
+
+.header-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 22px;
+  min-height: 0px !important;
+}

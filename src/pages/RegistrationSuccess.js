@@ -72,8 +72,8 @@ export default function RegistrationSuccess() {
           </p>
           <ul>
             <li>dr. Melissa Dharmawan 081299001720</li>
+            <li>dr. Vien Stefani 08112010238</li>
             <li>dr. Gede Wikananda 081237941622</li>
-            <li>dr. Made Ade Satria Darma 082340339699</li>
           </ul>
           <p>
             After the confirmation, we will email the password for the login to view the dashboard of your schedule and Zoom meeting links.

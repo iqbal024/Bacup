@@ -6,7 +6,7 @@ export default function AbstactSubmission() {
     <div>
       <div class="header-logo container">
         <nav aria-label="breadcrumb">
-          <h2 class="title-logo">ABSTRACT SUBMISSION</h2>
+          <h2 class="title-logo">Abstract Submission</h2>
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/" style={{ color: "#fff" }}>Home</a></li>
             <Icon name="arrow right" style={{ color: "#fff", margin: "0px 5px" }} />

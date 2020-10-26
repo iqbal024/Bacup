@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Grid, Image, Segment, Container, Button } from "semantic-ui-react";
+import { Grid, Image, Segment, Container, Button, GridColumn } from "semantic-ui-react";
 import YouTube from "react-youtube";
 import { AnimateOnChange, animations } from "react-animation";
+import SlickDemo1 from '../components/Slider';
 import institution1 from "../assets/images/insitusi.png";
 import institution2 from "../assets/images/institusi1.png";
 import institution3 from "../assets/images/institusi2.png";
 import institution4 from "../assets/images/institusi3.png";
+import sponsor1 from "../assets/images/pfizer.png";
+import sponsor2 from "../assets/images/Novartis.png";
+import sponsor3 from "../assets/images/Sanofi.png";
+import sponsor4 from "../assets/images/MSD.png";
+import sponsor5 from "../assets/images/Abbott_Laboratori.png";
 
 export default function Home() {
   const calculateTimeLeft = () => {
@@ -60,9 +66,12 @@ export default function Home() {
 
   return (
     <div>
-      <div className="hero">
-        <img src="header.jpg" alt="bacup header" className="hero__image" />
+      <div className="header-slider">
+        <SlickDemo1/> 
       </div>
+      {/* <div className="hero">
+        <img src="header.jpg" alt="bacup header" className="hero__image" />
+      </div> */}
       <Segment
         style={{ padding: "8em 0em" }}
         vertical
@@ -141,13 +150,15 @@ export default function Home() {
               <h3>Chairwoman of the 9th Bali Cardiology Update 2020</h3>
             </Grid.Column>
           </Grid.Row>
+          <Grid.Row>
+            <Grid.Column textAlign='center'>
+              <Link to="/registration">
+                <Button primary style={{ width: "200px", height: "55px", marginTop: "20px" }}>REGISTER HERE</Button>
+              </Link>
+            </Grid.Column>
+          </Grid.Row>
         </Grid>
       </Segment>
-      <div className="registration-here">
-        <Link to="/registration">
-          <Button primary style={{ width: "200px", height: "55px" }}>REGISTER HERE</Button>
-        </Link>
-      </div>
       <Segment style={{ padding: "8em 0em" }} vertical className="times">
         <Grid container stackable verticalAlign="middle">
           <Grid.Row>
@@ -212,6 +223,24 @@ export default function Home() {
           </Grid>
         </Container>
       </Segment>
+      <Grid verticalAlign='middle' columns={5} centered style={{ margin: "25px" }} >
+        <h1>Sponsor By :</h1>
+        <Grid.Row>
+          <Grid.Column>
+            <Image src={sponsor2} />
+          </Grid.Column>
+          <Grid.Column>
+            <Image src={sponsor3} />
+            <br />
+            <Image src={sponsor4} />
+            <br />
+            <Image src={sponsor5} />
+          </Grid.Column>
+          <Grid.Column>
+            <Image src={sponsor1} />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     </div>
   );
 }
