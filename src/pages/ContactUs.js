@@ -19,9 +19,9 @@ export default function ContactUs() {
         <div className="contact-us">
           <div>
             <Header as="h2">Address</Header>
-            <p>Sekretariat PERKI BALI</p>
-            <p>Lantai 4, Gedung Pelayanan Jantung Terpadu RSUP Sanglah</p>
-            <p>Telp. Fax: +62361 257518 / +62361 223190 ext 400</p>
+            <p style={{ margin: "0 0 0em" }} >Sekretariat PERKI BALI</p>
+            <p style={{ margin: "0 0 0em" }} >Lantai 4, Gedung Pelayanan Jantung Terpadu RSUP Sanglah</p>
+            <p style={{ margin: "0 0 0em" }} >Telp. Fax: +62361 257518 / +62361 223190 ext 400</p>
             <a
               href="https://www.instagram.com/perkibali"
               target="_blank"
@@ -32,11 +32,11 @@ export default function ContactUs() {
               perkibali
             </a>
           </div>
-          <div>
+          <div style={{ marginBottom: "28px" }}>
             <Header as="h2">Mobile Phones</Header>
-            <p>dr. Melissa Dharmawan 081299001720</p>
-            <p>dr. Vien Stefani 08112010238</p>
-            <p>dr. Gede Wikananda 081237941622</p>
+            <p style={{ margin: "0 0 0em" }}>dr. Melissa Dharmawan 081299001720</p>
+            <p style={{ margin: "0 0 0em" }}>dr. Vien Stefani 08112010238</p>
+            <p style={{ margin: "0 0 0em" }}>dr. Gede Wikananda 081237941622</p>
           </div>
         </div>
       </div>
