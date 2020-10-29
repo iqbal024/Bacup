@@ -29,7 +29,7 @@ export default function JoinSymposium() {
         <Segment secondary>
           <Link to="/joinSymposium/symposium-2">
             <div>
-              <span>Symposium II - Acute Coronary Syndrome</span>
+              <span>Symposium II - Clinical Update on Antithrombotic Role in CV Disease</span>
               <br />
               <span>10.20 - 11.35</span>
             </div>
@@ -51,7 +51,7 @@ export default function JoinSymposium() {
         <Segment secondary>
           <Link to="/joinSymposium/symposium-4">
             <div>
-              <span>Symposium IV - Coronary Artery Disease</span>
+              <span>Symposium IV - Advances in Management of Coronary Artery Disease</span>
               <br />
               <span>10.20 - 11.35</span>
             </div>
@@ -70,7 +70,7 @@ export default function JoinSymposium() {
         <Segment secondary>
           <Link to="/joinSymposium/symposium-6">
             <div>
-              <span>Symposium VI - Metabolic Disease (Dyslipidemia)</span>
+              <span>Symposium VI - Managing Dyslipidemia Patient: What Can We Do Better</span>
               <br />
               <span>10.20 - 11.35</span>
             </div>

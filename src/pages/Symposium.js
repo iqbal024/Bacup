@@ -35,20 +35,20 @@ const schedules = [
         ],
       },
       {
-        title: "Symposium II : Acute Coronary Syndrome",
+        title: "Symposium II : Clinical Update on Antithrombotic Role in CV Disease",
         moderator: "dr. I Wayan Sutarmawan, Sp.JP, FIHA",
         time: "10.20-11.35",
         topics: [
           {
             title:
-              "Diagnosis and Initial Management of ACS in Limited Resources Hospital",
-            speaker: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
+              "Case Management of ACS Associated COVID-19 : Role of Antithrombotic Use (Focus on Fibrinolitic)",
+            speaker: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
             time: "10.20-10.40",
           },
           {
             title:
-              "Antiplatelet and Anticoagualtion in ACS: Which is the best approach?",
-            speaker: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
+              "Optimal DAPT For Asian Patients : Measuring Bleeding vs Thrombosis Risk",
+            speaker: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
             time: "10.40-11.00",
           },
           {
@@ -70,8 +70,8 @@ const schedules = [
     symposiums: [
       {
         title:
-          "Symposium III : Congenital Heart Disease and Pulmonary Hypertension",
-        moderator: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
+          "Symposium III :  Advances in Management of Congenital Heart Disease and Pulmonary Hypertension",
+        moderator: "dr. I.B Rangga Wibhuti, M.Biomed, Sp.JP(K), FIHA, FASE",
         time: "09.00-10.15",
         topics: [
           {
@@ -82,8 +82,8 @@ const schedules = [
           },
           {
             title:
-              "Pharmacological Management of Pulmonary Arterial Hypertension : What’s the update ?",
-            speaker: "dr. I.B Rangga Wibhuti, M.Biomed, Sp.JP(K), FIHA, FASE",
+              "Updates on Pulmonary Hypertension Management: What Current Evidence Recommend",
+            speaker: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
             time: "09.20 – 09.40",
           },
           {
@@ -99,7 +99,7 @@ const schedules = [
         ],
       },
       {
-        title: "Symposium IV : Coronary Artery Disease",
+        title: "Symposium IV : Advances in Management of Coronary Artery Disease",
         moderator: "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
         time: "10.20-11.35",
         topics: [
@@ -110,7 +110,7 @@ const schedules = [
           },
           {
             title:
-              "Current Management in Coronary Artery Disease; Controlling The Risk Factors",
+              "Targeting Plaque Regression in Dyslipidemia Management",
             speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
             time: "10.40-11.00",
           },
@@ -161,18 +161,18 @@ const schedules = [
         ],
       },
       {
-        title: "Symposium VI : Metabolic Disease (Dyslipidemia)",
+        title: "Symposium VI : Managing Dyslipidemia Patient: What Can We Do Better",
         moderator: "dr. I Kadek Susila Surya Darma, M.Biomed, Sp.JP, FIHA",
         time: "10.20-11.35",
         topics: [
           {
-            title: "Management of dyslipidemia in very high risk patients",
-            speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
+            title: "Pharmacological Strategy in Maintaining The Daily Productivity of Dyslipidemia Patients",
+            speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
             time: "10.20-10.40",
           },
           {
-            title: "When and how to treat hypertriglyceridemia?",
-            speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
+            title: "Targeting Plaque Stabilization and Regression: The Role of Dual Inhibition",
+            speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
             time: "10.40-11.00",
           },
           {
@@ -223,7 +223,7 @@ const schedules = [
       },
       {
         title:
-          "Symposium VIII : Thromboembolic Complications in COVID-19 Infection",
+          "Symposium VIII : Prevention and Long-term Management of Venous Thromboembolism",
         moderator: "dr. Ni Wayan Lena Agustini, M.Biomed, Sp.JP, FIHA",
         time: "10.20-11.35",
         topics: [

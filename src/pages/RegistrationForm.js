@@ -557,15 +557,9 @@ export default function RegistrationForm() {
                     name="event2"
                     value={eventFormValues.event2}
                     onChange={handleDropdownChange}
-                    options={eventOptions.slice(0, 4).filter((el) => {
-                      if (eventFormValues.event3 === null) {
-                        return true
-                      } else if (["ws1", "ws2"].includes(eventFormValues.event3)) {
-                        return ["ws3", "ws4"].includes(el.key);
-                      } else {
-                        return ["ws1", "ws2"].includes(el.key);
-                      }
-                    })}
+                    options={eventOptions
+                      .slice(0, 4)
+                      .filter((el) => el.key !== eventFormValues.event3)}
                     style={{ marginTop: "8px" }}
                   />
                 </>
@@ -581,13 +575,9 @@ export default function RegistrationForm() {
                     name="event3"
                     value={eventFormValues.event3}
                     onChange={handleDropdownChange}
-                    options={eventOptions.slice(0, 4).filter((el) => {
-                      if (["ws1", "ws2"].includes(eventFormValues.event2)) {
-                        return ["ws3", "ws4"].includes(el.key);
-                      } else {
-                        return ["ws1", "ws2"].includes(el.key);
-                      }
-                    })}
+                    options={eventOptions
+                      .slice(0, 4)
+                      .filter((el) => el.key !== eventFormValues.event2)}
                     style={{ marginTop: "8px" }}
                   />
                 </>

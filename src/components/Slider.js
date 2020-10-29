@@ -9,7 +9,8 @@ import header3 from "../assets/images/Header3.jpg";
 export class SlickDemo extends Component {  
     render() {  
         var settings = {  
-          dots: true,  
+          dots: true,
+          autoplay: true,
           infinite: true,  
           speed: 500,  
           centerMode: true,  
@@ -19,15 +20,9 @@ export class SlickDemo extends Component {
           return (  
             <div>  
                 <Slider {...settings} >
-                    <div className="wdt">  
-                        <img  className="img" src= {header} className="img"/>  
-                    </div>  
-                    <div className="wdt">  
-                        <img  className="img" src= {header2} className="img"/>  
-                    </div >  
-                    <div className="wdt">  
-                        <img  className="img" src= {header3} className="img"/>  
-                    </div>
+                    <img src={header} width="100%" />
+                    <img src={header2} width="100%" />
+                    <img src={header3} width="100%" />
                 </Slider>  
             </div>  
           );  

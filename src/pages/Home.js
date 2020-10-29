@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
 import { Grid, Image, Segment, Container, Button, GridColumn } from "semantic-ui-react";
 import YouTube from "react-youtube";
 import { AnimateOnChange, animations } from "react-animation";
@@ -13,6 +14,9 @@ import sponsor2 from "../assets/images/Novartis.png";
 import sponsor3 from "../assets/images/Sanofi.png";
 import sponsor4 from "../assets/images/MSD.png";
 import sponsor5 from "../assets/images/Abbott_Laboratori.png";
+import slider1 from "../assets/images/Header1.jpg";
+import slider2 from "../assets/images/Header2.jpg";
+import slider3 from "../assets/images/Header3.jpg";
 
 export default function Home() {
   const calculateTimeLeft = () => {
@@ -64,13 +68,32 @@ export default function Home() {
     event.target.pauseVideo();
   }
 
+  const settings = {
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
     <div>
-      <div className="header-slider">
-        <SlickDemo1/> 
+      <div class="slider-header">
+        <Slider {...settings}>
+          <div>
+            <Image src={slider1} width="100%" height="435px"/>
+          </div>
+          <div>
+            <Image src={slider2} width="100%" height="435px"/>
+          </div>
+          <div>
+            <Image src={slider3} width="100%" height="435px"/>
+          </div>
+        </Slider>
       </div>
-      {/* <div className="hero">
-        <img src="header.jpg" alt="bacup header" className="hero__image" />
+      {/* <div>
+        <SlickDemo1/> 
       </div> */}
       <Segment
         style={{ padding: "8em 0em" }}

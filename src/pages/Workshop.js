@@ -29,7 +29,7 @@ const schedules = [
           },
           {
             title: "Role of fibrinolytics in STEMI: How to do?",
-            lecturer: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC ",
+            lecturer: "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
             time: "14.50-15.20",
           },
           {
@@ -39,7 +39,7 @@ const schedules = [
           },
           {
             title: "Risk stratifications and invasive management of NSTE-ACS",
-            lecturer: "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
+            lecturer: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
             time: "15.25-15.55",
           },
           {
@@ -129,7 +129,7 @@ const schedules = [
           },
           {
             title: "Symptomatology of arrhythmia induced pre/syncope",
-            lecturer: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
+            lecturer: "dr. Putu Kiki Wulandari, M. Biomed, Sp.JP, FIHA",
             time: "14.15-14.45",
           },
           {
