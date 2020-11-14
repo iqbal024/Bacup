@@ -29,6 +29,8 @@ const eventSchema = {
   event1: null,
   event2: null,
   event3: null,
+  event4: null,
+  event5: null,
 };
 
 const categoryOptions = [
@@ -96,6 +98,7 @@ export default function RegistrationForm() {
   const [eventFormValues, setEventFormValues] = useState(eventSchema);
   const [eventErrors, setEventErrors] = useState(eventSchema);
   const [posting, setPosting] = useState(false);
+  const [additionalWworkshop, setAdditionalWorkshop] = useState(0);
 
   function handleChange(e) {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
@@ -126,6 +129,8 @@ export default function RegistrationForm() {
   function handleSubmit() {
     const err = validatePersonal(formValues);
 
+    console.log(err)
+
     if (!err) {
       localStorage.setItem("personal", JSON.stringify(formValues));
       setStep("event");
@@ -144,6 +149,8 @@ export default function RegistrationForm() {
         event1,
         event2,
         event3,
+        event4,
+        event5,
         Package,
         Category,
         ...rawPayload
@@ -172,6 +179,22 @@ export default function RegistrationForm() {
               : null
             : eventOptions.find((event) => event.key === event2)
             ? eventOptions.find((event) => event.key === event2).value
+            : null,
+        Workshop3:
+          event1 === "sy"
+            ? eventOptions.find((event) => event.key === event4)
+              ? eventOptions.find((event) => event.key === event4).value
+              : null
+            : eventOptions.find((event) => event.key === event3)
+            ? eventOptions.find((event) => event.key === event3).value
+            : null,
+        Workshop4:
+          event1 === "sy"
+            ? eventOptions.find((event) => event.key === event5)
+              ? eventOptions.find((event) => event.key === event5).value
+              : null
+            : eventOptions.find((event) => event.key === event4)
+            ? eventOptions.find((event) => event.key === event4).value
             : null,
         Status: 1,
       };
@@ -216,21 +239,28 @@ export default function RegistrationForm() {
         },
       };
 
-      return categoryPackagePriceMapping[eventFormValues.Category] &&
+      const standardPrice =
+        categoryPackagePriceMapping[eventFormValues.Category] &&
         categoryPackagePriceMapping[eventFormValues.Category][
           eventFormValues.Package
         ]
-        ? categoryPackagePriceMapping[eventFormValues.Category][
-            eventFormValues.Package
-          ]
-        : 0;
+          ? categoryPackagePriceMapping[eventFormValues.Category][
+              eventFormValues.Package
+            ]
+          : 0;
+
+      const additionalPriceMultiplier =
+        eventFormValues.Category === "sp" ? 100_000 : 50_000;
+      const additionalPrice = additionalPriceMultiplier * additionalWworkshop;
+
+      return standardPrice + additionalPrice;
     }
 
     setEventFormValues((latestState) => ({
       ...latestState,
       Price: getPrice(),
     }));
-  }, [eventFormValues.Category, eventFormValues.Package]);
+  }, [eventFormValues.Category, eventFormValues.Package, additionalWworkshop]);
 
   useEffect(() => {
     if (eventFormValues.Package === "silver") {
@@ -559,7 +589,12 @@ export default function RegistrationForm() {
                     onChange={handleDropdownChange}
                     options={eventOptions
                       .slice(0, 4)
-                      .filter((el) => el.key !== eventFormValues.event3)}
+                      .filter(
+                        (el) =>
+                          el.key !== eventFormValues.event3 &&
+                          el.key !== eventFormValues.event4 &&
+                          el.key !== eventFormValues.event5
+                      )}
                     style={{ marginTop: "8px" }}
                   />
                 </>
@@ -577,13 +612,97 @@ export default function RegistrationForm() {
                     onChange={handleDropdownChange}
                     options={eventOptions
                       .slice(0, 4)
-                      .filter((el) => el.key !== eventFormValues.event2)}
+                      .filter(
+                        (el) =>
+                          el.key !== eventFormValues.event2 &&
+                          el.key !== eventFormValues.event4 &&
+                          el.key !== eventFormValues.event5
+                      )}
                     style={{ marginTop: "8px" }}
                   />
                 </>
               )}
+              {eventFormValues.Package === "platinum" &&
+                additionalWworkshop > 0 && (
+                  <>
+                    {eventErrors.event4 && (
+                      <p className="error">{eventErrors.event4}</p>
+                    )}
+                    <Dropdown
+                      placeholder="Select Another Workshop"
+                      selection
+                      name="event4"
+                      value={eventFormValues.event4}
+                      onChange={handleDropdownChange}
+                      options={eventOptions
+                        .slice(0, 4)
+                        .filter(
+                          (el) =>
+                            el.key !== eventFormValues.event2 &&
+                            el.key !== eventFormValues.event3 &&
+                            el.key !== eventFormValues.event5
+                        )}
+                      style={{ marginTop: "8px" }}
+                    />
+                  </>
+                )}
+              {eventFormValues.Package === "platinum" &&
+                additionalWworkshop > 1 && (
+                  <>
+                    {eventErrors.event5 && (
+                      <p className="error">{eventErrors.event5}</p>
+                    )}
+                    <Dropdown
+                      placeholder="Select Another Workshop"
+                      selection
+                      name="event5"
+                      value={eventFormValues.event5}
+                      onChange={handleDropdownChange}
+                      options={eventOptions
+                        .slice(0, 4)
+                        .filter(
+                          (el) =>
+                            el.key !== eventFormValues.event2 &&
+                            el.key !== eventFormValues.event3 &&
+                            el.key !== eventFormValues.event4
+                        )}
+                      style={{ marginTop: "8px" }}
+                    />
+                  </>
+                )}
             </Form.Field>
           ) : null}
+          {eventFormValues.Package === "platinum" && (
+            <>
+              {additionalWworkshop > 0 && (
+                <Button
+                  type="button"
+                  color="red"
+                  onClick={() => {
+                    setAdditionalWorkshop(0);
+                    setEventFormValues({
+                      ...eventFormValues,
+                      event4: null,
+                      event5: null,
+                    });
+                  }}
+                >
+                  Remove additional workshops
+                </Button>
+              )}
+              {additionalWworkshop < 2 && (
+                <Button
+                  type="button"
+                  color="yellow"
+                  onClick={() => setAdditionalWorkshop(additionalWworkshop + 1)}
+                >
+                  Add another workshop for{" "}
+                  {eventFormValues.Category === "sp" ? "100.000" : "50.000"}
+                </Button>
+              )}
+            </>
+          )}
+
           <Form.Field>
             <label>Package Price</label>
             <input

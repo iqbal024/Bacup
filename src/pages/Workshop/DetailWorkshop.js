@@ -51,7 +51,9 @@ export default function DetailWorkshop() {
       <div className="btn-join">
         <h4>{workshop.date}</h4>
         {(workshop.code === user.Workshop1 ||
-          workshop.code === user.Workshop2) &&
+          workshop.code === user.Workshop2 ||
+          workshop.code === user.Workshop3 ||
+          workshop.code === user.Workshop4) &&
           isInTime && (
             <a href={workshop.zoom} target="_blank" rel="noopener noreferrer">
               <Button primary>Join Now</Button>
