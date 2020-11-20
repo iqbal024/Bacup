@@ -61,6 +61,24 @@ export default function RegistrationSuccess() {
                 }
               </li>
             )}
+            {registrationDetails.Workshop3 && (
+              <li>
+                {
+                  eventOptions.find(
+                    (event) => event.key === registrationDetails.Workshop3
+                  ).text
+                }
+              </li>
+            )}
+            {registrationDetails.Workshop4 && (
+              <li>
+                {
+                  eventOptions.find(
+                    (event) => event.key === registrationDetails.Workshop4
+                  ).text
+                }
+              </li>
+            )}
           </ul>
           <p>
             Please transfer the exact amount of IDR{" "}
@@ -68,13 +86,15 @@ export default function RegistrationSuccess() {
           </p>
           <p>BNI 0430601922 (Perki cabang Bali)</p>
           <p>
-            After you have transfered, please confirm to one of these numbers via WhatsApp
+            After you have transfered, please confirm to one of these numbers
+            via WhatsApp
           </p>
           <ul>
             <li>dr. Melissa Dharmawan 081299001720</li>
           </ul>
           <p>
-            After the confirmation, we will email the password for the login to view the dashboard of your schedule and Zoom meeting links.
+            After the confirmation, we will email the password for the login to
+            view the dashboard of your schedule and Zoom meeting links.
           </p>
         </div>
       </div>
