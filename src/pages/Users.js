@@ -108,10 +108,10 @@ export default function Users() {
           {users
             .filter(
               (user) =>
-                (user.Email.includes(filter) ||
-                  user.FirstName.includes(filter) ||
-                  user.LastName.includes(filter) ||
-                  user.PhoneNumber.includes(filter)) &&
+                (user?.Email?.toLowerCase().includes(filter) ||
+                  user?.FirstName?.toLowerCase().includes(filter) ||
+                  user?.LastName?.toLowerCase().includes(filter) ||
+                  user?.PhoneNumber?.toLowerCase().includes(filter)) &&
                 user.Email !== "bacuponline2020@gmail.com"
             )
             .map((user) => (
