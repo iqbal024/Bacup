@@ -1,9 +1,13 @@
 export const symposiums = [
   {
     title: "Symposium I - Arrhythmia",
-    date: "Saturday, 5 December 2020",
-    startTime: "20.15",
-    endTime: "22.00",
+    // date: "Saturday, 12 December 2020",
+    // dateISO: "2020-12-12",
+    // startTime: "09:00",
+    // endTime: "10:15",
+    dateISO: "2020-12-06",
+    startTime: "16:00",
+    endTime: "16:15",
     zoom: "https://meet.google.com/mst-bpaq-yfm",
     sections: [
       {
@@ -32,8 +36,10 @@ export const symposiums = [
     ],
   },
   {
-    title: "Symposium II : Clinical Update on Antithrombotic Role in CV Disease",
+    title:
+      "Symposium II : Clinical Update on Antithrombotic Role in CV Disease",
     date: "Saturday, 12 December 2020",
+    dateISO: "2020-12-12",
     startTime: "10:20",
     endTime: "11:35",
     zoom: "https://meet.google.com/mst-bpaq-yfm",
@@ -68,6 +74,7 @@ export const symposiums = [
     title:
       "Symposium III : Advances in Management of Congenital Heart Disease and Pulmonary Hypertension",
     date: "Sunday, 13 December 2020",
+    dateISO: "2020-12-13",
     startTime: "09:00",
     endTime: "10:15",
     zoom: "https://meet.google.com/phu-gsia-pnk",
@@ -101,6 +108,7 @@ export const symposiums = [
   {
     title: "Symposium IV : Advances in Management of Coronary Artery Disease",
     date: "Sunday, 13 December 2020",
+    dateISO: "2020-12-13",
     startTime: "10:20",
     endTime: "11:35",
     zoom: "https://meet.google.com/phu-gsia-pnk",
@@ -113,8 +121,7 @@ export const symposiums = [
       },
       {
         imgUrl: null,
-        title:
-          "Targeting Plaque Regression in Dyslipidemia Management",
+        title: "Targeting Plaque Regression in Dyslipidemia Management",
         time: "10.40 - 11.00",
         speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
       },
@@ -133,6 +140,7 @@ export const symposiums = [
   {
     title: "Symposium V : Hypertension",
     date: "Saturday, 19 December 2020",
+    dateISO: "2020-12-19",
     startTime: "09:00",
     endTime: "10:15",
     zoom: "https://meet.google.com/ffi-mnzn-szx",
@@ -164,21 +172,25 @@ export const symposiums = [
     ],
   },
   {
-    title: "Symposium VI : Managing Dyslipidemia Patient: What Can We Do Better",
+    title:
+      "Symposium VI : Managing Dyslipidemia Patient: What Can We Do Better",
     date: "Saturday, 19 December 2020",
+    dateISO: "2020-12-19",
     startTime: "10:20",
     endTime: "11:35",
     zoom: "https://meet.google.com/ffi-mnzn-szx",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
-        title: "Pharmacological Strategy in Maintaining The Daily Productivity of Dyslipidemia Patients",
+        title:
+          "Pharmacological Strategy in Maintaining The Daily Productivity of Dyslipidemia Patients",
         time: "10.20 - 10.40",
         speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
       },
       {
         imgUrl: null,
-        title: "Targeting Plaque Stabilization and Regression: The Role of Dual Inhibition",
+        title:
+          "Targeting Plaque Stabilization and Regression: The Role of Dual Inhibition",
         time: "10.40 - 11.00",
         speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
       },
@@ -197,6 +209,7 @@ export const symposiums = [
   {
     title: "Symposium VII : Heart Failure",
     date: "Sunday, 20 December 2020",
+    dateISO: "2020-12-20",
     startTime: "09:00",
     endTime: "10:15",
     zoom: "https://meet.google.com/qux-gqwz-nma",
@@ -230,6 +243,7 @@ export const symposiums = [
     title:
       "Symposium VIII : Prevention and Long-term Management of Venous Thromboembolism",
     date: "Sunday, 20 December 2020",
+    dateISO: "2020-12-20",
     startTime: "10:20",
     endTime: "11:35",
     zoom: "https://meet.google.com/qux-gqwz-nma",
@@ -264,9 +278,13 @@ export const workshops = [
   {
     title: "Workshop I : Workshop of ACS",
     code: "ws1",
-    date: "Saturday, 5 December 2020",
-    startTime: "20.15",
-    endTime: "22.00",
+    date: "Friday, 11 December 2020",
+    // dateISO: "2020-12-11",
+    // startTime: "14:00",
+    // endTime: "16:30",
+    dateISO: "2020-12-06",
+    startTime: "16:00",
+    endTime: "16:15",
     zoom: "https://meet.google.com/uit-kmhf-bzh",
     sections: [
       {
@@ -319,6 +337,7 @@ export const workshops = [
       "Workshop II : Workshop of Echocardiography in congenital heart disease (Pokja Pediatric Cardiology PERKI)",
     code: "ws2",
     date: "Friday, 11 December 2020",
+    dateISO: "2020-12-11",
     startTime: "14:00",
     endTime: "16:30",
     zoom: "https://meet.google.com/uqw-qrpd-qii",
@@ -371,6 +390,7 @@ export const workshops = [
     title: "Workshop III : Workshop of Arrhythmia in Clinical Practice",
     code: "ws3",
     date: "Friday, 18 December 2020",
+    dateISO: "2020-12-18",
     startTime: "14:00",
     endTime: "16:30",
     zoom: "https://meet.google.com/vbo-rybb-ppk",
@@ -423,6 +443,7 @@ export const workshops = [
     title: "Workshop IV : Workshop of Acute Heart Failure",
     code: "ws4",
     date: "Friday, 18 December 2020",
+    dateISO: "2020-12-18",
     startTime: "14:00",
     endTime: "16:30",
     zoom: "https://meet.google.com/rch-pskz-nnq",
@@ -482,26 +503,25 @@ export const sympoSchedules = [
     day: "Saturday, 12 December 2020",
     symposiums: [
       {
-        title:
-          "Symposium I : Arrhythmia",
+        title: "Symposium I : Arrhythmia",
         moderator: "dr. I Kadek Susila Surya Darma, M.Biomed, Sp.JP, FIHA",
         time: "09.00-10.15",
         topics: [
           {
-            title: "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
-            speaker:
-              "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
+            title:
+              "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
+            speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
             time: "09.00-09.20",
           },
           {
-            title: "Tips and Trick of Management of Supraventricular Arrhythmia",
+            title:
+              "Tips and Trick of Management of Supraventricular Arrhythmia",
             speaker: "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA",
             time: "09.20 – 09.40",
           },
           {
             title: "Case Studies",
-            speaker:
-              "dr. I Putu Agus Wismantara, SpJP, FIHA",
+            speaker: "dr. I Putu Agus Wismantara, SpJP, FIHA",
             time: "09.40-10.00",
           },
           {
@@ -512,7 +532,8 @@ export const sympoSchedules = [
         ],
       },
       {
-        title: "Symposium II : Clinical Update on Antithrombotic Role in CV Disease",
+        title:
+          "Symposium II : Clinical Update on Antithrombotic Role in CV Disease",
         moderator: "dr. I Wayan Sutarmawan, Sp.JP, FIHA",
         time: "10.20-11.35",
         topics: [
@@ -552,13 +573,14 @@ export const sympoSchedules = [
         time: "09.00-10.15",
         topics: [
           {
-            title: "Diagnosis and Management of Acyanotic Congenital Heart Disease with Pulmonary Hypertension",
-            speaker:
-              "Dr. dr. Venny Kartika Yantie, Sp.A(K)",
+            title:
+              "Diagnosis and Management of Acyanotic Congenital Heart Disease with Pulmonary Hypertension",
+            speaker: "Dr. dr. Venny Kartika Yantie, Sp.A(K)",
             time: "09.00-09.20",
           },
           {
-            title: "Updates on Pulmonary Hypertension Management: What Current Evidence Recommend",
+            title:
+              "Updates on Pulmonary Hypertension Management: What Current Evidence Recommend",
             speaker: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
             time: "09.20 – 09.40",
           },
@@ -609,7 +631,8 @@ export const sympoSchedules = [
     day: "Saturday, 19 December 2020",
     symposiums: [
       {
-        title: "Symposium V : Advances in Management of Coronary Artery Disease",
+        title:
+          "Symposium V : Advances in Management of Coronary Artery Disease",
         moderator: "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
         time: "09.00-10.15",
         topics: [
@@ -619,8 +642,7 @@ export const sympoSchedules = [
             time: "09.00-09.20",
           },
           {
-            title:
-              "Targeting Plaque Regression in Dyslipidemia Management",
+            title: "Targeting Plaque Regression in Dyslipidemia Management",
             speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
             time: "09.20 – 09.40",
           },
@@ -638,17 +660,20 @@ export const sympoSchedules = [
         ],
       },
       {
-        title: "Symposium VI : Managing Dyslipidemia Patient: What Can We Do Better",
+        title:
+          "Symposium VI : Managing Dyslipidemia Patient: What Can We Do Better",
         moderator: "dr. I Kadek Susila Surya Darma, M.Biomed, Sp.JP, FIHA",
         time: "10.20-11.35",
         topics: [
           {
-            title: "Pharmacological Strategy in Maintaining The Daily Productivity of Dyslipidemia Patients",
+            title:
+              "Pharmacological Strategy in Maintaining The Daily Productivity of Dyslipidemia Patients",
             speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
             time: "10.20-10.40",
           },
           {
-            title: "Targeting Plaque Stabilization and Regression: The Role of Dual Inhibition",
+            title:
+              "Targeting Plaque Stabilization and Regression: The Role of Dual Inhibition",
             speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
             time: "10.40-11.00",
           },
@@ -699,25 +724,25 @@ export const sympoSchedules = [
         ],
       },
       {
-        title: "Symposium VIII : Prevention and Long-term Management of Venous Thromboembolism",
+        title:
+          "Symposium VIII : Prevention and Long-term Management of Venous Thromboembolism",
         moderator: "dr. Ni Wayan Lena Agustini, M.Biomed, Sp.JP, FIHA",
         time: "10.20-11.35",
         topics: [
           {
-            title:
-              "Venous Thromboembolism in Severe COVID-19",
+            title: "Venous Thromboembolism in Severe COVID-19",
             speaker: "dr. Ketut Susila, Sp.JP(K), FIHA",
             time: "10.20-10.40",
           },
           {
-            title:
-              "Role of DOAC in Vein Thrombosis",
+            title: "Role of DOAC in Vein Thrombosis",
             speaker: "dr. Agung Pradnyana Suwirya, M. Biomed, Sp.JP, FIHA",
             time: "10.40-11.00",
           },
           {
             title: "Case Studies",
-            speaker: "dr. Rani Paramitha Iswari Maliawan, M. Biomed, Sp.JP, FIHA",
+            speaker:
+              "dr. Rani Paramitha Iswari Maliawan, M. Biomed, Sp.JP, FIHA",
             time: "11.00-11.20",
           },
           {

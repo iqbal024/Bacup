@@ -16,9 +16,20 @@ export default function DetailSympo() {
 
   const userLoginData = useSelector((state) => state.authReducer).user;
 
+  console.log("starttimeee")
+  console.log(
+    moment(`${symposium.dateISO} ${symposium.startTime}`).subtract(
+      30,
+      "minutes"
+    )
+  );
+
   const isInTime = moment().isBetween(
-    moment(`${symposium.date} ${symposium.startTime}`).subtract(30, "minutes"),
-    moment(`${symposium.date} ${symposium.endTime}`)
+    moment(`${symposium.dateISO} ${symposium.startTime}`).subtract(
+      30,
+      "minutes"
+    ),
+    moment(`${symposium.dateISO} ${symposium.endTime}`)
   );
 
   useEffect(() => {

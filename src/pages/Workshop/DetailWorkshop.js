@@ -17,8 +17,8 @@ export default function DetailWorkshop() {
   const userLoginData = useSelector((state) => state.authReducer).user;
 
   const isInTime = moment().isBetween(
-    moment(`${workshop.date} ${workshop.startTime}`).subtract(30, "minutes"),
-    moment(`${workshop.date} ${workshop.endTime}`)
+    moment(`${workshop.dateISO} ${workshop.startTime}`).subtract(30, "minutes"),
+    moment(`${workshop.dateISO} ${workshop.endTime}`)
   );
 
   useEffect(() => {
