@@ -1,9 +1,9 @@
 export const symposiums = [
   {
     title: "Symposium I - Arrhythmia",
-    date: "Saturday, 12 December 2020",
-    startTime: "09:00",
-    endTime: "10:15",
+    date: "Saturday, 5 December 2020",
+    startTime: "20.15",
+    endTime: "20.20",
     zoom: "https://meet.google.com/mst-bpaq-yfm",
     sections: [
       {
@@ -264,9 +264,9 @@ export const workshops = [
   {
     title: "Workshop I : Workshop of ACS",
     code: "ws1",
-    date: "Friday, 11 December 2020",
-    startTime: "14:00",
-    endTime: "16:30",
+    date: "Saturday, 5 December 2020",
+    startTime: "20.15",
+    endTime: "20.20",
     zoom: "https://meet.google.com/uit-kmhf-bzh",
     sections: [
       {
