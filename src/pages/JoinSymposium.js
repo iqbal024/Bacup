@@ -29,7 +29,7 @@ export default function JoinSymposium() {
         <Segment secondary>
           <Link to="/joinSymposium/symposium-2">
             <div>
-              <span>Symposium II - Clinical Update on Antithrombotic Role in CV Disease</span>
+              <span>Symposium II -  Acute Coronary Syndrome</span>
               <br />
               <span>10.20 - 11.35</span>
             </div>

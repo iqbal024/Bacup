@@ -37,7 +37,7 @@ export const symposiums = [
   },
   {
     title:
-      "Symposium II : Clinical Update on Antithrombotic Role in CV Disease",
+      "Symposium II : Acute Coronary Syndrome",
     date: "Saturday, 12 December 2020",
     dateISO: "2020-12-12",
     startTime: "10:20",
@@ -45,11 +45,11 @@ export const symposiums = [
     zoom: "https://meet.google.com/mst-bpaq-yfm",
     sections: [
       {
-        imgUrl: "/assets/doctors/dr. Made Satria Yudha Dewangga, Sp.JP.jpg",
+        imgUrl: null,
         title:
-          "Case Management of ACS Associated COVID-19 : Role of Antithrombotic Use (Focus on Fibrinolitic)",
+          "Diagnosis and Initial Management of ACS in Limited Resources Hospital",
         time: "10.20 - 10.40",
-        speaker: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
+        speaker: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
       },
       {
         imgUrl: "/assets/doctors/dr. I G N Putra Gunadhi, Sp.JP(K).JPG",
@@ -121,7 +121,7 @@ export const symposiums = [
       },
       {
         imgUrl: null,
-        title: "Targeting Plaque Regression in Dyslipidemia Management",
+        title: "The Role of High Intensity Statin in CAD",
         time: "10.40 - 11.00",
         speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
       },
@@ -138,7 +138,7 @@ export const symposiums = [
     ],
   },
   {
-    title: "Symposium V : Hypertension",
+    title: "Symposium V : Cardiovascular Prevention in High Risk Patients",
     date: "Saturday, 19 December 2020",
     dateISO: "2020-12-19",
     startTime: "09:00",
@@ -154,14 +154,14 @@ export const symposiums = [
       },
       {
         imgUrl: null,
-        title: "Hypertensive Crisis and Cardiovascular prevention",
+        title: "Antihypertensive Efficacy and Tolerability of CCB in Clinical Practice",
         time: "09.20 - 09.40",
         speaker: "dr. A.A.A Dwi Adelia Yasmin, M.Biomed, Sp.JP, FIHA",
       },
       {
         imgUrl: "/assets/doctors/dr. I Putu Parwata Jaya, Sp.JP.jpg",
         title:
-          "Secondary Hypertension: Differential Diagnosis and Basic Principles of Treatment",
+          "Lowering non-HDL Cholesterol in High Risk ASCVD Patients : is There Any Benefit?",
         time: "09.40 - 10.00",
         speaker: "dr. I Putu Parwata Jaya, Sp.JP, FIHA",
       },
@@ -183,7 +183,7 @@ export const symposiums = [
       {
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
         title:
-          "Pharmacological Strategy in Maintaining The Daily Productivity of Dyslipidemia Patients",
+          "The Safety Statin Treatment: When it Gets Serious",
         time: "10.20 - 10.40",
         speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
       },
@@ -216,7 +216,7 @@ export const symposiums = [
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Nyoman Wiryawan, Sp.JP.JPG",
-        title: "Increasing Survival in Heart Failure Patients: Introducing ARN",
+        title: "Pioneering Medication in Acute Heart Failure Hospitalization",
         time: "09.00 - 09.20",
         speaker: "dr. I Nyoman Wiryawan, Sp.JP,FIHA",
       },
@@ -290,41 +290,41 @@ export const workshops = [
       {
         imgUrl: null,
         title: "Pre-test",
-        time: "14.00 - 14.15",
+        time: "09.10-09.25",
       },
       {
         imgUrl: null,
         title: "Diagnosis and initial management of ACS in Primary Health Care",
-        time: "14.15 - 14.45",
+        time: "09.25-09.55",
         lecturer:
           "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA, FICA, FasCC",
       },
       {
         imgUrl: null,
         title: "Discussion",
-        time: "14.45 - 14.50",
+        time: "09.55-10.05",
       },
       {
         title: "Role of fibrinolytics in STEMI: How to do?",
-        time: "14.50 - 15.20",
+        time: "10.05-10.35",
         lecturer: "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
       },
       {
         title: "Discussion",
-        time: "15.20 - 15.25",
+        time: "10.35–10.45",
       },
       {
         title: "Risk stratifications and invasive management of NSTE-ACS",
-        time: "15.25 - 15.55",
-        lecturer: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
+        time: "10.45–11.15",
+        lecturer: "dr. Dian Zamroni, Sp.JP(K), FIHA",
       },
       {
         title: "Discussion",
-        time: "15.55 - 16.00",
+        time: "11.15–11.25",
       },
       {
         title: "Case Discussion",
-        time: "16.00 - 16.15",
+        time: "11.25–11.50",
       },
       {
         title: "Post-test",
@@ -334,55 +334,67 @@ export const workshops = [
   },
   {
     title:
-      "Workshop II : Workshop of Echocardiography in congenital heart disease (Pokja Pediatric Cardiology PERKI)",
+      "Workshop II : Basic Echo course in CHD: The First Virtual Pediatric Cardiology Echocardiography Course",
     code: "ws2",
     date: "Friday, 11 December 2020",
     dateISO: "2020-12-11",
-    startTime: "14:00",
-    endTime: "16:30",
+    startTime: "13:00",
+    endTime: "17:30",
     zoom: "https://meet.google.com/uqw-qrpd-qii",
     sections: [
       {
         imgUrl: "/assets/images/placeholder.png",
         title: "Pre-test",
-        time: "14.00 - 14.15",
+        time: "13.10–13.25",
       },
       {
         imgUrl: "/assets/images/placeholder.png",
-        title: "Lecture 1",
-        time: "14.15 - 14.45",
-        lecturer: "Pokja Pediatric Cardiology PERKI",
+        title: "Lecture 1 : Role of Echo in Diagnosis of CHD",
+        time: "13.25–13.55",
+        lecturer: "Dr. dr. Indriwanto S. Atmosudigdo, SpJP(K), MARS",
+      },
+      {
+        imgUrl: "/assets/images/placeholder.png",
+        title: "Lecture 2 : Sequential segmental analysis (KULIAH + VIDEO)",
+        time: "13.55 – 14.25",
+        lecturer: "Prof. dr. Ganesja M. Harimurti, SpJP(K)",
       },
       {
         imgUrl: "/assets/images/placeholder.png",
         title: "Discussion",
-        time: "14.45 - 14.50",
+        time: "14.25 – 14.40",
       },
       {
-        title: "Lecture 2",
-        time: "14.50 - 15.20",
-        lecturer: "Pokja Pediatric Cardiology PERKI",
+        title: "Lecture 2 : Echocardiography assessment: ASD (KULIAH + VIDEO)",
+        time: "14.40 – 15.10",
+        lecturer: " dr. Poppy S. Roebiono, SpJP(K)",
       },
       {
-        title: "Discussion",
-        time: "15.20 - 15.25",
-      },
-      {
-        title: "Lecture 3",
-        time: "15.25 - 15.55",
-        lecturer: "Pokja Pediatric Cardiology PERKI",
+        title: "Lecture 3 : Echocardiography assessment: PDA (KULIAH + VIDEO)",
+        time: "15.10 – 15.40",
+        lecturer: "dr. Anna U. Rahajoe, SpJP(K)",
       },
       {
         title: "Discussion",
-        time: "15.55 - 16.00",
+        time: "15.40 – 15.55",
       },
       {
-        title: "Case Discussion",
-        time: "16.00 - 16.15",
+        title: "Lecture 4 : Echocardiography assessment: VSD (KULIAH + VIDEO)",
+        time: "15.55 – 16.25",
+        lecturer: "dr. Oktavia Lilyasari, M.Kes, SpJP(K)",
+      },
+      {
+        title: "Lecture 5 : Echocardiography assessment: TOF (KULIAH + VIDEO)",
+        time: "16.25 – 16.55",
+        lecturer: "dr. Radityo Prakoso, SpJP(K)",
+      },
+      {
+        title: "Discussion",
+        time: "16.55 – 17.10",
       },
       {
         title: "Post-test",
-        time: "16.15 - 16.30",
+        time: "17.10 – 17.25s",
       },
     ],
   },
@@ -391,51 +403,51 @@ export const workshops = [
     code: "ws3",
     date: "Friday, 18 December 2020",
     dateISO: "2020-12-18",
-    startTime: "14:00",
-    endTime: "16:30",
+    startTime: "09:00",
+    endTime: "12:10",
     zoom: "https://meet.google.com/vbo-rybb-ppk",
     sections: [
       {
         imgUrl: "/assets/images/placeholder.png",
         title: "Pre-test",
-        time: "14.00 - 14.15",
+        time: "09.10-09.25",
       },
       {
         imgUrl: null,
         title: "Symptomatology of arrhythmia induced pre/syncope",
-        time: "14.15 - 14.45",
+        time: "09.25-09.55",
         lecturer: " dr. Putu Kiki Wulandari, M. Biomed, Sp.JP, FIHA",
       },
       {
         imgUrl: "/assets/images/placeholder.png",
         title: "Discussion",
-        time: "14.45 - 14.50",
+        time: "09.55-10.05",
       },
       {
         title: "Diagnostic approaches for bradhyarrhythmia",
-        time: "14.50 - 15.20",
+        time: "10.05-10.35",
         lecturer: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
       },
       {
         title: "Discussion",
-        time: "15.20 - 15.25",
+        time: "10.35–10.45",
       },
       {
         title: "Management of bradhyarrhytmia",
-        time: "15.25 - 15.55",
-        lecturer: "dr. Gusti Ayu Suryawati, M.Biomed, Sp.JP, FIHA",
+        time: "10.45–11.15",
+        lecturer: "dr. Ida Bagus Komang Wisasmita, M.Biomed, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
-        time: "15.55 - 16.00",
+        time: "11.15–11.25",
       },
       {
         title: "Case Discussion",
-        time: "16.00 - 16.15",
+        time: "11.25–11.50",
       },
       {
         title: "Post-test",
-        time: "16.15 - 16.30",
+        time: "11.50–12.05",
       },
     ],
   },
@@ -444,54 +456,54 @@ export const workshops = [
     code: "ws4",
     date: "Friday, 18 December 2020",
     dateISO: "2020-12-18",
-    startTime: "14:00",
-    endTime: "16:30",
+    startTime: "13:30",
+    endTime: "16:40",
     zoom: "https://meet.google.com/rch-pskz-nnq",
     sections: [
       {
         imgUrl: "/assets/images/placeholder.png",
         title: "Pre-test",
-        time: "14.00 - 14.15",
+        time: "13.40 – 13.55",
       },
       {
         imgUrl: "/assets/images/placeholder.png",
         title:
           "Diuretics vs Vasodilators: Choosing The Best Treatment Strategy For Acute Heart Failure In Emergency Department",
-        time: "14.15 - 14.45",
+        time: "13.55 – 14.25",
         lecturer: "dr. I Gusti Agung Bagus Krisna Jayantika, SpJP, FIHA",
       },
       {
         imgUrl: "/assets/images/placeholder.png",
         title: "Discussion",
-        time: "14.45 - 14.50",
+        time: "14.25-14.35",
       },
       {
         title:
           "The Best Toolkit To Evaluate The Effectiveness Of Decongestive Therapy",
-        time: "14.50 - 15.20",
+        time: "14.35 – 15.05",
         lecturer: "dr. Ni Gusti Putu Sri Andayani, SpJP, FIHA, FAsCC",
       },
       {
         title: "Discussion",
-        time: "15.20 - 15.25",
+        time: "15.05 - 15.15",
       },
       {
         title:
           "Acute Right Ventricular Dysfunction or Failure: The Importance Of Recognizing and Treating The Forgotten One",
-        time: "15.25 - 15.55",
+        time: "15.15 – 15.45",
         lecturer: "dr. I Putu Gede Budiana, SpJP(K), FIHA",
       },
       {
         title: "Discussion",
-        time: "15.55 - 16.00",
+        time: "15.45-15.55",
       },
       {
         title: "Case Discussion",
-        time: "16.00 - 16.15",
+        time: "15.55-16.20",
       },
       {
         title: "Post-test",
-        time: "16.15 - 16.30",
+        time: "16.20-16.35",
       },
     ],
   },

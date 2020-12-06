@@ -30,8 +30,7 @@ export default function JoinWorkshop() {
           <Link to="/joinWorkshop/workshop-2">
             <div>
               <span>
-                Workshop II : Workshop of Echocardiography in congenital heart
-                disease (Pokja Pediatric Cardiology PERKI)
+                Workshop II : Basic Echo course in CHD: The First Virtual Pediatric Cardiology Echocardiography Course
               </span>
               <br />
               <span>14.00 - 16.30</span>
