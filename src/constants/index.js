@@ -6,8 +6,8 @@ export const symposiums = [
     // startTime: "09:00",
     // endTime: "10:15",
     dateISO: "2020-12-06",
-    startTime: "16:00",
-    endTime: "16:15",
+    startTime: "18:05",
+    endTime: "18:20",
     zoom: "https://meet.google.com/mst-bpaq-yfm",
     sections: [
       {
@@ -283,8 +283,8 @@ export const workshops = [
     // startTime: "14:00",
     // endTime: "16:30",
     dateISO: "2020-12-06",
-    startTime: "16:00",
-    endTime: "16:15",
+    startTime: "18:05",
+    endTime: "18:20",
     zoom: "https://meet.google.com/uit-kmhf-bzh",
     sections: [
       {
