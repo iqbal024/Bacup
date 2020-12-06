@@ -61,11 +61,11 @@ export default function DetailSympo() {
       <h3>{symposium.title}</h3>
       <div className="btn-join">
         <h4>{symposium.date}</h4>
-        {user.Symposhium === "sy" && isInTime && (
+        {/* {user.Symposhium === "sy" && isInTime && (
+        )} */}
           <a href={symposium.zoom} target="_blank" rel="noopener noreferrer">
             <Button primary>Join Now</Button>
           </a>
-        )}
       </div>
       {symposium.sections.map((section, index) => (
         <Segment

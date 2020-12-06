@@ -8,7 +8,7 @@ export const symposiums = [
     dateISO: "2020-12-06",
     startTime: "18:05",
     endTime: "18:20",
-    zoom: "https://meet.google.com/mst-bpaq-yfm",
+    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
@@ -42,7 +42,7 @@ export const symposiums = [
     dateISO: "2020-12-12",
     startTime: "10:20",
     endTime: "11:35",
-    zoom: "https://meet.google.com/mst-bpaq-yfm",
+    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
         imgUrl: null,
@@ -285,7 +285,7 @@ export const workshops = [
     dateISO: "2020-12-06",
     startTime: "18:05",
     endTime: "18:20",
-    zoom: "https://meet.google.com/uit-kmhf-bzh",
+    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
         imgUrl: null,
@@ -340,7 +340,7 @@ export const workshops = [
     dateISO: "2020-12-11",
     startTime: "13:00",
     endTime: "17:30",
-    zoom: "https://meet.google.com/uqw-qrpd-qii",
+    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
         imgUrl: "/assets/images/placeholder.png",
@@ -405,7 +405,7 @@ export const workshops = [
     dateISO: "2020-12-18",
     startTime: "09:00",
     endTime: "12:10",
-    zoom: "https://meet.google.com/vbo-rybb-ppk",
+    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
         imgUrl: "/assets/images/placeholder.png",
@@ -458,7 +458,7 @@ export const workshops = [
     dateISO: "2020-12-18",
     startTime: "13:30",
     endTime: "16:40",
-    zoom: "https://meet.google.com/rch-pskz-nnq",
+    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
         imgUrl: "/assets/images/placeholder.png",
