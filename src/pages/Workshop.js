@@ -11,6 +11,11 @@ const schedules = [
         time: "09.00-12.10",
         lectures: [
           {
+            title: "Opening Workshop I",
+            lecturer: "",
+            time: "09.00 – 09.10",
+          },
+          {
             title: "Pre-test",
             lecturer: "",
             time: "09.10-09.25",
@@ -65,6 +70,11 @@ const schedules = [
         chairman: "dr. Ni Made Ayu Wulan Sari, M.Biomed, Sp.JP",
         time: "13.00-17.30",
         lectures: [
+          {
+            title: "Opening Workshop II",
+            lecturer: "",
+            time: "13.00 – 13.10",
+          },
           {
             title: "Pre-test",
             lecturer: "",
@@ -133,6 +143,11 @@ const schedules = [
         time: "09.00-12.10",
         lectures: [
           {
+            title: "Opening Workshop III",
+            lecturer: "",
+            time: "09.00 – 09.10",
+          },
+          {
             title: "Pre-test",
             lecturer: "",
             time: "09.10 – 09.25",
@@ -184,6 +199,11 @@ const schedules = [
         chairman: "dr. IGN Sugiada, SpJP, FIHA",
         time: "13.30-16.40",
         lectures: [
+          {
+            title: "Opening Workshop IV",
+            lecturer: "",
+            time: "13.30 – 13.40",
+          },
           {
             title: "Pre-test",
             lecturer: "",

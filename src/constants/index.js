@@ -328,7 +328,7 @@ export const workshops = [
       },
       {
         title: "Post-test",
-        time: "16.15 - 16.30",
+        time: "11.50 – 12.05",
       },
     ],
   },

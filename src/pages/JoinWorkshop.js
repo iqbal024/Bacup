@@ -22,7 +22,7 @@ export default function JoinWorkshop() {
             <div>
               <span>Workshop I : Workshop of ACS</span>
               <br />
-              <span>14.00 - 16.30</span>
+              <span>09.00 - 12.10</span>
             </div>
           </Link>
         </Segment>
@@ -33,7 +33,7 @@ export default function JoinWorkshop() {
                 Workshop II : Basic Echo course in CHD: The First Virtual Pediatric Cardiology Echocardiography Course
               </span>
               <br />
-              <span>14.00 - 16.30</span>
+              <span>13.00 - 17.30</span>
             </div>
           </Link>
         </Segment>
@@ -45,7 +45,7 @@ export default function JoinWorkshop() {
                 Workshop III : Workshop of Arrhythmia in Clinical Practice
               </span>
               <br />
-              <span>14.00 - 16.30</span>
+              <span>09.00 - 12.10</span>
             </div>
           </Link>
         </Segment>
@@ -54,7 +54,7 @@ export default function JoinWorkshop() {
             <div>
               <span>Workshop IV : Workshop of Acute Heart Failure</span>
               <br />
-              <span>14.00 - 16.30</span>
+              <span>13.30 - 16.40</span>
             </div>
           </Link>
         </Segment>

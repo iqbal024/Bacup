@@ -11,6 +11,11 @@ const schedules = [
         time: "09.00-10.30",
         topics: [
           {
+            title: "Online Registration – Symposium I & II",
+            speaker: "",
+            time: "09.00 – 09.15",
+          },
+          {
             title:
               "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
             speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
@@ -75,6 +80,11 @@ const schedules = [
         time: "09.00-10.30",
         topics: [
           {
+            title: "Online Registration – Symposium III & IV",
+            speaker: "",
+            time: "09.00 – 09.15",
+          },
+          {
             title:
               "Diagnosis and Management of Acyanotic Congenital Heart Disease with Pulmonary Hypertension",
             speaker: "Dr. dr. Ni Putu Veny Kartika Yantie, M.Sc, Sp.A(K)",
@@ -137,6 +147,11 @@ const schedules = [
         time: "09.00-10.30",
         topics: [
           {
+            title: "Online Registration – Symposium V & VI",
+            speaker: "",
+            time: "09.00 – 09.15",
+          },
+          {
             title:
               "Targeting Blood Pressure Control in People at Risk of ASCVD: How Far Should We Go?",
             speaker: "Dr. dr. I Ketut Rina, Sp.PD, Sp.JP(K), FIHA, FAsCC",
@@ -197,6 +212,11 @@ const schedules = [
         moderator: "dr. I Gede Bagus Gita Pranata Putra, SpJP, FIHA",
         time: "09.00-10.30",
         topics: [
+          {
+            title: "Online Registration – Symposium VII & VIII",
+            speaker: "",
+            time: "09.00 – 09.15",
+          },
           {
             title:
               "Pioneering Medication in Acute Heart Failure Hospitalization",
