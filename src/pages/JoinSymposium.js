@@ -22,7 +22,7 @@ export default function JoinSymposium() {
             <div>
               <span>Symposium I - Arrhythmia</span>
               <br />
-              <span>09.00 - 10.15</span>
+              <span>09.15 - 10.30</span>
             </div>
           </Link>
         </Segment>
@@ -31,11 +31,11 @@ export default function JoinSymposium() {
             <div>
               <span>Symposium II -  Acute Coronary Syndrome</span>
               <br />
-              <span>10.20 - 11.35</span>
+              <span>10.40 - 12.00</span>
             </div>
           </Link>
         </Segment>
-        <h4>Saturday, 13 December 2020</h4>
+        <h4>Sunday, 13 December 2020</h4>
         <Segment secondary>
           <Link to="/joinSymposium/symposium-3">
             <div>
@@ -44,7 +44,7 @@ export default function JoinSymposium() {
                 Hypertension
               </span>
               <br />
-              <span>09.00 - 10.15</span>
+              <span>09.15 - 10.30</span>
             </div>
           </Link>
         </Segment>
@@ -53,7 +53,7 @@ export default function JoinSymposium() {
             <div>
               <span>Symposium IV - Advances in Management of Coronary Artery Disease</span>
               <br />
-              <span>10.20 - 11.35</span>
+              <span>10.40 - 12.00</span>
             </div>
           </Link>
         </Segment>
@@ -63,7 +63,7 @@ export default function JoinSymposium() {
             <div>
               <span>Symposium V - Hypertension</span>
               <br />
-              <span>09.00 - 10.15</span>
+              <span>09.15 - 10.30</span>
             </div>
           </Link>
         </Segment>
@@ -72,17 +72,17 @@ export default function JoinSymposium() {
             <div>
               <span>Symposium VI - Managing Dyslipidemia Patient: What Can We Do Better</span>
               <br />
-              <span>10.20 - 11.35</span>
+              <span>10.40 - 12.00</span>
             </div>
           </Link>
         </Segment>
-        <h4>Saturday, 20 December 2020</h4>
+        <h4>Sunday, 20 December 2020</h4>
         <Segment secondary>
           <Link to="/joinSymposium/symposium-7">
             <div>
               <span>Symposium VII - Heart Failure</span>
               <br />
-              <span>09.00 - 10.15</span>
+              <span>09.15 - 10.30</span>
             </div>
           </Link>
         </Segment>
@@ -94,7 +94,7 @@ export default function JoinSymposium() {
                 Infection
               </span>
               <br />
-              <span>10.20 - 11.35</span>
+              <span>10.40 - 12.00</span>
             </div>
           </Link>
         </Segment>

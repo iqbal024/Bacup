@@ -14,24 +14,24 @@ export const symposiums = [
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
         title:
           "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
-        time: "09.00-09.20",
+        time: "09.15 – 09.35",
         speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
       },
       {
         imgUrl: "/assets/doctors/dr-bagus.png",
         title: "Tips and Trick of Management of Supraventricular Arrhythmia",
-        time: "09.20 - 09.40",
+        time: "09.35 – 09.55",
         speaker: "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA",
       },
       {
         imgUrl: null,
         title: "Case Studies",
-        time: "09.40 - 10.00",
+        time: "09.55 – 10.15",
         speaker: "dr. Rani Paramitha Iswari Maliawan, M. Biomed, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
-        time: "10.00 - 10.15",
+        time: "10.15 – 10.30",
       },
     ],
   },
@@ -48,25 +48,25 @@ export const symposiums = [
         imgUrl: null,
         title:
           "Diagnosis and Initial Management of ACS in Limited Resources Hospital",
-        time: "10.20 - 10.40",
+        time: "10.40 – 11.00",
         speaker: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
       },
       {
-        imgUrl: "/assets/doctors/dr. I G N Putra Gunadhi, Sp.JP(K).JPG",
+        imgUrl: null,
         title:
           "Optimal DAPT For Asian Patients : Measuring Bleeding vs Thrombosis Risk",
-        time: "10.40 - 11.00",
-        speaker: "dr. IGN. Putra Gunadhi, Sp.JP(K), FIHA, FAsCC",
+        time: "11.00 – 11.20",
+        speaker: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
       },
       {
         imgUrl: "/assets/doctors/dr. Hendy Wirawan, Sp.JP.jpg",
         title: "Case Studies",
-        time: "11.00 - 11.20",
+        time: "11.20 – 11.40",
         speaker: "dr. Hendy Wirawan,M.Biomed, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
-        time: "11.20 - 11.35",
+        time: "11.40 – 11.55",
       },
     ],
   },
@@ -83,25 +83,25 @@ export const symposiums = [
         imgUrl: null,
         title:
           "Diagnosis and Management of Acyanotic Congenital Heart Disease with Pulmonary Hypertension",
-        time: "09.00 - 09.20",
+        time: "09.15 – 09.35",
         speaker: "Dr. dr. Venny Kartika Yantie, Sp.A(K)",
       },
       {
         imgUrl: "/assets/doctors/dr. Made Satria Yudha Dewangga, Sp.JP.jpg",
         title:
           "Updates on Pulmonary Hypertension Management: What Current Evidence Recommend",
-        time: "09.20 - 09.40",
+        time: "09.35 – 09.55",
         speaker: "dr. Made Satria Yudha Dewangga, M. Biomed, Sp.JP, FIHA",
       },
       {
         imgUrl: "/assets/doctors/dr. Luh Oliva Saraswati Suastika, Sp.JP.JPG",
         title: "Case Studies",
-        time: "09.40 - 10.00",
+        time: "09.55 – 10.15",
         speaker: "dr. Luh Oliva Saraswati Suastika, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
-        time: "10.00 - 10.15",
+        time: "10.15 – 10.30",
       },
     ],
   },
@@ -116,24 +116,24 @@ export const symposiums = [
       {
         imgUrl: null,
         title: "Angina; Contemporary Diagnosis and Management",
-        time: "10.20 - 10.40",
+        time: "10.40 – 11.00",
         speaker: "Prof. Dr. dr. I Wayan Wita, Sp.JP(K), FIHA, FAsC",
       },
       {
         imgUrl: null,
         title: "The Role of High Intensity Statin in CAD",
-        time: "10.40 - 11.00",
+        time: "11.00 – 11.20",
         speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
       },
       {
         imgUrl: null,
         title: "Case studies",
-        time: "11.00 - 11.20",
+        time: "11.20 – 11.40",
         speaker: "dr. I Putu Gede Eka Ariawan S, M.Biomed, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
-        time: "11.20 - 11.35",
+        time: "11.40 – 11.55",
       },
     ],
   },
@@ -149,25 +149,25 @@ export const symposiums = [
         imgUrl: "/assets/doctors/Dr. dr. Ketut Rina, Sp.PD, Sp.JP(K).JPG",
         title:
           "Targeting Blood Pressure Control in People at Risk of ASCVD: How Far Should We Go?",
-        time: "09.00-09.20",
+        time: "09.15 – 09.35",
         speaker: "Dr. dr. I Ketut Rina, Sp.PD, Sp.JP(K), FIHA, FAsCC",
       },
       {
         imgUrl: null,
         title: "Antihypertensive Efficacy and Tolerability of CCB in Clinical Practice",
-        time: "09.20 - 09.40",
+        time: "09.35 – 09.55",
         speaker: "dr. A.A.A Dwi Adelia Yasmin, M.Biomed, Sp.JP, FIHA",
       },
       {
         imgUrl: "/assets/doctors/dr. I Putu Parwata Jaya, Sp.JP.jpg",
         title:
           "Lowering non-HDL Cholesterol in High Risk ASCVD Patients : is There Any Benefit?",
-        time: "09.40 - 10.00",
+        time: "09.55 – 10.15",
         speaker: "dr. I Putu Parwata Jaya, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
-        time: "10.00 - 10.15",
+        time: "10.15 – 10.30",
       },
     ],
   },
@@ -184,25 +184,25 @@ export const symposiums = [
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
         title:
           "The Safety Statin Treatment: When it Gets Serious",
-        time: "10.20 - 10.40",
+        time: "10.40 – 11.00",
         speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
       },
       {
         imgUrl: null,
         title:
           "Targeting Plaque Stabilization and Regression: The Role of Dual Inhibition",
-        time: "10.40 - 11.00",
+        time: "11.00 – 11.20",
         speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
       },
       {
         imgUrl: null,
         title: "Case Studies",
-        time: "11.00 - 11.20",
+        time: "11.20 – 11.40",
         speaker: "dr. Ketut Erna Bagiari, M.Biomed, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
-        time: "11.20 - 11.35",
+        time: "11.40 – 11.55",
       },
     ],
   },
@@ -217,25 +217,25 @@ export const symposiums = [
       {
         imgUrl: "/assets/doctors/dr. I Nyoman Wiryawan, Sp.JP.JPG",
         title: "Pioneering Medication in Acute Heart Failure Hospitalization",
-        time: "09.00 - 09.20",
+        time: "09.15 – 09.35",
         speaker: "dr. I Nyoman Wiryawan, Sp.JP,FIHA",
       },
       {
         imgUrl: null,
         title:
-          "Tips & Tricks of Diuresis and symptomatic management of Heart Failure",
-        time: "09.20 - 09.40",
+          "Defining Essential Treatment Choice Since Early Stage of Heart Failure : Learning From Novel HF Treatment",
+        time: "09.35 – 09.55",
         speaker: "dr. Siti Elkana Nauli, SpJP(K), FIHA",
       },
       {
         imgUrl: null,
         title: "Case Studies",
-        time: "09.40 - 10.00",
+        time: "09.55 – 10.15",
         speaker: "dr. Ni Made Ayu Wulan Sari, M.Biomed, Sp.JP",
       },
       {
         title: "Discussion",
-        time: "10.00 - 10.15",
+        time: "10.15 – 10.30",
       },
     ],
   },
@@ -251,24 +251,24 @@ export const symposiums = [
       {
         imgUrl: "/assets/doctors/dr. Ketut Susila, Sp.JP(K).JPG",
         title: "Venous Thromboembolism in Severe COVID-19",
-        time: "10.20 - 10.40",
+        time: "10.40 – 11.00",
         speaker: "dr. Ketut Susila, Sp.JP(K), FIHA",
       },
       {
         imgUrl: null,
         title: "Role of DOAC in Vein Thrombosis",
-        time: "10.40 - 11.00",
+        time: "11.00 – 11.20",
         speaker: "dr. Agung Pradnyana Suwirya, M. Biomed, Sp.JP, FIHA",
       },
       {
         imgUrl: null,
         title: "Case Studies",
-        time: "11.00 - 11.20",
+        time: "11.20 – 11.40",
         speaker: "dr. Rani Paramitha Iswari Maliawan, M. Biomed, Sp.JP, FIHA",
       },
       {
         title: "Discussion",
-        time: "11.20 - 11.35",
+        time: "11.40 – 11.55",
       },
     ],
   },
@@ -523,7 +523,7 @@ export const sympoSchedules = [
             title:
               "Paroxysmal Atrial Fibrillation: The Risk and The Management Challenges",
             speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
-            time: "09.00-09.20",
+            time: "09.15 – 09.35",
           },
           {
             title:
@@ -588,7 +588,7 @@ export const sympoSchedules = [
             title:
               "Diagnosis and Management of Acyanotic Congenital Heart Disease with Pulmonary Hypertension",
             speaker: "Dr. dr. Venny Kartika Yantie, Sp.A(K)",
-            time: "09.00-09.20",
+            time: "09.15 – 09.35",
           },
           {
             title:
@@ -651,7 +651,7 @@ export const sympoSchedules = [
           {
             title: "Angina; Contemporary Diagnosis and Management",
             speaker: "Prof.Dr.dr.I Wayan Wita, Sp.JP(K), FIHA, FAsC",
-            time: "09.00-09.20",
+            time: "09.15 – 09.35",
           },
           {
             title: "Targeting Plaque Regression in Dyslipidemia Management",
@@ -715,7 +715,7 @@ export const sympoSchedules = [
             title:
               "Increasing Survival in Heart Failure Patients: Introducing ARN",
             speaker: "dr. I Nyoman Wiryawan, Sp.JP,FIHA",
-            time: "09.00-09.20",
+            time: "09.15 – 09.35",
           },
           {
             title:
