@@ -54,7 +54,7 @@ const schedules = [
           },
           {
             title: "Case Discussion",
-            lecturer: "",
+            lecturer: "dr. Hendy Wirawan, M. Biomed, Sp.JP, FIHA",
             time: "11.25–11.50",
           },
           {
@@ -184,7 +184,7 @@ const schedules = [
           },
           {
             title: "Case Discussion",
-            lecturer: "",
+            lecturer: "dr. I Dewa Gde Sumajaya, Sp.JP, FIHA",
             time: "11.25 – 11.50",
           },
           {
@@ -244,7 +244,7 @@ const schedules = [
           },
           {
             title: "Case Discussion",
-            lecturer: "",
+            lecturer: "dr. IGN Sugiada, SpJP, FIHA",
             time: "15.55-16.20",
           },
           {

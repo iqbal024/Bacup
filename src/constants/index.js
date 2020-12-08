@@ -3,11 +3,11 @@ export const symposiums = [
     title: "Symposium I - Arrhythmia",
     // date: "Saturday, 12 December 2020",
     // dateISO: "2020-12-12",
-    // startTime: "09:00",
-    // endTime: "10:15",
-    dateISO: "2020-12-06",
-    startTime: "18:05",
-    endTime: "18:20",
+    // startTime: "08:00",
+    // endTime: "11:00",
+    dateISO: "2020-12-12",
+    startTime: "08:00",
+    endTime: "11:00",
     zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
@@ -40,8 +40,8 @@ export const symposiums = [
       "Symposium II : Acute Coronary Syndrome",
     date: "Saturday, 12 December 2020",
     dateISO: "2020-12-12",
-    startTime: "10:20",
-    endTime: "11:35",
+    startTime: "09:30",
+    endTime: "11:00",
     zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
@@ -75,8 +75,8 @@ export const symposiums = [
       "Symposium III : Advances in Management of Congenital Heart Disease and Pulmonary Hypertension",
     date: "Sunday, 13 December 2020",
     dateISO: "2020-12-13",
-    startTime: "09:00",
-    endTime: "10:15",
+    startTime: "08:00",
+    endTime: "11:00",
     zoom: "https://meet.google.com/phu-gsia-pnk",
     sections: [
       {
@@ -109,8 +109,8 @@ export const symposiums = [
     title: "Symposium IV : Advances in Management of Coronary Artery Disease",
     date: "Sunday, 13 December 2020",
     dateISO: "2020-12-13",
-    startTime: "10:20",
-    endTime: "11:35",
+    startTime: "09:30",
+    endTime: "11:00",
     zoom: "https://meet.google.com/phu-gsia-pnk",
     sections: [
       {
@@ -141,8 +141,8 @@ export const symposiums = [
     title: "Symposium V : Cardiovascular Prevention in High Risk Patients",
     date: "Saturday, 19 December 2020",
     dateISO: "2020-12-19",
-    startTime: "09:00",
-    endTime: "10:15",
+    startTime: "08:00",
+    endTime: "11:00",
     zoom: "https://meet.google.com/ffi-mnzn-szx",
     sections: [
       {
@@ -176,8 +176,8 @@ export const symposiums = [
       "Symposium VI : Managing Dyslipidemia Patient: What Can We Do Better",
     date: "Saturday, 19 December 2020",
     dateISO: "2020-12-19",
-    startTime: "10:20",
-    endTime: "11:35",
+    startTime: "09:30",
+    endTime: "11:00",
     zoom: "https://meet.google.com/ffi-mnzn-szx",
     sections: [
       {
@@ -210,8 +210,8 @@ export const symposiums = [
     title: "Symposium VII : Heart Failure",
     date: "Sunday, 20 December 2020",
     dateISO: "2020-12-20",
-    startTime: "09:00",
-    endTime: "10:15",
+    startTime: "08:00",
+    endTime: "11:00",
     zoom: "https://meet.google.com/qux-gqwz-nma",
     sections: [
       {
@@ -244,8 +244,8 @@ export const symposiums = [
       "Symposium VIII : Prevention and Long-term Management of Venous Thromboembolism",
     date: "Sunday, 20 December 2020",
     dateISO: "2020-12-20",
-    startTime: "10:20",
-    endTime: "11:35",
+    startTime: "09:30",
+    endTime: "11:00",
     zoom: "https://meet.google.com/qux-gqwz-nma",
     sections: [
       {
@@ -282,9 +282,9 @@ export const workshops = [
     // dateISO: "2020-12-11",
     // startTime: "14:00",
     // endTime: "16:30",
-    dateISO: "2020-12-06",
-    startTime: "18:05",
-    endTime: "18:20",
+    dateISO: "2020-12-11",
+    startTime: "08:00",
+    endTime: "11:10",
     zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
@@ -338,29 +338,29 @@ export const workshops = [
     code: "ws2",
     date: "Friday, 11 December 2020",
     dateISO: "2020-12-11",
-    startTime: "13:00",
+    startTime: "12:00",
     endTime: "17:30",
     zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Pre-test",
         time: "13.10–13.25",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Lecture 1 : Role of Echo in Diagnosis of CHD",
         time: "13.25–13.55",
         lecturer: "Dr. dr. Indriwanto S. Atmosudigdo, SpJP(K), MARS",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Lecture 2 : Sequential segmental analysis (KULIAH + VIDEO)",
         time: "13.55 – 14.25",
         lecturer: "Prof. dr. Ganesja M. Harimurti, SpJP(K)",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Discussion",
         time: "14.25 – 14.40",
       },
@@ -403,12 +403,12 @@ export const workshops = [
     code: "ws3",
     date: "Friday, 18 December 2020",
     dateISO: "2020-12-18",
-    startTime: "09:00",
+    startTime: "08:00",
     endTime: "12:10",
     zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Pre-test",
         time: "09.10-09.25",
       },
@@ -419,7 +419,7 @@ export const workshops = [
         lecturer: " dr. Putu Kiki Wulandari, M. Biomed, Sp.JP, FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Discussion",
         time: "09.55-10.05",
       },
@@ -456,24 +456,24 @@ export const workshops = [
     code: "ws4",
     date: "Friday, 18 December 2020",
     dateISO: "2020-12-18",
-    startTime: "13:30",
+    startTime: "12:30",
     endTime: "16:40",
     zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Pre-test",
         time: "13.40 – 13.55",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title:
           "Diuretics vs Vasodilators: Choosing The Best Treatment Strategy For Acute Heart Failure In Emergency Department",
         time: "13.55 – 14.25",
         lecturer: "dr. I Gusti Agung Bagus Krisna Jayantika, SpJP, FIHA",
       },
       {
-        imgUrl: "/assets/images/placeholder.png",
+        imgUrl: null,
         title: "Discussion",
         time: "14.25-14.35",
       },

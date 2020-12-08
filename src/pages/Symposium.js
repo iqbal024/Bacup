@@ -24,7 +24,7 @@ const schedules = [
           {
             title:
               "Tips and Trick of Management of Supraventricular Arrhythmia",
-            speaker: "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA",
+            speaker: "dr. Bagus Ari Pradnyana Dwi Sutanegara, Sp.JP(K), FIHA, FICA, FAsCC",
             time: "09.35 – 09.55",
           },
           {
@@ -41,7 +41,7 @@ const schedules = [
       },
       {
         title: "Symposium II :  Acute Coronary Syndrome",
-        moderator: "dr. I Wayan Sutarmawan, Sp.JP, FIHA",
+        moderator: "dr. I Wayan Sutarmawan, Sp.JP (K), FIHA",
         time: "10.30-12.00",
         topics: [
           {
@@ -98,7 +98,7 @@ const schedules = [
           },
           {
             title: "Case Studies",
-            speaker: "dr. Luh Oliva Saraswati Suastika, Sp.JP, FIHA",
+            speaker: "dr. Luh Oliva Saraswati Suastika, Sp.JP, FIHA, FASE",
             time: "09.55 – 10.15",
           },
           {
@@ -115,7 +115,7 @@ const schedules = [
         topics: [
           {
             title: "Angina; Contemporary Diagnosis and Management",
-            speaker: "Prof. Dr. dr. I Wayan Wita, Sp.JP(K), FIHA, FAsC",
+            speaker: "Prof. Dr. dr. I Wayan Wita, Sp.JP(K), FIHA, FAsCC",
             time: "10.40 – 11.00",
           },
           {
@@ -220,7 +220,7 @@ const schedules = [
           {
             title:
               "Pioneering Medication in Acute Heart Failure Hospitalization",
-            speaker: "dr. I Nyoman Wiryawan, Sp.JP,FIHA",
+            speaker: "dr. I Nyoman Wiryawan, Sp.JP,FIHA,FAPSC",
             time: "09.15 – 09.35",
           },
           {
@@ -231,7 +231,7 @@ const schedules = [
           },
           {
             title: "Case Studies",
-            speaker: "dr. Ni Made Ayu Wulan Sari, M.Biomed, Sp.JP",
+            speaker: "dr. Ni Made Ayu Wulan Sari, M.Biomed, Sp.JP,FIHA",
             time: "09.55 – 10.15",
           },
           {
