@@ -325,6 +325,7 @@ export const workshops = [
       {
         title: "Case Discussion",
         time: "11.25–11.50",
+        lecturer: "dr. Hendy Wirawan, M.Biomed, Sp.JP, FIHA",
       },
       {
         title: "Post-test",
@@ -444,6 +445,7 @@ export const workshops = [
       {
         title: "Case Discussion",
         time: "11.25–11.50",
+        lecturer: "dr. I Dewa Gde Sumajaya, Sp.JP, FIHA",
       },
       {
         title: "Post-test",
@@ -500,6 +502,7 @@ export const workshops = [
       {
         title: "Case Discussion",
         time: "15.55-16.20",
+        lecturer: "dr. IGN Sugiada, SpJP, FIHA",
       },
       {
         title: "Post-test",
