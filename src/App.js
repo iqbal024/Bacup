@@ -23,6 +23,7 @@ import Posters from "./pages/Posters";
 import PostersDetail from "./pages/PostersDetail";
 import Sponsors from "./pages/Sponsors";
 import ScrollToTop from "./utils/ScrollToTop";
+import Prifzer from "./pages/Sponsor/Prifzer";
 
 import store from "./helper/store";
 
@@ -73,6 +74,7 @@ function App() {
             <Route exact path="/posters" component={Posters} />
             <Route exact path="/posters/:id" component={PostersDetail} />
             <Route exact path="/sponsors" component={Sponsors} />
+            <Route exact path="/pfizer" component={Prifzer} />
             <Route exact path="/contact-us" component={ContactUs} />
           </Switch>
           <Footer />

@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Image, Icon } from 'semantic-ui-react';
+import { Link } from "react-router-dom";
 import Sanofi from './../assets/images/Sanofi.png';
 import Pfizer from './../assets/images/pfizer.png';
 import MSD from './../assets/images/MSD.png';
@@ -35,7 +36,9 @@ export default function Sponsors() {
               <Image src={Abbott_Laboratori} />
             </Grid.Column>
             <Grid.Column>
-              <Image src={Pfizer} />
+                <Image src={Pfizer} />
+              {/* <Link to="/pfizer">
+              </Link> */}
             </Grid.Column>
           </Grid.Row>
         </Grid>

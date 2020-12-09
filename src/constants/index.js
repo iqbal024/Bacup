@@ -5,10 +5,10 @@ export const symposiums = [
     // dateISO: "2020-12-12",
     // startTime: "08:00",
     // endTime: "11:00",
-    dateISO: "2020-12-12",
-    startTime: "08:00",
-    endTime: "11:00",
-    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
+    dateISO: "2020-12-10",
+    startTime: "14:30",
+    endTime: "16:30",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
@@ -39,10 +39,10 @@ export const symposiums = [
     title:
       "Symposium II : Acute Coronary Syndrome",
     date: "Saturday, 12 December 2020",
-    dateISO: "2020-12-12",
-    startTime: "09:30",
-    endTime: "11:00",
-    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
+    dateISO: "2020-12-10",
+    startTime: "14:40",
+    endTime: "16:30",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: null,
@@ -77,7 +77,7 @@ export const symposiums = [
     dateISO: "2020-12-13",
     startTime: "08:00",
     endTime: "11:00",
-    zoom: "https://meet.google.com/phu-gsia-pnk",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: null,
@@ -111,7 +111,7 @@ export const symposiums = [
     dateISO: "2020-12-13",
     startTime: "09:30",
     endTime: "11:00",
-    zoom: "https://meet.google.com/phu-gsia-pnk",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: null,
@@ -143,7 +143,7 @@ export const symposiums = [
     dateISO: "2020-12-19",
     startTime: "08:00",
     endTime: "11:00",
-    zoom: "https://meet.google.com/ffi-mnzn-szx",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: "/assets/doctors/Dr. dr. Ketut Rina, Sp.PD, Sp.JP(K).JPG",
@@ -178,7 +178,7 @@ export const symposiums = [
     dateISO: "2020-12-19",
     startTime: "09:30",
     endTime: "11:00",
-    zoom: "https://meet.google.com/ffi-mnzn-szx",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
@@ -212,7 +212,7 @@ export const symposiums = [
     dateISO: "2020-12-20",
     startTime: "08:00",
     endTime: "11:00",
-    zoom: "https://meet.google.com/qux-gqwz-nma",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Nyoman Wiryawan, Sp.JP.JPG",
@@ -246,7 +246,7 @@ export const symposiums = [
     dateISO: "2020-12-20",
     startTime: "09:30",
     endTime: "11:00",
-    zoom: "https://meet.google.com/qux-gqwz-nma",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. Ketut Susila, Sp.JP(K).JPG",
@@ -282,10 +282,10 @@ export const workshops = [
     // dateISO: "2020-12-11",
     // startTime: "14:00",
     // endTime: "16:30",
-    dateISO: "2020-12-11",
-    startTime: "08:00",
-    endTime: "11:10",
-    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
+    dateISO: "2020-12-10",
+    startTime: "14:30",
+    endTime: "16:10",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: null,
@@ -338,10 +338,10 @@ export const workshops = [
       "Workshop II : Basic Echo course in CHD: The First Virtual Pediatric Cardiology Echocardiography Course",
     code: "ws2",
     date: "Friday, 11 December 2020",
-    dateISO: "2020-12-11",
-    startTime: "12:00",
+    dateISO: "2020-12-10",
+    startTime: "14:40",
     endTime: "17:30",
-    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: null,
@@ -403,10 +403,10 @@ export const workshops = [
     title: "Workshop III : Workshop of Arrhythmia in Clinical Practice",
     code: "ws3",
     date: "Friday, 18 December 2020",
-    dateISO: "2020-12-18",
-    startTime: "08:00",
-    endTime: "12:10",
-    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
+    dateISO: "2020-12-10",
+    startTime: "14:45",
+    endTime: "16:10",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: null,
@@ -457,10 +457,10 @@ export const workshops = [
     title: "Workshop IV : Workshop of Acute Heart Failure",
     code: "ws4",
     date: "Friday, 18 December 2020",
-    dateISO: "2020-12-18",
-    startTime: "12:30",
+    dateISO: "2020-12-10",
+    startTime: "14:50",
     endTime: "16:40",
-    zoom: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fus02web.zoom.us%2Fj%2F5661292057%3Fpwd%3DNkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
+    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
         imgUrl: null,
