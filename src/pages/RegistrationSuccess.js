@@ -10,7 +10,7 @@ const eventOptions = [
   {
     key: "ws2",
     text:
-      "Workshop II : Workshop of Echocardiography in congenital heart disease",
+      "Workshop II : Basic Echo course in CHD: The First Virtual Pediatric Cardiology Echocardiography Course",
     value: "ws2",
   },
   {

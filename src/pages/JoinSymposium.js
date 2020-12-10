@@ -97,7 +97,7 @@ export default function JoinSymposium() {
             )}
           </div>
         </Segment>
-        <h4>Saturday, 13 December 2020</h4>
+        <h4>Sunday, 13 December 2020</h4>
         <Segment secondary>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <Link to="/joinSymposium/symposium-3">
@@ -184,7 +184,7 @@ export default function JoinSymposium() {
             )}
           </div>
         </Segment>
-        <h4>Saturday, 20 December 2020</h4>
+        <h4>Sunday, 20 December 2020</h4>
         <Segment secondary>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <Link to="/joinSymposium/symposium-7">
