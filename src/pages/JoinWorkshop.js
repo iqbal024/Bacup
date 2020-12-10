@@ -84,13 +84,13 @@ export default function JoinWorkshop() {
               <div>
                 <span>Workshop I : Workshop of ACS</span>
                 <br />
-                <span>14.00 - 16.30</span>
+                <span>09.00 - 12.10</span>
               </div>
             </Link>
             {hasRegisteredForWorkshop1 && (
               <Button
                 color="green"
-                onClick={() => window.open("https://www.google.com", "_blank")}
+                onClick={() => window.open("https://us02web.zoom.us/j/86706294917?pwd=UTdsOUtPSVZQNS9ybm04R3hSai81UT09", "_blank")}
               >
                 Join now
               </Button>
@@ -102,17 +102,16 @@ export default function JoinWorkshop() {
             <Link to="/joinWorkshop/workshop-2">
               <div>
                 <span>
-                  Workshop II : Workshop of Echocardiography in congenital heart
-                  disease (Pokja Pediatric Cardiology PERKI)
+                  Workshop II : Basic Echo course in CHD: The First Virtual Pediatric Cardiology Echocardiography Course
                 </span>
                 <br />
-                <span>14.00 - 16.30</span>
+                <span>13.00 - 17.30</span>
               </div>
             </Link>
             {hasRegisteredForWorkshop2 && (
               <Button
                 color="green"
-                onClick={() => window.open("https://www.google.com", "_blank")}
+                onClick={() => window.open("https://us02web.zoom.us/j/5661292057?pwd=NkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09", "_blank")}
               >
                 Join now
               </Button>
@@ -128,7 +127,7 @@ export default function JoinWorkshop() {
                   Workshop III : Workshop of Arrhythmia in Clinical Practice
                 </span>
                 <br />
-                <span>14.00 - 16.30</span>
+                <span>09.00 - 12.10</span>
               </div>
             </Link>
             {hasRegisteredForWorkshop3 && (
@@ -147,7 +146,7 @@ export default function JoinWorkshop() {
               <div>
                 <span>Workshop IV : Workshop of Acute Heart Failure</span>
                 <br />
-                <span>14.00 - 16.30</span>
+                <span>13.30 - 16.40</span>
               </div>
             </Link>
             {hasRegisteredForWorkshop4 && (

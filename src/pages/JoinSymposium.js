@@ -62,7 +62,7 @@ export default function JoinSymposium() {
               <div>
                 <span>Symposium I - Arrhythmia</span>
                 <br />
-                <span>09.00 - 10.15</span>
+                <span>09.00 - 10.30</span>
               </div>
             </Link>
             {hasRegisteredForSympo && (
@@ -80,11 +80,10 @@ export default function JoinSymposium() {
             <Link to="/joinSymposium/symposium-2">
               <div>
                 <span>
-                  Symposium II - Clinical Update on Antithrombotic Role in CV
-                  Disease
+                  Symposium II - Acute Coronary Syndrome
                 </span>
                 <br />
-                <span>10.20 - 11.35</span>
+                <span>10.40 - 12.00</span>
               </div>
             </Link>
             {hasRegisteredForSympo && (
@@ -103,11 +102,10 @@ export default function JoinSymposium() {
             <Link to="/joinSymposium/symposium-3">
               <div>
                 <span>
-                  Symposium III - Congenital Heart Disease and Pulmonary
-                  Hypertension
+                  Symposium III - Advances in Management of Congenital Heart Disease and Pulmonary Hypertension
                 </span>
                 <br />
-                <span>09.00 - 10.15</span>
+                <span>09.00 - 10.30</span>
               </div>
             </Link>
             {hasRegisteredForSympo && (
@@ -129,7 +127,7 @@ export default function JoinSymposium() {
                   Disease
                 </span>
                 <br />
-                <span>10.20 - 11.35</span>
+                <span>10.40 - 12.00</span>
               </div>
             </Link>
             {hasRegisteredForSympo && (
@@ -147,9 +145,9 @@ export default function JoinSymposium() {
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <Link to="/joinSymposium/symposium-5">
               <div>
-                <span>Symposium V - Hypertension</span>
+                <span>Symposium V - Cardiovascular Prevention in High Risk Patients</span>
                 <br />
-                <span>09.00 - 10.15</span>
+                <span>09.00 - 10.30</span>
               </div>
             </Link>
             {hasRegisteredForSympo && (
@@ -171,7 +169,7 @@ export default function JoinSymposium() {
                   Better
                 </span>
                 <br />
-                <span>10.20 - 11.35</span>
+                <span>10.40 - 12.00</span>
               </div>
             </Link>
             {hasRegisteredForSympo && (
@@ -191,7 +189,7 @@ export default function JoinSymposium() {
               <div>
                 <span>Symposium VII - Heart Failure</span>
                 <br />
-                <span>09.00 - 10.15</span>
+                <span>09.00 - 10.30</span>
               </div>
             </Link>
             {hasRegisteredForSympo && (
@@ -209,11 +207,10 @@ export default function JoinSymposium() {
             <Link to="/joinSymposium/symposium-8">
               <div>
                 <span>
-                  Symposium VIII - Thromboembolic Complications in COVID-19
-                  Infection
+                  Symposium VIII - Prevention and Long-term Management of Venous Thromboembolism
                 </span>
                 <br />
-                <span>10.20 - 11.35</span>
+                <span>10.40 - 12.00</span>
               </div>
             </Link>
             {hasRegisteredForSympo && (

@@ -5,9 +5,9 @@ export const symposiums = [
     // dateISO: "2020-12-12",
     // startTime: "08:00",
     // endTime: "11:00",
-    dateISO: "2020-12-10",
-    startTime: "14:30",
-    endTime: "16:30",
+    dateISO: "2020-12-12",
+    startTime: "08:00",
+    endTime: "09:30",
     zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
@@ -39,9 +39,9 @@ export const symposiums = [
     title:
       "Symposium II : Acute Coronary Syndrome",
     date: "Saturday, 12 December 2020",
-    dateISO: "2020-12-10",
-    startTime: "14:40",
-    endTime: "16:30",
+    dateISO: "2020-12-12",
+    startTime: "09:30",
+    endTime: "11:00",
     zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
     sections: [
       {
@@ -282,10 +282,10 @@ export const workshops = [
     // dateISO: "2020-12-11",
     // startTime: "14:00",
     // endTime: "16:30",
-    dateISO: "2020-12-10",
-    startTime: "14:30",
-    endTime: "16:10",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    dateISO: "2020-12-11",
+    startTime: "07:30",
+    endTime: "17:00",
+    zoom: "https://us02web.zoom.us/j/86706294917?pwd=UTdsOUtPSVZQNS9ybm04R3hSai81UT09",
     sections: [
       {
         imgUrl: null,
@@ -338,10 +338,10 @@ export const workshops = [
       "Workshop II : Basic Echo course in CHD: The First Virtual Pediatric Cardiology Echocardiography Course",
     code: "ws2",
     date: "Friday, 11 December 2020",
-    dateISO: "2020-12-10",
-    startTime: "14:40",
-    endTime: "17:30",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    dateISO: "2020-12-11",
+    startTime: "12:00",
+    endTime: "17:00",
+    zoom: "https://us02web.zoom.us/j/5661292057?pwd=NkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
         imgUrl: null,

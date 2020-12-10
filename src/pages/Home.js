@@ -173,13 +173,13 @@ export default function Home() {
               <h3>Chairwoman of the 9th Bali Cardiology Update 2020</h3>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row>
+          {/* <Grid.Row>
             <Grid.Column textAlign='center'>
               <Link to="/registration">
                 <Button primary style={{ width: "200px", height: "55px", marginTop: "20px" }}>REGISTER HERE</Button>
               </Link>
             </Grid.Column>
-          </Grid.Row>
+          </Grid.Row> */}
         </Grid>
       </Segment>
       <Segment style={{ padding: "8em 0em" }} vertical className="times">
@@ -219,7 +219,7 @@ export default function Home() {
             </Grid.Column>
             <Grid.Column floated="right" width={6}>
               <YouTube
-                videoId="lvO1o9ry8t8"
+                videoId="Q2deKsG_TOo"
                 opts={opts}
                 onReady={handleOnReady}
               />

@@ -74,12 +74,12 @@ const TableCategoryRegister = () => (
         </Table.Body>
       </Table>
     </div>
-    <div className="button-registration" style={{ marginBottom: "50px" }}>
+    {/* <div className="button-registration" style={{ marginBottom: "50px" }}>
       <h1>Registration</h1>
       <Link to="/registration">
         <Button primary>Register</Button>
       </Link>
-    </div>
+    </div> */}
   </>
 );
 export default TableCategoryRegister;
