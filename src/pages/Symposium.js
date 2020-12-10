@@ -35,7 +35,8 @@ const schedules = [
         ],
       },
       {
-        title: "Symposium II : Clinical Update on Antithrombotic Role in CV Disease",
+        title:
+          "Symposium II : Clinical Update on Antithrombotic Role in CV Disease",
         moderator: "dr. I Wayan Sutarmawan, Sp.JP, FIHA",
         time: "10.20-11.35",
         topics: [
@@ -99,7 +100,8 @@ const schedules = [
         ],
       },
       {
-        title: "Symposium IV : Advances in Management of Coronary Artery Disease",
+        title:
+          "Symposium IV : Advances in Management of Coronary Artery Disease",
         moderator: "dr. I Made Junior Rina Artha, Sp.JP(K), FIHA, FAsCC",
         time: "10.20-11.35",
         topics: [
@@ -109,8 +111,7 @@ const schedules = [
             time: "10.20-10.40",
           },
           {
-            title:
-              "Targeting Plaque Regression in Dyslipidemia Management",
+            title: "Targeting Plaque Regression in Dyslipidemia Management",
             speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
             time: "10.40-11.00",
           },
@@ -161,17 +162,20 @@ const schedules = [
         ],
       },
       {
-        title: "Symposium VI : Managing Dyslipidemia Patient: What Can We Do Better",
+        title:
+          "Symposium VI : Managing Dyslipidemia Patient: What Can We Do Better",
         moderator: "dr. I Kadek Susila Surya Darma, M.Biomed, Sp.JP, FIHA",
         time: "10.20-11.35",
         topics: [
           {
-            title: "Pharmacological Strategy in Maintaining The Daily Productivity of Dyslipidemia Patients",
+            title:
+              "Pharmacological Strategy in Maintaining The Daily Productivity of Dyslipidemia Patients",
             speaker: "dr. I Made Putra Swi Antara, Sp.JP(K), FIHA",
             time: "10.20-10.40",
           },
           {
-            title: "Targeting Plaque Stabilization and Regression: The Role of Dual Inhibition",
+            title:
+              "Targeting Plaque Stabilization and Regression: The Role of Dual Inhibition",
             speaker: "dr. Wayan Aryadana, Sp.JP(K), FIHA, FICA, FAsCC",
             time: "10.40-11.00",
           },
@@ -258,7 +262,7 @@ export default function Symposium() {
   const panes = schedules.map((schedule) => ({
     menuItem: schedule.day,
     render: () => (
-      <div style={{ marginBottom: '50px' }}>
+      <div style={{ marginBottom: "50px" }}>
         {schedule.symposiums.map((sympo) => (
           <div>
             <Header as="h2" textAlign="center" style={{ marginTop: "20px" }}>
@@ -269,8 +273,16 @@ export default function Symposium() {
             <Table>
               <Table.Header>
                 <Table.Row>
-                  <Table.HeaderCell style={{ background: '#800000', color: '#ffffff' }} >Time</Table.HeaderCell>
-                  <Table.HeaderCell style={{ background: '#800000', color: '#ffffff' }} >Schedule</Table.HeaderCell>
+                  <Table.HeaderCell
+                    style={{ background: "#800000", color: "#ffffff" }}
+                  >
+                    Time
+                  </Table.HeaderCell>
+                  <Table.HeaderCell
+                    style={{ background: "#800000", color: "#ffffff" }}
+                  >
+                    Schedule
+                  </Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
 
@@ -299,9 +311,18 @@ export default function Symposium() {
         <nav aria-label="breadcrumb">
           <h2 class="title-logo">Symposium</h2>
           <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="/" style={{ color: "#fff" }}>Home</a></li>
-            <Icon name="arrow right" style={{ color: "#fff", margin: "0px 5px" }} />
-            <li class="breadcrumb-item active" aria-current="page">Symposium</li>
+            <li class="breadcrumb-item">
+              <a href="/" style={{ color: "#fff" }}>
+                Home
+              </a>
+            </li>
+            <Icon
+              name="arrow right"
+              style={{ color: "#fff", margin: "0px 5px" }}
+            />
+            <li class="breadcrumb-item active" aria-current="page">
+              Symposium
+            </li>
           </ol>
         </nav>
       </div>
