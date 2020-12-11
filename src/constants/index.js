@@ -8,7 +8,7 @@ export const symposiums = [
     dateISO: "2020-12-12",
     startTime: "07:30",
     endTime: "11:00",
-    zoom: "https://us02web.zoom.us/j/86706294917?pwd=UTdsOUtPSVZQNS9ybm04R3hSai81UT09",
+    zoom: "https://us02web.zoom.us/j/84718712595?pwd=T1dKTDNUTmExY2FxN1lXc2NUc0V0QT09",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
@@ -42,7 +42,7 @@ export const symposiums = [
     dateISO: "2020-12-12",
     startTime: "09:00",
     endTime: "11:00",
-    zoom: "https://us02web.zoom.us/j/5661292057?pwd=NkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
+    zoom: "https://us02web.zoom.us/j/84718712595?pwd=T1dKTDNUTmExY2FxN1lXc2NUc0V0QT09",
     sections: [
       {
         imgUrl: null,

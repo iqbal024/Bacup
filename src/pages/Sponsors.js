@@ -6,6 +6,10 @@ import Pfizer from './../assets/images/pfizer.png';
 import MSD from './../assets/images/MSD.png';
 import Novartis from './../assets/images/Novartis.png';
 import Abbott_Laboratori from './../assets/images/Abbott_Laboratori.png';
+import Terumo from './../assets/images/terumo.png';
+import Ge from './../assets/images/GE.png';
+import Dexa from './../assets/images/LOGO DEXA WITH TAGLINE.jpg';
+import Medtronic from './../assets/images/Medtronic.jpeg';
 
 export default function Sponsors() {
   return (
@@ -26,7 +30,7 @@ export default function Sponsors() {
         <Grid verticalAlign='middle' columns={5} centered>
           <Grid.Row>
             <Grid.Column>
-              <Image src={Sanofi} />
+              <Image src={Ge} size="medium"/>
             </Grid.Column>
             <Grid.Column>
               <Image src={Novartis} />
@@ -39,6 +43,22 @@ export default function Sponsors() {
                 <Image src={Pfizer} />
               {/* <Link to="/pfizer">
               </Link> */}
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        <Grid>
+          <Grid.Row columns={4}>
+            <Grid.Column>
+              <Image src={Sanofi} size="medium" />
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={Terumo} size="medium"/>
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={Dexa} size="medium"/>
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={Medtronic} size="medium"/>
             </Grid.Column>
           </Grid.Row>
         </Grid>

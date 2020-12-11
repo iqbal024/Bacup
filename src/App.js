@@ -24,6 +24,9 @@ import PostersDetail from "./pages/PostersDetail";
 import Sponsors from "./pages/Sponsors";
 import ScrollToTop from "./utils/ScrollToTop";
 import Prifzer from "./pages/Sponsor/Prifzer";
+import Terumo from "./pages/Sponsor/Terumo";
+import Msd from "./pages/Sponsor/Msd";
+import Abbott from "./pages/Sponsor/Abbott";
 
 import store from "./helper/store";
 
@@ -75,6 +78,9 @@ function App() {
             <Route exact path="/posters/:id" component={PostersDetail} />
             <Route exact path="/sponsors" component={Sponsors} />
             <Route exact path="/pfizer" component={Prifzer} />
+            <Route exact path="/terumo" component={Terumo} />
+            <Route exact path="/msd" component={Msd} />
+            <Route exact path="/abbott" component={Abbott} />
             <Route exact path="/contact-us" component={ContactUs} />
           </Switch>
           <Footer />

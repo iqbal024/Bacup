@@ -17,6 +17,10 @@ import sponsor5 from "../assets/images/Abbott_Laboratori.png";
 import slider1 from "../assets/images/Header1.jpg";
 import slider2 from "../assets/images/Header2.jpg";
 import slider3 from "../assets/images/Header3.jpg";
+import Terumo from './../assets/images/terumo.png';
+import Ge from './../assets/images/GE.png';
+import Dexa from './../assets/images/LOGO DEXA WITH TAGLINE.jpg';
+import Medtronic from './../assets/images/Medtronic.jpeg';
 
 export default function Home() {
   const calculateTimeLeft = () => {
@@ -250,7 +254,7 @@ export default function Home() {
         <h1>Sponsor By :</h1>
         <Grid.Row>
           <Grid.Column>
-            <Image src={sponsor2} />
+            <Image src={Ge} />
           </Grid.Column>
           <Grid.Column>
             <Image src={sponsor3} />
@@ -264,6 +268,22 @@ export default function Home() {
           </Grid.Column>
         </Grid.Row>
       </Grid>
+      <Grid>
+          <Grid.Row columns={4} style={{ margin: "25px" }}>
+            <Grid.Column>
+              <Image src={sponsor2} size="medium" />
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={Terumo} size="medium"/>
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={Dexa} size="medium"/>
+            </Grid.Column>
+            <Grid.Column>
+              <Image src={Medtronic} size="medium"/>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
     </div>
   );
 }

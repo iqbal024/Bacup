@@ -68,7 +68,7 @@ export default function JoinSymposium() {
             {hasRegisteredForSympo && (
               <Button
                 color="green"
-                onClick={() => window.open("https://us02web.zoom.us/j/86706294917?pwd=UTdsOUtPSVZQNS9ybm04R3hSai81UT09", "_blank")}
+                onClick={() => window.open("https://us02web.zoom.us/j/84718712595?pwd=T1dKTDNUTmExY2FxN1lXc2NUc0V0QT09", "_blank")}
               >
                 Join now
               </Button>
@@ -89,7 +89,7 @@ export default function JoinSymposium() {
             {hasRegisteredForSympo && (
               <Button
                 color="green"
-                onClick={() => window.open("https://us02web.zoom.us/j/5661292057?pwd=NkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09", "_blank")}
+                onClick={() => window.open("https://us02web.zoom.us/j/84718712595?pwd=T1dKTDNUTmExY2FxN1lXc2NUc0V0QT09", "_blank")}
               >
                 Join now
               </Button>
