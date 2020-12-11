@@ -6,9 +6,9 @@ export const symposiums = [
     // startTime: "08:00",
     // endTime: "11:00",
     dateISO: "2020-12-12",
-    startTime: "08:00",
-    endTime: "09:30",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    startTime: "07:30",
+    endTime: "11:00",
+    zoom: "https://us02web.zoom.us/j/86706294917?pwd=UTdsOUtPSVZQNS9ybm04R3hSai81UT09",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
@@ -40,9 +40,9 @@ export const symposiums = [
       "Symposium II : Acute Coronary Syndrome",
     date: "Saturday, 12 December 2020",
     dateISO: "2020-12-12",
-    startTime: "09:30",
+    startTime: "09:00",
     endTime: "11:00",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    zoom: "https://us02web.zoom.us/j/5661292057?pwd=NkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09",
     sections: [
       {
         imgUrl: null,
