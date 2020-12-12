@@ -65,14 +65,14 @@ export default function JoinSymposium() {
                 <span>09.00 - 10.30</span>
               </div>
             </Link>
-            {hasRegisteredForSympo && (
+            {/* {hasRegisteredForSympo && (
               <Button
                 color="green"
                 onClick={() => window.open("https://us02web.zoom.us/j/84718712595?pwd=T1dKTDNUTmExY2FxN1lXc2NUc0V0QT09", "_blank")}
               >
                 Join now
               </Button>
-            )}
+            )} */}
           </div>
         </Segment>
         <Segment secondary>
@@ -86,14 +86,14 @@ export default function JoinSymposium() {
                 <span>10.40 - 12.00</span>
               </div>
             </Link>
-            {hasRegisteredForSympo && (
+            {/* {hasRegisteredForSympo && (
               <Button
                 color="green"
                 onClick={() => window.open("https://us02web.zoom.us/j/84718712595?pwd=T1dKTDNUTmExY2FxN1lXc2NUc0V0QT09", "_blank")}
               >
                 Join now
               </Button>
-            )}
+            )} */}
           </div>
         </Segment>
         <h4>Sunday, 13 December 2020</h4>
@@ -111,7 +111,7 @@ export default function JoinSymposium() {
             {hasRegisteredForSympo && (
               <Button
                 color="green"
-                onClick={() => window.open("https://www.google.com", "_blank")}
+                onClick={() => window.open("https://us02web.zoom.us/j/7860838986?pwd=Y1hJQm5kQ3hQTCtJNFRzckRLREd5QT09", "_blank")}
               >
                 Join now
               </Button>
@@ -133,7 +133,7 @@ export default function JoinSymposium() {
             {hasRegisteredForSympo && (
               <Button
                 color="green"
-                onClick={() => window.open("https://www.google.com", "_blank")}
+                onClick={() => window.open("https://us02web.zoom.us/j/7860838986?pwd=Y1hJQm5kQ3hQTCtJNFRzckRLREd5QT09", "_blank")}
               >
                 Join now
               </Button>
@@ -150,14 +150,14 @@ export default function JoinSymposium() {
                 <span>09.00 - 10.30</span>
               </div>
             </Link>
-            {hasRegisteredForSympo && (
+            {/* {hasRegisteredForSympo && (
               <Button
                 color="green"
                 onClick={() => window.open("https://www.google.com", "_blank")}
               >
                 Join now
               </Button>
-            )}
+            )} */}
           </div>
         </Segment>
         <Segment secondary>
@@ -172,14 +172,14 @@ export default function JoinSymposium() {
                 <span>10.40 - 12.00</span>
               </div>
             </Link>
-            {hasRegisteredForSympo && (
+            {/* {hasRegisteredForSympo && (
               <Button
                 color="green"
                 onClick={() => window.open("https://www.google.com", "_blank")}
               >
                 Join now
               </Button>
-            )}
+            )} */}
           </div>
         </Segment>
         <h4>Sunday, 20 December 2020</h4>
@@ -192,14 +192,14 @@ export default function JoinSymposium() {
                 <span>09.00 - 10.30</span>
               </div>
             </Link>
-            {hasRegisteredForSympo && (
+            {/* {hasRegisteredForSympo && (
               <Button
                 color="green"
                 onClick={() => window.open("https://www.google.com", "_blank")}
               >
                 Join now
               </Button>
-            )}
+            )} */}
           </div>
         </Segment>
         <Segment secondary>
@@ -213,14 +213,14 @@ export default function JoinSymposium() {
                 <span>10.40 - 12.00</span>
               </div>
             </Link>
-            {hasRegisteredForSympo && (
+            {/* {hasRegisteredForSympo && (
               <Button
                 color="green"
                 onClick={() => window.open("https://www.google.com", "_blank")}
               >
                 Join now
               </Button>
-            )}
+            )} */}
           </div>
         </Segment>
       </div>

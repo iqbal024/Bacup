@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Segment, Icon } from "semantic-ui-react";
+import { Segment, Icon, Button } from "semantic-ui-react";
 
 export const posters = [
   {
@@ -96,7 +96,7 @@ export const posters = [
   },
   {
     id: "15",
-    title: "Ketut Angga Aditya Putra Pramana, MD",
+    title: "Atrial Fibrillation in Patient with Mitral Valve Disease (Stenosis and Regurgitation) and Pneumonia",
     dateSubmitted: "",
     author: "Ni Nyoman Amik Indrayani, MD",
     imageUrl: "/assets/poster/015 - Atrial Fibrillation In Patient With Mitral Valve Disease (Stenosis And Regurgitation) And Pneumonia.jpg"
@@ -194,7 +194,7 @@ export const posters = [
   },
   {
     id: "29",
-    title: "Tuberculosis and Cardiac Tamponade in Adolescent: A Case Report",
+    title: "CARDIORESPIRATORY PHYSIOLOGICAL MONITORING OF APPLICATION HIGH FLOW NASAL CANNULA (HFNC) FOR ACUTE HYPOXEMIC RESPIRATORY FAILURE IN COVID-19 PATIENT: CASE REPORT",
     dateSubmitted: "",
     author: "Ni Made Pasmiati Setyaningsih, MD",
     imageUrl: "/assets/poster/029 - Tuberculosis And Cardiac Tamponade In Adolescent, A Case Report.jpg"
@@ -278,6 +278,11 @@ export default function Posters() {
         </nav>
       </div>
       <div className="posters">
+        <div className="btn-poster">
+            <a href="https://us02web.zoom.us/j/5661292057?pwd=NkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09" target="_blank" rel="noopener noreferrer">
+              <Button primary>Join Now</Button>
+            </a>
+        </div>
         {posters.map((poster, index) => (
           <div key={`poster-${index}`}>
             <Link to={`/posters/${poster.id}`}>

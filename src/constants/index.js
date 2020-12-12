@@ -75,9 +75,9 @@ export const symposiums = [
       "Symposium III : Advances in Management of Congenital Heart Disease and Pulmonary Hypertension",
     date: "Sunday, 13 December 2020",
     dateISO: "2020-12-13",
-    startTime: "08:00",
+    startTime: "07:30",
     endTime: "11:00",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    zoom: "https://us02web.zoom.us/j/7860838986?pwd=Y1hJQm5kQ3hQTCtJNFRzckRLREd5QT09",
     sections: [
       {
         imgUrl: null,
@@ -109,9 +109,9 @@ export const symposiums = [
     title: "Symposium IV : Advances in Management of Coronary Artery Disease",
     date: "Sunday, 13 December 2020",
     dateISO: "2020-12-13",
-    startTime: "09:30",
+    startTime: "09:00",
     endTime: "11:00",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    zoom: "https://us02web.zoom.us/j/7860838986?pwd=Y1hJQm5kQ3hQTCtJNFRzckRLREd5QT09",
     sections: [
       {
         imgUrl: null,

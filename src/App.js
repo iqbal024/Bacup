@@ -27,6 +27,9 @@ import Prifzer from "./pages/Sponsor/Prifzer";
 import Terumo from "./pages/Sponsor/Terumo";
 import Msd from "./pages/Sponsor/Msd";
 import Abbott from "./pages/Sponsor/Abbott";
+import Medtronic from "./pages/Sponsor/Medtronic";
+import Dexa from "./pages/Sponsor/Dexa";
+import Ge from "./pages/Sponsor/Ge";
 
 import store from "./helper/store";
 
@@ -81,6 +84,9 @@ function App() {
             <Route exact path="/terumo" component={Terumo} />
             <Route exact path="/msd" component={Msd} />
             <Route exact path="/abbott" component={Abbott} />
+            <Route exact path="/medtronic" component={Medtronic} />
+            <Route exact path="/dexa" component={Dexa} />
+            <Route exact path="/ge" component={Ge} />
             <Route exact path="/contact-us" component={ContactUs} />
           </Switch>
           <Footer />

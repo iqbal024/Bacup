@@ -42,6 +42,15 @@ export default function AbbottDetail() {
             <Button class="ui button" onClick={OpenBrosur1} style={{ position: "absolute", top: "248px", left: "458px", width: "111px", height: "154px", backgroundColor: "transparent", backgroundRepeat: "no-repeat", border: "none", cursor: "pointer", overflow: "hidden", outline: "none" }}> Open PPT</Button>
             <Button class="ui button" onClick={OpenBrosur2} style={{ position: "absolute", top: "177px", left: "577px", width: "111px", height: "154px", backgroundColor: "transparent", backgroundRepeat: "no-repeat", border: "none", cursor: "pointer", overflow: "hidden", outline: "none" }}> Open PPT</Button>
             <Button class="ui button" onClick={OpenBrosur3} style={{ position: "absolute", top: "619px", right: "600px", width: "221px", height: "92px", backgroundColor: "transparent", backgroundRepeat: "no-repeat", border: "none", cursor: "pointer", overflow: "hidden", outline: "none" }}> </Button>
+            <a
+                href="https://api.whatsapp.com/send?phone=628111607930"
+                target="blank"
+                title="Hotline Bacup"
+                className="text-hotline"
+                style={{ position: "absolute", right: "5px", bottom: "10px" }}
+            >
+                Contact Person : +62 811-1607-930 (Dimas)
+            </a>
         </div>
     </div>
 }

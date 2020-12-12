@@ -30,19 +30,25 @@ export default function Sponsors() {
         <Grid verticalAlign='middle' columns={5} centered>
           <Grid.Row>
             <Grid.Column>
-              <Image src={Ge} size="medium"/>
+              <Link to="/ge">
+                <Image src={Ge} size="medium"/>
+              </Link>
             </Grid.Column>
             <Grid.Column>
               <Image src={Novartis} />
               <br />
-              <Image src={MSD} />
+              <Link to="/msd">
+                <Image src={MSD} />
+              </Link>
               <br />
-              <Image src={Abbott_Laboratori} />
+              <Link to="/abbott">
+                <Image src={Abbott_Laboratori} />
+              </Link>
             </Grid.Column>
             <Grid.Column>
+              <Link to="/pfizer">
                 <Image src={Pfizer} />
-              {/* <Link to="/pfizer">
-              </Link> */}
+              </Link>
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -52,13 +58,19 @@ export default function Sponsors() {
               <Image src={Sanofi} size="medium" />
             </Grid.Column>
             <Grid.Column>
-              <Image src={Terumo} size="medium"/>
+              <Link to="/terumo">
+                <Image src={Terumo} size="medium"/>
+              </Link>
             </Grid.Column>
             <Grid.Column>
-              <Image src={Dexa} size="medium"/>
+              <Link to="/dexa">
+                <Image src={Dexa} size="medium"/>
+              </Link>
             </Grid.Column>
             <Grid.Column>
-              <Image src={Medtronic} size="medium"/>
+              <Link to="/medtronic">
+                <Image src={Medtronic} size="medium"/>
+              </Link>
             </Grid.Column>
           </Grid.Row>
         </Grid>
