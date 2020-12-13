@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from 'semantic-ui-react';
-import Ge from "../../assets/images/bae634bd5199979a0403c8ceaf0cdd2a.jpg";
+import Ge from "../../assets/images/Triputra Technomed.jpg";
 
 export default function GeDetail() {
 
@@ -15,12 +15,17 @@ export default function GeDetail() {
     return <div className="page">
         <div style= {{ position: "relative" }}>
             <img style={{ width: "100%" }} src={Ge}></img>
-            <Button class="ui button" onClick={OpenBrosur} style={{ position: "absolute", bottom: "320px", left: "581px", width: "271px", height: "281px", backgroundColor: "transparent", backgroundRepeat: "no-repeat", border: "none", cursor: "pointer", overflow: "hidden", outline: "none" }}> </Button>
-            <Button class="ui button" onClick={OpenBrosur1} style={{ position: "absolute", top: "260px", right: "100px", width: "468px", height: "227px", backgroundColor: "transparent", backgroundRepeat: "no-repeat", border: "none", cursor: "pointer", overflow: "hidden", outline: "none" }}> </Button>
-            <p>
-                Contact Person : 
-                <span>+62 822-5778-7722</span>
-            </p>
+            <Button class="ui button" onClick={OpenBrosur} style={{ position: "absolute", bottom: "150px", left: "145px", width: "166px", height: "236px", backgroundColor: "transparent", backgroundRepeat: "no-repeat", border: "none", cursor: "pointer", overflow: "hidden", outline: "none" }}> </Button>
+            <Button class="ui button" onClick={OpenBrosur1} style={{ position: "absolute", top: "347px", right: "194px", width: "135px", height: "348px", backgroundColor: "transparent", backgroundRepeat: "no-repeat", border: "none", cursor: "pointer", overflow: "hidden", outline: "none" }}> </Button>
+            {/* <a
+                href="https://api.whatsapp.com/send?phone=6282189968555"
+                target="blank"
+                title="Hotline Bacup"
+                className="text-hotline"
+                style={{ position: "absolute", right: "5px", bottom: "10px" }}
+            >
+                Contact Person : +62 821-8996-8555 (Darwin)
+            </a> */}
         </div>
     </div>
 }

@@ -86,7 +86,7 @@ function App() {
             <Route exact path="/abbott" component={Abbott} />
             <Route exact path="/medtronic" component={Medtronic} />
             <Route exact path="/dexa" component={Dexa} />
-            <Route exact path="/ge" component={Ge} />
+            <Route exact path="/triputra" component={Ge} />
             <Route exact path="/contact-us" component={ContactUs} />
           </Switch>
           <Footer />

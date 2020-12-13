@@ -7,7 +7,7 @@ import MSD from './../assets/images/MSD.png';
 import Novartis from './../assets/images/Novartis.png';
 import Abbott_Laboratori from './../assets/images/Abbott_Laboratori.png';
 import Terumo from './../assets/images/terumo.png';
-import Ge from './../assets/images/GE.png';
+import Ge from './../assets/images/Triputra.jpg';
 import Dexa from './../assets/images/LOGO DEXA WITH TAGLINE.jpg';
 import Medtronic from './../assets/images/Medtronic.jpeg';
 
@@ -30,7 +30,7 @@ export default function Sponsors() {
         <Grid verticalAlign='middle' columns={5} centered>
           <Grid.Row>
             <Grid.Column>
-              <Link to="/ge">
+              <Link to="/triputra">
                 <Image src={Ge} size="medium"/>
               </Link>
             </Grid.Column>

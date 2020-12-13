@@ -18,7 +18,7 @@ import slider1 from "../assets/images/Header1.jpg";
 import slider2 from "../assets/images/Header2.jpg";
 import slider3 from "../assets/images/Header3.jpg";
 import Terumo from './../assets/images/terumo.png';
-import Ge from './../assets/images/GE.png';
+import Ge from './../assets/images/Triputra.jpg';
 import Dexa from './../assets/images/LOGO DEXA WITH TAGLINE.jpg';
 import Medtronic from './../assets/images/Medtronic.jpeg';
 
