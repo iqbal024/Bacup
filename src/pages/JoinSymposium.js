@@ -108,14 +108,14 @@ export default function JoinSymposium() {
                 <span>09.00 - 10.30</span>
               </div>
             </Link>
-            {hasRegisteredForSympo && (
+            {/* {hasRegisteredForSympo && (
               <Button
                 color="green"
                 onClick={() => window.open("https://us02web.zoom.us/j/7860838986?pwd=Y1hJQm5kQ3hQTCtJNFRzckRLREd5QT09", "_blank")}
               >
                 Join now
               </Button>
-            )}
+            )} */}
           </div>
         </Segment>
         <Segment secondary>
@@ -130,14 +130,14 @@ export default function JoinSymposium() {
                 <span>10.40 - 12.00</span>
               </div>
             </Link>
-            {hasRegisteredForSympo && (
+            {/* {hasRegisteredForSympo && (
               <Button
                 color="green"
                 onClick={() => window.open("https://us02web.zoom.us/j/7860838986?pwd=Y1hJQm5kQ3hQTCtJNFRzckRLREd5QT09", "_blank")}
               >
                 Join now
               </Button>
-            )}
+            )} */}
           </div>
         </Segment>
         <h4>Saturday, 19 December 2020</h4>
