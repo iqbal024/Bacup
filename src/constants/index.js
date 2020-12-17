@@ -403,10 +403,10 @@ export const workshops = [
     title: "Workshop III : Workshop of Arrhythmia in Clinical Practice",
     code: "ws3",
     date: "Friday, 18 December 2020",
-    dateISO: "2020-12-10",
-    startTime: "14:45",
+    dateISO: "2020-12-18",
+    startTime: "07:30",
     endTime: "16:10",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    zoom: "https://us02web.zoom.us/meeting/register/tZMrfuCrpzsqH9KcVV6x7UCClJav1RPepRpI",
     sections: [
       {
         imgUrl: null,
@@ -457,10 +457,10 @@ export const workshops = [
     title: "Workshop IV : Workshop of Acute Heart Failure",
     code: "ws4",
     date: "Friday, 18 December 2020",
-    dateISO: "2020-12-10",
-    startTime: "14:50",
+    dateISO: "2020-12-18",
+    startTime: "11:45",
     endTime: "16:40",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    zoom: "https://us02web.zoom.us/meeting/register/tZEqdeivrjwtG9QMmcrRNIy4IRh478El2xT9",
     sections: [
       {
         imgUrl: null,

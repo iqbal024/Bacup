@@ -133,7 +133,7 @@ export default function JoinWorkshop() {
             {hasRegisteredForWorkshop3 && (
               <Button
                 color="green"
-                onClick={() => window.open("https://www.google.com", "_blank")}
+                onClick={() => window.open("https://us02web.zoom.us/meeting/register/tZMrfuCrpzsqH9KcVV6x7UCClJav1RPepRpI", "_blank")}
               >
                 Join now
               </Button>
@@ -152,7 +152,7 @@ export default function JoinWorkshop() {
             {hasRegisteredForWorkshop4 && (
               <Button
                 color="green"
-                onClick={() => window.open("https://www.google.com", "_blank")}
+                onClick={() => window.open("https://us02web.zoom.us/meeting/register/tZEqdeivrjwtG9QMmcrRNIy4IRh478El2xT9", "_blank")}
               >
                 Join now
               </Button>
