@@ -143,7 +143,7 @@ export const symposiums = [
     dateISO: "2020-12-19",
     startTime: "08:00",
     endTime: "11:00",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    zoom: "https://us02web.zoom.us/meeting/register/tZAucuGuqjguHtKI3nLsBE-kpqk4O5zBWEWn",
     sections: [
       {
         imgUrl: "/assets/doctors/Dr. dr. Ketut Rina, Sp.PD, Sp.JP(K).JPG",
@@ -176,9 +176,9 @@ export const symposiums = [
       "Symposium VI : Managing Dyslipidemia Patient: What Can We Do Better",
     date: "Saturday, 19 December 2020",
     dateISO: "2020-12-19",
-    startTime: "09:30",
+    startTime: "08:30",
     endTime: "11:00",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    zoom: "https://us02web.zoom.us/meeting/register/tZAucuGuqjguHtKI3nLsBE-kpqk4O5zBWEWn",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Made Putra Swi Antara, Sp.JP(K).JPG",
