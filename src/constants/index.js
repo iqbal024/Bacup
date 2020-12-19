@@ -210,9 +210,9 @@ export const symposiums = [
     title: "Symposium VII : Heart Failure",
     date: "Sunday, 20 December 2020",
     dateISO: "2020-12-20",
-    startTime: "08:00",
+    startTime: "07:30",
     endTime: "11:00",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    zoom: "https://us02web.zoom.us/meeting/register/tZAtcuqqqDMuH9Jg5uepA6LIGZkpHDnusmSH",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. I Nyoman Wiryawan, Sp.JP.JPG",
@@ -244,9 +244,9 @@ export const symposiums = [
       "Symposium VIII : Prevention and Long-term Management of Venous Thromboembolism",
     date: "Sunday, 20 December 2020",
     dateISO: "2020-12-20",
-    startTime: "09:30",
+    startTime: "09:00",
     endTime: "11:00",
-    zoom: "https://us02web.zoom.us/j/82537404667?pwd=alNJQ3lTYTJDdllxYjhqem8rQW5sUT09",
+    zoom: "https://us02web.zoom.us/meeting/register/tZAtcuqqqDMuH9Jg5uepA6LIGZkpHDnusmSH",
     sections: [
       {
         imgUrl: "/assets/doctors/dr. Ketut Susila, Sp.JP(K).JPG",

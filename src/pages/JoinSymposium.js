@@ -150,14 +150,14 @@ export default function JoinSymposium() {
                 <span>09.00 - 10.30</span>
               </div>
             </Link>
-            {hasRegisteredForSympo && (
+            {/* {hasRegisteredForSympo && (
               <Button
                 color="green"
                 onClick={() => window.open("https://us02web.zoom.us/meeting/register/tZAucuGuqjguHtKI3nLsBE-kpqk4O5zBWEWn", "_blank")}
               >
                 Join now
               </Button>
-            )}
+            )} */}
           </div>
         </Segment>
         <Segment secondary>
@@ -172,14 +172,14 @@ export default function JoinSymposium() {
                 <span>10.40 - 12.00</span>
               </div>
             </Link>
-            {hasRegisteredForSympo && (
+            {/* {hasRegisteredForSympo && (
               <Button
                 color="green"
                 onClick={() => window.open("https://us02web.zoom.us/meeting/register/tZAucuGuqjguHtKI3nLsBE-kpqk4O5zBWEWn", "_blank")}
               >
                 Join now
               </Button>
-            )}
+            )} */}
           </div>
         </Segment>
         <h4>Sunday, 20 December 2020</h4>
@@ -192,14 +192,14 @@ export default function JoinSymposium() {
                 <span>09.00 - 10.30</span>
               </div>
             </Link>
-            {/* {hasRegisteredForSympo && (
+            {hasRegisteredForSympo && (
               <Button
                 color="green"
-                onClick={() => window.open("https://www.google.com", "_blank")}
+                onClick={() => window.open("https://us02web.zoom.us/meeting/register/tZAtcuqqqDMuH9Jg5uepA6LIGZkpHDnusmSH", "_blank")}
               >
                 Join now
               </Button>
-            )} */}
+            )}
           </div>
         </Segment>
         <Segment secondary>
@@ -213,14 +213,14 @@ export default function JoinSymposium() {
                 <span>10.40 - 12.00</span>
               </div>
             </Link>
-            {/* {hasRegisteredForSympo && (
+            {hasRegisteredForSympo && (
               <Button
                 color="green"
-                onClick={() => window.open("https://www.google.com", "_blank")}
+                onClick={() => window.open("https://us02web.zoom.us/meeting/register/tZAtcuqqqDMuH9Jg5uepA6LIGZkpHDnusmSH", "_blank")}
               >
                 Join now
               </Button>
-            )} */}
+            )}
           </div>
         </Segment>
       </div>
