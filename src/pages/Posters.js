@@ -279,7 +279,7 @@ export default function Posters() {
       </div>
       <div className="posters">
         <div className="btn-poster">
-            <a href="https://us02web.zoom.us/j/5661292057?pwd=NkRXb2ZxQTNZZkZKTzVVbjkycjlKUT09" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/watch?v=tgPwtxI766Q" target="_blank" rel="noopener noreferrer">
               <Button primary>Join Now</Button>
             </a>
         </div>
